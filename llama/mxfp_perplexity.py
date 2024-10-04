@@ -63,7 +63,7 @@ class Evaluator:
 
 from datasets import load_dataset
 
-tokenizer = LlamaTokenizer.from_pretrained("meta-llama/Llama-2-7b-hf")
+tokenizer = LlamaTokenizer.from_pretrained("meta-llama/Llama-2-7b-hf",token="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" )
 dataset = load_dataset('wikitext', 'wikitext-2-raw-v1', split='test')
 evaluator = Evaluator(dataset, tokenizer, "cuda")
 
@@ -102,7 +102,7 @@ mx_specs = finalize_mx_specs(mx_specs)
 mx_mapping.inject_pyt_ops(mx_specs)
 
 model = LlamaForCausalLM.from_pretrained(
-    args.model, torch_dtype=torch.float16, device_map="auto"
+    args.model, torch_dtype=torch.float16, device_map="auto",token="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"
 )
 
 ppl = evaluator.evaluate(model)
