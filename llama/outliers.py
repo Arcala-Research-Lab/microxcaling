@@ -44,11 +44,37 @@ def check_outliers(activations_dict, threshold=3):
         outlier_info[layer_name] = {
             'mean': mean,
             'std': std,
-            'max magnitude': max_val,
-            'min magnitude': min_val,  
+            'max_abs': max_val,
+            'min_abs': min_val,  
             'outliers_percent': percentage_outliers
         }
     return outlier_info
+
+# Function to check for max, min, mean, std, and outliers in weights
+def check_weights(model, threshold=3):
+    weight_info = {}
+    for name, param in model.named_parameters():
+        if 'weight' in name:  # Focus on weight parameters only
+            weights = param.detach().cpu().numpy()
+            mean = np.mean(weights)
+            std = np.std(weights)
+            max_val = np.max(weights)
+            min_val = np.min(weights)
+            max_abs_val = np.max(np.abs(weights))  # Max absolute value
+            min_abs_val = np.min(np.abs(weights))  # Min absolute value (ignores sign)
+            outliers = np.abs(weights - mean) > threshold * std
+            percentage_outliers = np.sum(outliers) / weights.size * 100
+            weight_info[name] = {
+                'mean': mean,
+                'std': std,
+                'max': max_val,
+                'min': min_val,
+                'max_abs': max_abs_val,
+                'min_abs': min_abs_val,
+                'outliers_percent': percentage_outliers
+            }
+    return weight_info
+
 
 class Evaluator:
     def __init__(self, dataset, tokenizer, device, n_samples=100):
@@ -90,8 +116,12 @@ class Evaluator:
 
             # Check for outliers in the captured activations
             outlier_info = check_outliers(activations_dict)
+
             for layer, info in outlier_info.items():
-                print(f"Layer {layer}: Mean: {info['mean']}, Std: {info['std']}, Max: {info['max']}, Min: {info['min']}, Outliers: {info['outliers_percent']}%")
+                print(f"Activations Layer {layer}: Mean: {info['mean']}, Std: {info['std']}, Max: {info['max_abs']}, Min: {info['min_abs']}, Outliers: {info['outliers_percent']}%")
+
+            # for layer, info in outlier_info.items():
+            #     print(f"Layer {layer}: Mean: {info['mean']}, Std: {info['std']}, Max: {info['max_abs']}, Min: {info['min_abs']}, Outliers: {info['outliers_percent']}%")
 
         return torch.exp(torch.stack(nlls).sum() / (self.n_samples * 2048))
 
@@ -139,6 +169,13 @@ model = LlamaForCausalLM.from_pretrained(
     args.model, torch_dtype=torch.float16, device_map="auto",token="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"
 )
 
+# Check weights
+weight_info = check_weights(model)
+for layer, info in weight_info.items():
+    print(f"Weights Layer {layer}: Mean: {info['mean']}, Std: {info['std']}, Max: {info['max']}, Min: {info['min']}, Max Abs: {info['max_abs']}, Min Abs: {info['min_abs']}, Outliers: {info['outliers_percent']}%")
+
+print(f"-------------------------------------------"
+)
 ppl = evaluator.evaluate(model)
 print(f"{args.model} {args.w_elem} {args.a_elem} {args.block_size} {args.scalar_format} {args.scalar_width} {args.quantize_backprop}")
 print(f"perplexity: {ppl}")
