@@ -20,18 +20,19 @@ import tqdm
 
 import argparse
 parser = argparse.ArgumentParser()
+parser.add_argument('--baseline', help='No quantization', default=False)
 parser.add_argument('--model', help='model name', default="meta-llama/Llama-2-7b-hf")
 parser.add_argument('--w_elem', help='weight format', default="int8")
 parser.add_argument('--a_elem', help='activation format', default="int8")
 parser.add_argument('--block_size', help='microscaling block size', default=32)
-parser.add_argument('--scalar_format', help='fp or bfloat', default="bfloat")
+parser.add_argument('--scalar_format', help='fp or bfloat', default="fp")
 parser.add_argument('--scalar_width', help='width of scalar elems', default=16)
 parser.add_argument('--quantize_backprop', help='quantization of back prop (True or False)', default=False)
 
 args = parser.parse_args()
 
 class Evaluator:
-    def __init__(self, dataset, tokenizer, device, n_samples=40):
+    def __init__(self, dataset, tokenizer, device, n_samples=100):
         self.dataset = dataset
         self.tokenizer = tokenizer
         self.device = device
@@ -65,7 +66,14 @@ from datasets import load_dataset
 
 tokenizer = LlamaTokenizer.from_pretrained("meta-llama/Llama-2-7b-hf",token="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" )
 dataset = load_dataset('wikitext', 'wikitext-2-raw-v1', split='test')
-evaluator = Evaluator(dataset, tokenizer, "cuda")
+
+# Tokenize the dataset
+tokenized_dataset = dataset.map(lambda e: tokenizer(e['text'], truncation=True, padding=False), batched=True)
+
+# Count the total number of tokens
+total_tokens = sum(len(token_ids) for token_ids in tokenized_dataset['input_ids'])
+# print("number of batches:", total_tokens//2048)
+evaluator = Evaluator(dataset, tokenizer, "cuda", total_tokens//2048)
 
 # MXFP imports
 import torch
@@ -75,31 +83,30 @@ import argparse
 import sys
 import os
 
-microscaling = '../mx'
-sys.path.append(os.path.dirname(os.path.expanduser(microscaling)))
-# import finalize_mx_specs
-# import mx_mapping
 
-from mx import finalize_mx_specs
-from mx import mx_mapping
-
-
-# Simple MX spec for MXFP6 weights+activations
-mx_specs = {
-    'w_elem_format': args.w_elem,
-    'a_elem_format': args.a_elem,
-    'block_size': args.block_size,
-    args.scalar_format: args.scalar_width,
-    'custom_cuda': True,
-    # For quantization-aware finetuning, do backward pass in FP32
-    'quantize_backprop': args.quantize_backprop,
-}
-mx_specs = finalize_mx_specs(mx_specs)
 
 # Auto-inject MX modules and functions
 # This will replace certain torch.nn.* and torch.nn.functional.*
 # modules/functions in the global namespace!
-mx_mapping.inject_pyt_ops(mx_specs)
+if not args.baseline:
+    microscaling = '../mx'
+    sys.path.append(os.path.dirname(os.path.expanduser(microscaling)))
+
+    from mx import finalize_mx_specs
+    from mx import mx_mapping
+
+    # Simple MX spec for MXFP6 weights+activations
+    mx_specs = {
+        'w_elem_format': args.w_elem,
+        'a_elem_format': args.a_elem,
+        'block_size': int(args.block_size),
+        args.scalar_format: args.scalar_width,
+        'custom_cuda': True,
+        # For quantization-aware finetuning, do backward pass in FP32
+        'quantize_backprop': args.quantize_backprop,
+    }
+    mx_specs = finalize_mx_specs(mx_specs)
+    mx_mapping.inject_pyt_ops(mx_specs)
 
 model = LlamaForCausalLM.from_pretrained(
     args.model, torch_dtype=torch.float16, device_map="auto",token="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"
