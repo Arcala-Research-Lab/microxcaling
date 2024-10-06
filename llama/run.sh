@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Arrays for all the options
-w_elem_options=("int8" "int4" "fp8_e5m2" "fp8_e4m3" "fp6_e2m3" "fp4_e1m1")
-a_elem_options=("int8" "int4" "fp8_e5m2" "fp8_e4m3" "fp6_e2m3" "fp4_e1m1")
+w_elem_options=("int8" "int4" "fp8_e5m2" "fp8_e4m3" "fp6_e2m3" "fp4_e2m1")
+a_elem_options=("int8" "int4" "fp8_e5m2" "fp8_e4m3" "fp6_e2m3" "fp4_e2m1")
 block_size_options=("2" "4" "8" "16" "32" "64" "128" "256" "512" "1024")
 scalar_format_options=("fp" "bfloat")
 
