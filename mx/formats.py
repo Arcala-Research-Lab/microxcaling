@@ -34,6 +34,21 @@ class ElemFormat(Enum):
     bfloat16 = 10
     bf16 = 10
 
+    # ARCALA added formats
+    int7 = 11
+    int6 = 12
+    int5 = 13
+    int3 = 14
+    fp8_e3m4 = 15
+    fp8_e2m5 = 16
+    fp7_e4m2 = 17
+    fp7_e3m3 = 18
+    fp7_e2m4 = 19
+    fp5_e3m1 = 20
+    fp5_e2m2 = 21
+    fp4_e3m0 = 22
+    fp3_e2m0 = 23
+
     @staticmethod
     def from_str(s):
         assert(s != None), "String elem_format == None"
@@ -110,6 +125,46 @@ def _get_format_params(fmt):
     elif fmt == ElemFormat.bfloat16:
         ebits, mbits = 8, 9
         emax = 2**(ebits - 1) - 1
+    # ARCALA added formats
+    elif fmt == ElemFormat.int7:
+        ebits, mbits = 0, 7
+        emax = 0    
+    elif fmt == ElemFormat.int6:
+        ebits, mbits = 0, 6
+        emax = 0 
+    elif fmt == ElemFormat.int5:
+        ebits, mbits = 0, 5
+        emax = 0     
+    elif fmt == ElemFormat.int3:
+        ebits, mbits = 0, 3
+        emax = 0   
+    elif fmt == ElemFormat.fp8_e3m4:
+        ebits, mbits = 3, 6
+        emax = 2**(ebits - 1) 
+    elif fmt == ElemFormat.fp8_e2m5:
+        ebits, mbits = 2, 7
+        emax = 2**(ebits - 1)
+    elif fmt == ElemFormat.fp7_e4m2:
+        ebits, mbits = 4, 4
+        emax = 2**(ebits - 1) 
+    elif fmt == ElemFormat.fp7_e3m3:
+        ebits, mbits = 3, 5
+        emax = 2**(ebits - 1)
+    elif fmt == ElemFormat.fp7_e2m4:
+        ebits, mbits = 2, 6
+        emax = 2**(ebits - 1)
+    elif fmt == ElemFormat.fp5_e3m1:
+        ebits, mbits = 3, 3
+        emax = 2**(ebits - 1)
+    elif fmt == ElemFormat.fp5_e2m2:
+        ebits, mbits = 2, 4
+        emax = 2**(ebits - 1)
+    elif fmt == ElemFormat.fp4_e3m0:
+        ebits, mbits = 3, 2
+        emax = 2**(ebits - 1)
+    elif fmt == ElemFormat.fp3_e2m0:
+        ebits, mbits = 2, 2
+        emax = 2**(ebits - 1)
     else:
         raise Exception("Unknown element format %s" % fmt)
     
