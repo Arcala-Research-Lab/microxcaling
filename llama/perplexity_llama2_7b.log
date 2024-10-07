@@ -1,0 +1,4707 @@
+==> baseline_llama2.log <==
+meta-llama/Llama-2-7b-hf Baseline No Quantization (FP16)
+perplexity: 5.472055912017822
+
+==> fp4_e2m1_fp16_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 1024 bfloat 16 False
+perplexity: 6.21875
+
+==> fp4_e2m1_fp16_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 1024 fp 16 False
+perplexity: 6.2265625
+
+==> fp4_e2m1_fp16_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 128 bfloat 16 False
+perplexity: 6.03125
+
+==> fp4_e2m1_fp16_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 128 fp 16 False
+perplexity: 6.0234375
+
+==> fp4_e2m1_fp16_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 16384 bfloat 16 False
+perplexity: 8.75
+
+==> fp4_e2m1_fp16_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 16384 fp 16 False
+perplexity: 8.828125
+
+==> fp4_e2m1_fp16_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 16 bfloat 16 False
+perplexity: 6.125
+
+==> fp4_e2m1_fp16_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 16 fp 16 False
+perplexity: 6.14453125
+
+==> fp4_e2m1_fp16_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 2048 bfloat 16 False
+perplexity: 6.875
+
+==> fp4_e2m1_fp16_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 2048 fp 16 False
+perplexity: 6.89453125
+
+==> fp4_e2m1_fp16_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 256 bfloat 16 False
+perplexity: 6.03125
+
+==> fp4_e2m1_fp16_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 256 fp 16 False
+perplexity: 6.01953125
+
+==> fp4_e2m1_fp16_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 2 bfloat 16 False
+perplexity: 6.1875
+
+==> fp4_e2m1_fp16_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 2 fp 16 False
+perplexity: 6.1796875
+
+==> fp4_e2m1_fp16_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 32 bfloat 16 False
+perplexity: 6.0625
+
+==> fp4_e2m1_fp16_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 32 fp 16 False
+perplexity: 6.0859375
+
+==> fp4_e2m1_fp16_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 4096 bfloat 16 False
+perplexity: 8.9375
+
+==> fp4_e2m1_fp16_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 4096 fp 16 False
+perplexity: 8.9140625
+
+==> fp4_e2m1_fp16_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 4 bfloat 16 False
+perplexity: 6.21875
+
+==> fp4_e2m1_fp16_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 4 fp 16 False
+perplexity: 6.21484375
+
+==> fp4_e2m1_fp16_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 512 bfloat 16 False
+perplexity: 6.0625
+
+==> fp4_e2m1_fp16_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 512 fp 16 False
+perplexity: 6.05859375
+
+==> fp4_e2m1_fp16_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 64 bfloat 16 False
+perplexity: 6.0625
+
+==> fp4_e2m1_fp16_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 64 fp 16 False
+perplexity: 6.05859375
+
+==> fp4_e2m1_fp16_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 8192 bfloat 16 False
+perplexity: 8.75
+
+==> fp4_e2m1_fp16_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 8192 fp 16 False
+perplexity: 8.84375
+
+==> fp4_e2m1_fp16_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 8 bfloat 16 False
+perplexity: 6.1875
+
+==> fp4_e2m1_fp16_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp16 8 fp 16 False
+perplexity: 6.1796875
+
+==> fp4_e2m1_fp4_e2m1_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 1024 bfloat 16 False
+perplexity: 12.9375
+
+==> fp4_e2m1_fp4_e2m1_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 1024 fp 16 False
+perplexity: 13.1171875
+
+==> fp4_e2m1_fp4_e2m1_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 128 bfloat 16 False
+perplexity: 7.625
+
+==> fp4_e2m1_fp4_e2m1_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 128 fp 16 False
+perplexity: 7.63671875
+
+==> fp4_e2m1_fp4_e2m1_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 16384 bfloat 16 False
+perplexity: 222208.0
+
+==> fp4_e2m1_fp4_e2m1_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 16384 fp 16 False
+perplexity: inf
+
+==> fp4_e2m1_fp4_e2m1_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 16 bfloat 16 False
+perplexity: 7.625
+
+==> fp4_e2m1_fp4_e2m1_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 16 fp 16 False
+perplexity: 7.71484375
+
+==> fp4_e2m1_fp4_e2m1_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 2048 bfloat 16 False
+perplexity: 286.0
+
+==> fp4_e2m1_fp4_e2m1_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 2048 fp 16 False
+perplexity: 343.75
+
+==> fp4_e2m1_fp4_e2m1_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 256 bfloat 16 False
+perplexity: 7.625
+
+==> fp4_e2m1_fp4_e2m1_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 256 fp 16 False
+perplexity: 7.69921875
+
+==> fp4_e2m1_fp4_e2m1_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 2 bfloat 16 False
+perplexity: 8.375
+
+==> fp4_e2m1_fp4_e2m1_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 2 fp 16 False
+perplexity: 8.46875
+
+==> fp4_e2m1_fp4_e2m1_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 32 bfloat 16 False
+perplexity: 7.5
+
+==> fp4_e2m1_fp4_e2m1_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 32 fp 16 False
+perplexity: 7.625
+
+==> fp4_e2m1_fp4_e2m1_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 4096 bfloat 16 False
+perplexity: 173056.0
+
+==> fp4_e2m1_fp4_e2m1_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 4096 fp 16 False
+perplexity: inf
+
+==> fp4_e2m1_fp4_e2m1_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 4 bfloat 16 False
+perplexity: 8.0
+
+==> fp4_e2m1_fp4_e2m1_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 4 fp 16 False
+perplexity: 8.1484375
+
+==> fp4_e2m1_fp4_e2m1_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 512 bfloat 16 False
+perplexity: 8.625
+
+==> fp4_e2m1_fp4_e2m1_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 512 fp 16 False
+perplexity: 8.703125
+
+==> fp4_e2m1_fp4_e2m1_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 64 bfloat 16 False
+perplexity: 7.625
+
+==> fp4_e2m1_fp4_e2m1_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 64 fp 16 False
+perplexity: 7.625
+
+==> fp4_e2m1_fp4_e2m1_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 8192 bfloat 16 False
+perplexity: 173056.0
+
+==> fp4_e2m1_fp4_e2m1_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 8192 fp 16 False
+perplexity: inf
+
+==> fp4_e2m1_fp4_e2m1_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 8 bfloat 16 False
+perplexity: 7.875
+
+==> fp4_e2m1_fp4_e2m1_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp4_e2m1 8 fp 16 False
+perplexity: 7.89453125
+
+==> fp4_e2m1_fp6_e2m3_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 1024 bfloat 16 False
+perplexity: 6.3125
+
+==> fp4_e2m1_fp6_e2m3_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 1024 fp 16 False
+perplexity: 6.33203125
+
+==> fp4_e2m1_fp6_e2m3_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 128 bfloat 16 False
+perplexity: 6.0625
+
+==> fp4_e2m1_fp6_e2m3_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 128 fp 16 False
+perplexity: 6.0859375
+
+==> fp4_e2m1_fp6_e2m3_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 16384 bfloat 16 False
+perplexity: 9.9375
+
+==> fp4_e2m1_fp6_e2m3_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 16384 fp 16 False
+perplexity: 9.9609375
+
+==> fp4_e2m1_fp6_e2m3_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 16 bfloat 16 False
+perplexity: 6.1875
+
+==> fp4_e2m1_fp6_e2m3_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 16 fp 16 False
+perplexity: 6.171875
+
+==> fp4_e2m1_fp6_e2m3_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 2048 bfloat 16 False
+perplexity: 7.09375
+
+==> fp4_e2m1_fp6_e2m3_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 2048 fp 16 False
+perplexity: 7.09765625
+
+==> fp4_e2m1_fp6_e2m3_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 256 bfloat 16 False
+perplexity: 6.0625
+
+==> fp4_e2m1_fp6_e2m3_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 256 fp 16 False
+perplexity: 6.08984375
+
+==> fp4_e2m1_fp6_e2m3_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 2 bfloat 16 False
+perplexity: 6.1875
+
+==> fp4_e2m1_fp6_e2m3_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 2 fp 16 False
+perplexity: 6.19140625
+
+==> fp4_e2m1_fp6_e2m3_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 32 bfloat 16 False
+perplexity: 6.125
+
+==> fp4_e2m1_fp6_e2m3_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 32 fp 16 False
+perplexity: 6.12109375
+
+==> fp4_e2m1_fp6_e2m3_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 4096 bfloat 16 False
+perplexity: 9.8125
+
+==> fp4_e2m1_fp6_e2m3_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 4096 fp 16 False
+perplexity: 9.90625
+
+==> fp4_e2m1_fp6_e2m3_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 4 bfloat 16 False
+perplexity: 6.21875
+
+==> fp4_e2m1_fp6_e2m3_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 4 fp 16 False
+perplexity: 6.234375
+
+==> fp4_e2m1_fp6_e2m3_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 512 bfloat 16 False
+perplexity: 6.125
+
+==> fp4_e2m1_fp6_e2m3_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 512 fp 16 False
+perplexity: 6.15625
+
+==> fp4_e2m1_fp6_e2m3_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 64 bfloat 16 False
+perplexity: 6.0625
+
+==> fp4_e2m1_fp6_e2m3_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 64 fp 16 False
+perplexity: 6.109375
+
+==> fp4_e2m1_fp6_e2m3_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 8192 bfloat 16 False
+perplexity: 9.9375
+
+==> fp4_e2m1_fp6_e2m3_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 8192 fp 16 False
+perplexity: 9.90625
+
+==> fp4_e2m1_fp6_e2m3_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 8 bfloat 16 False
+perplexity: 6.1875
+
+==> fp4_e2m1_fp6_e2m3_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp6_e2m3 8 fp 16 False
+perplexity: 6.203125
+
+==> fp4_e2m1_fp8_e4m3_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 1024 bfloat 16 False
+perplexity: 6.28125
+
+==> fp4_e2m1_fp8_e4m3_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 1024 fp 16 False
+perplexity: 6.27734375
+
+==> fp4_e2m1_fp8_e4m3_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 128 bfloat 16 False
+perplexity: 6.0625
+
+==> fp4_e2m1_fp8_e4m3_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 128 fp 16 False
+perplexity: 6.08984375
+
+==> fp4_e2m1_fp8_e4m3_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 16384 bfloat 16 False
+perplexity: 8.75
+
+==> fp4_e2m1_fp8_e4m3_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 16384 fp 16 False
+perplexity: 8.84375
+
+==> fp4_e2m1_fp8_e4m3_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 16 bfloat 16 False
+perplexity: 6.1875
+
+==> fp4_e2m1_fp8_e4m3_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 16 fp 16 False
+perplexity: 6.22265625
+
+==> fp4_e2m1_fp8_e4m3_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 2048 bfloat 16 False
+perplexity: 6.9375
+
+==> fp4_e2m1_fp8_e4m3_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 2048 fp 16 False
+perplexity: 6.93359375
+
+==> fp4_e2m1_fp8_e4m3_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 256 bfloat 16 False
+perplexity: 6.0625
+
+==> fp4_e2m1_fp8_e4m3_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 256 fp 16 False
+perplexity: 6.0703125
+
+==> fp4_e2m1_fp8_e4m3_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 2 bfloat 16 False
+perplexity: 6.28125
+
+==> fp4_e2m1_fp8_e4m3_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 2 fp 16 False
+perplexity: 6.27734375
+
+==> fp4_e2m1_fp8_e4m3_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 32 bfloat 16 False
+perplexity: 6.125
+
+==> fp4_e2m1_fp8_e4m3_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 32 fp 16 False
+perplexity: 6.16015625
+
+==> fp4_e2m1_fp8_e4m3_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 4096 bfloat 16 False
+perplexity: 8.9375
+
+==> fp4_e2m1_fp8_e4m3_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 4096 fp 16 False
+perplexity: 8.96875
+
+==> fp4_e2m1_fp8_e4m3_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 4 bfloat 16 False
+perplexity: 6.28125
+
+==> fp4_e2m1_fp8_e4m3_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 4 fp 16 False
+perplexity: 6.30078125
+
+==> fp4_e2m1_fp8_e4m3_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 512 bfloat 16 False
+perplexity: 6.0625
+
+==> fp4_e2m1_fp8_e4m3_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 512 fp 16 False
+perplexity: 6.109375
+
+==> fp4_e2m1_fp8_e4m3_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 64 bfloat 16 False
+perplexity: 6.125
+
+==> fp4_e2m1_fp8_e4m3_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 64 fp 16 False
+perplexity: 6.13671875
+
+==> fp4_e2m1_fp8_e4m3_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 8192 bfloat 16 False
+perplexity: 8.9375
+
+==> fp4_e2m1_fp8_e4m3_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 8192 fp 16 False
+perplexity: 8.859375
+
+==> fp4_e2m1_fp8_e4m3_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 8 bfloat 16 False
+perplexity: 6.21875
+
+==> fp4_e2m1_fp8_e4m3_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e4m3 8 fp 16 False
+perplexity: 6.2578125
+
+==> fp4_e2m1_fp8_e5m2_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 1024 bfloat 16 False
+perplexity: 6.3125
+
+==> fp4_e2m1_fp8_e5m2_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 1024 fp 16 False
+perplexity: 6.3203125
+
+==> fp4_e2m1_fp8_e5m2_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 128 bfloat 16 False
+perplexity: 6.125
+
+==> fp4_e2m1_fp8_e5m2_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 128 fp 16 False
+perplexity: 6.1328125
+
+==> fp4_e2m1_fp8_e5m2_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 16384 bfloat 16 False
+perplexity: 8.9375
+
+==> fp4_e2m1_fp8_e5m2_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 16384 fp 16 False
+perplexity: 8.9140625
+
+==> fp4_e2m1_fp8_e5m2_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 16 bfloat 16 False
+perplexity: 6.28125
+
+==> fp4_e2m1_fp8_e5m2_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 16 fp 16 False
+perplexity: 6.28515625
+
+==> fp4_e2m1_fp8_e5m2_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 2048 bfloat 16 False
+perplexity: 7.0
+
+==> fp4_e2m1_fp8_e5m2_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 2048 fp 16 False
+perplexity: 6.9765625
+
+==> fp4_e2m1_fp8_e5m2_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 256 bfloat 16 False
+perplexity: 6.0625
+
+==> fp4_e2m1_fp8_e5m2_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 256 fp 16 False
+perplexity: 6.11328125
+
+==> fp4_e2m1_fp8_e5m2_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 2 bfloat 16 False
+perplexity: 6.375
+
+==> fp4_e2m1_fp8_e5m2_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 2 fp 16 False
+perplexity: 6.375
+
+==> fp4_e2m1_fp8_e5m2_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 32 bfloat 16 False
+perplexity: 6.21875
+
+==> fp4_e2m1_fp8_e5m2_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 32 fp 16 False
+perplexity: 6.21484375
+
+==> fp4_e2m1_fp8_e5m2_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 4096 bfloat 16 False
+perplexity: 9.0625
+
+==> fp4_e2m1_fp8_e5m2_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 4096 fp 16 False
+perplexity: 9.0
+
+==> fp4_e2m1_fp8_e5m2_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 4 bfloat 16 False
+perplexity: 6.375
+
+==> fp4_e2m1_fp8_e5m2_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 4 fp 16 False
+perplexity: 6.3828125
+
+==> fp4_e2m1_fp8_e5m2_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 512 bfloat 16 False
+perplexity: 6.125
+
+==> fp4_e2m1_fp8_e5m2_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 512 fp 16 False
+perplexity: 6.1484375
+
+==> fp4_e2m1_fp8_e5m2_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 64 bfloat 16 False
+perplexity: 6.1875
+
+==> fp4_e2m1_fp8_e5m2_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 64 fp 16 False
+perplexity: 6.19140625
+
+==> fp4_e2m1_fp8_e5m2_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 8192 bfloat 16 False
+perplexity: 8.9375
+
+==> fp4_e2m1_fp8_e5m2_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 8192 fp 16 False
+perplexity: 8.9296875
+
+==> fp4_e2m1_fp8_e5m2_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 8 bfloat 16 False
+perplexity: 6.3125
+
+==> fp4_e2m1_fp8_e5m2_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 fp8_e5m2 8 fp 16 False
+perplexity: 6.33984375
+
+==> fp4_e2m1_int4_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 1024 bfloat 16 False
+perplexity: 35127296.0
+
+==> fp4_e2m1_int4_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 1024 fp 16 False
+perplexity: inf
+
+==> fp4_e2m1_int4_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 128 bfloat 16 False
+perplexity: 8.25
+
+==> fp4_e2m1_int4_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 128 fp 16 False
+perplexity: 8.34375
+
+==> fp4_e2m1_int4_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 16384 bfloat 16 False
+perplexity: 195421011968.0
+
+==> fp4_e2m1_int4_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 16384 fp 16 False
+perplexity: inf
+
+==> fp4_e2m1_int4_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 16 bfloat 16 False
+perplexity: 6.5625
+
+==> fp4_e2m1_int4_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 16 fp 16 False
+perplexity: 6.60546875
+
+==> fp4_e2m1_int4_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 2048 bfloat 16 False
+perplexity: 624951296.0
+
+==> fp4_e2m1_int4_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 2048 fp 16 False
+perplexity: inf
+
+==> fp4_e2m1_int4_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 256 bfloat 16 False
+perplexity: 13.375
+
+==> fp4_e2m1_int4_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 256 fp 16 False
+perplexity: 13.640625
+
+==> fp4_e2m1_int4_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 2 bfloat 16 False
+perplexity: 6.375
+
+==> fp4_e2m1_int4_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 2 fp 16 False
+perplexity: 6.4140625
+
+==> fp4_e2m1_int4_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 32 bfloat 16 False
+perplexity: 6.78125
+
+==> fp4_e2m1_int4_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 32 fp 16 False
+perplexity: 6.78125
+
+==> fp4_e2m1_int4_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 4096 bfloat 16 False
+perplexity: 56103010304.0
+
+==> fp4_e2m1_int4_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 4096 fp 16 False
+perplexity: inf
+
+==> fp4_e2m1_int4_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 4 bfloat 16 False
+perplexity: 6.46875
+
+==> fp4_e2m1_int4_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 4 fp 16 False
+perplexity: 6.484375
+
+==> fp4_e2m1_int4_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 512 bfloat 16 False
+perplexity: 252.0
+
+==> fp4_e2m1_int4_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 512 fp 16 False
+perplexity: 263.5
+
+==> fp4_e2m1_int4_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 64 bfloat 16 False
+perplexity: 7.15625
+
+==> fp4_e2m1_int4_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 64 fp 16 False
+perplexity: 7.21875
+
+==> fp4_e2m1_int4_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 8192 bfloat 16 False
+perplexity: 134754598912.0
+
+==> fp4_e2m1_int4_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 8192 fp 16 False
+perplexity: inf
+
+==> fp4_e2m1_int4_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 8 bfloat 16 False
+perplexity: 6.46875
+
+==> fp4_e2m1_int4_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int4 8 fp 16 False
+perplexity: 6.515625
+
+==> fp4_e2m1_int8_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 1024 bfloat 16 False
+perplexity: 6.21875
+
+==> fp4_e2m1_int8_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 1024 fp 16 False
+perplexity: 6.22265625
+
+==> fp4_e2m1_int8_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 128 bfloat 16 False
+perplexity: 6.03125
+
+==> fp4_e2m1_int8_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 128 fp 16 False
+perplexity: 6.0234375
+
+==> fp4_e2m1_int8_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 16384 bfloat 16 False
+perplexity: 9.1875
+
+==> fp4_e2m1_int8_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 16384 fp 16 False
+perplexity: 9.125
+
+==> fp4_e2m1_int8_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 16 bfloat 16 False
+perplexity: 6.125
+
+==> fp4_e2m1_int8_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 16 fp 16 False
+perplexity: 6.14453125
+
+==> fp4_e2m1_int8_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 2048 bfloat 16 False
+perplexity: 6.875
+
+==> fp4_e2m1_int8_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 2048 fp 16 False
+perplexity: 6.90234375
+
+==> fp4_e2m1_int8_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 256 bfloat 16 False
+perplexity: 6.03125
+
+==> fp4_e2m1_int8_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 256 fp 16 False
+perplexity: 6.0234375
+
+==> fp4_e2m1_int8_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 2 bfloat 16 False
+perplexity: 6.1875
+
+==> fp4_e2m1_int8_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 2 fp 16 False
+perplexity: 6.1796875
+
+==> fp4_e2m1_int8_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 32 bfloat 16 False
+perplexity: 6.0625
+
+==> fp4_e2m1_int8_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 32 fp 16 False
+perplexity: 6.0859375
+
+==> fp4_e2m1_int8_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 4096 bfloat 16 False
+perplexity: 9.1875
+
+==> fp4_e2m1_int8_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 4096 fp 16 False
+perplexity: 9.1953125
+
+==> fp4_e2m1_int8_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 4 bfloat 16 False
+perplexity: 6.21875
+
+==> fp4_e2m1_int8_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 4 fp 16 False
+perplexity: 6.21484375
+
+==> fp4_e2m1_int8_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 512 bfloat 16 False
+perplexity: 6.0625
+
+==> fp4_e2m1_int8_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 512 fp 16 False
+perplexity: 6.06640625
+
+==> fp4_e2m1_int8_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 64 bfloat 16 False
+perplexity: 6.0625
+
+==> fp4_e2m1_int8_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 64 fp 16 False
+perplexity: 6.06640625
+
+==> fp4_e2m1_int8_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 8192 bfloat 16 False
+perplexity: 9.0625
+
+==> fp4_e2m1_int8_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 8192 fp 16 False
+perplexity: 9.109375
+
+==> fp4_e2m1_int8_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 8 bfloat 16 False
+perplexity: 6.1875
+
+==> fp4_e2m1_int8_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp4_e2m1 int8 8 fp 16 False
+perplexity: 6.1796875
+
+==> fp6_e2m3_fp16_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 1024 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp16_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 1024 fp 16 False
+perplexity: 5.51953125
+
+==> fp6_e2m3_fp16_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 128 bfloat 16 False
+perplexity: 5.5
+
+==> fp6_e2m3_fp16_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 128 fp 16 False
+perplexity: 5.5078125
+
+==> fp6_e2m3_fp16_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 16384 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp16_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 16384 fp 16 False
+perplexity: 5.53515625
+
+==> fp6_e2m3_fp16_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 16 bfloat 16 False
+perplexity: 5.5
+
+==> fp6_e2m3_fp16_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 16 fp 16 False
+perplexity: 5.5078125
+
+==> fp6_e2m3_fp16_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 2048 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp16_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 2048 fp 16 False
+perplexity: 5.5234375
+
+==> fp6_e2m3_fp16_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 256 bfloat 16 False
+perplexity: 5.5
+
+==> fp6_e2m3_fp16_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 256 fp 16 False
+perplexity: 5.5078125
+
+==> fp6_e2m3_fp16_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 2 bfloat 16 False
+perplexity: 5.5
+
+==> fp6_e2m3_fp16_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 2 fp 16 False
+perplexity: 5.5
+
+==> fp6_e2m3_fp16_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 32 bfloat 16 False
+perplexity: 5.5
+
+==> fp6_e2m3_fp16_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 32 fp 16 False
+perplexity: 5.5078125
+
+==> fp6_e2m3_fp16_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 4096 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp16_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 4096 fp 16 False
+perplexity: 5.52734375
+
+==> fp6_e2m3_fp16_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 4 bfloat 16 False
+perplexity: 5.5
+
+==> fp6_e2m3_fp16_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 4 fp 16 False
+perplexity: 5.5078125
+
+==> fp6_e2m3_fp16_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 512 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp16_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 512 fp 16 False
+perplexity: 5.51171875
+
+==> fp6_e2m3_fp16_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 64 bfloat 16 False
+perplexity: 5.5
+
+==> fp6_e2m3_fp16_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 64 fp 16 False
+perplexity: 5.5078125
+
+==> fp6_e2m3_fp16_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 8192 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp16_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 8192 fp 16 False
+perplexity: 5.52734375
+
+==> fp6_e2m3_fp16_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 8 bfloat 16 False
+perplexity: 5.5
+
+==> fp6_e2m3_fp16_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp16 8 fp 16 False
+perplexity: 5.5078125
+
+==> fp6_e2m3_fp4_e2m1_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 1024 bfloat 16 False
+perplexity: 9.5
+
+==> fp6_e2m3_fp4_e2m1_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 1024 fp 16 False
+perplexity: 9.6015625
+
+==> fp6_e2m3_fp4_e2m1_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 128 bfloat 16 False
+perplexity: 6.40625
+
+==> fp6_e2m3_fp4_e2m1_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 128 fp 16 False
+perplexity: 6.4140625
+
+==> fp6_e2m3_fp4_e2m1_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 16384 bfloat 16 False
+perplexity: 16128.0
+
+==> fp6_e2m3_fp4_e2m1_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 16384 fp 16 False
+perplexity: 19744.0
+
+==> fp6_e2m3_fp4_e2m1_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 16 bfloat 16 False
+perplexity: 6.1875
+
+==> fp6_e2m3_fp4_e2m1_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 16 fp 16 False
+perplexity: 6.19921875
+
+==> fp6_e2m3_fp4_e2m1_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 2048 bfloat 16 False
+perplexity: 131.0
+
+==> fp6_e2m3_fp4_e2m1_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 2048 fp 16 False
+perplexity: 145.0
+
+==> fp6_e2m3_fp4_e2m1_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 256 bfloat 16 False
+perplexity: 6.625
+
+==> fp6_e2m3_fp4_e2m1_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 256 fp 16 False
+perplexity: 6.62890625
+
+==> fp6_e2m3_fp4_e2m1_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 2 bfloat 16 False
+perplexity: 6.21875
+
+==> fp6_e2m3_fp4_e2m1_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 2 fp 16 False
+perplexity: 6.265625
+
+==> fp6_e2m3_fp4_e2m1_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 32 bfloat 16 False
+perplexity: 6.21875
+
+==> fp6_e2m3_fp4_e2m1_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 32 fp 16 False
+perplexity: 6.22265625
+
+==> fp6_e2m3_fp4_e2m1_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 4096 bfloat 16 False
+perplexity: 14208.0
+
+==> fp6_e2m3_fp4_e2m1_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 4096 fp 16 False
+perplexity: 15992.0
+
+==> fp6_e2m3_fp4_e2m1_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 4 bfloat 16 False
+perplexity: 6.21875
+
+==> fp6_e2m3_fp4_e2m1_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 4 fp 16 False
+perplexity: 6.234375
+
+==> fp6_e2m3_fp4_e2m1_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 512 bfloat 16 False
+perplexity: 7.28125
+
+==> fp6_e2m3_fp4_e2m1_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 512 fp 16 False
+perplexity: 7.296875
+
+==> fp6_e2m3_fp4_e2m1_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 64 bfloat 16 False
+perplexity: 6.28125
+
+==> fp6_e2m3_fp4_e2m1_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 64 fp 16 False
+perplexity: 6.296875
+
+==> fp6_e2m3_fp4_e2m1_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 8192 bfloat 16 False
+perplexity: 15168.0
+
+==> fp6_e2m3_fp4_e2m1_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 8192 fp 16 False
+perplexity: 16496.0
+
+==> fp6_e2m3_fp4_e2m1_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 8 bfloat 16 False
+perplexity: 6.21875
+
+==> fp6_e2m3_fp4_e2m1_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp4_e2m1 8 fp 16 False
+perplexity: 6.21484375
+
+==> fp6_e2m3_fp6_e2m3_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 1024 bfloat 16 False
+perplexity: 5.625
+
+==> fp6_e2m3_fp6_e2m3_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 1024 fp 16 False
+perplexity: 5.64453125
+
+==> fp6_e2m3_fp6_e2m3_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 128 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp6_e2m3_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 128 fp 16 False
+perplexity: 5.546875
+
+==> fp6_e2m3_fp6_e2m3_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 16384 bfloat 16 False
+perplexity: 6.40625
+
+==> fp6_e2m3_fp6_e2m3_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 16384 fp 16 False
+perplexity: 6.4375
+
+==> fp6_e2m3_fp6_e2m3_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 16 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp6_e2m3_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 16 fp 16 False
+perplexity: 5.53515625
+
+==> fp6_e2m3_fp6_e2m3_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 2048 bfloat 16 False
+perplexity: 5.71875
+
+==> fp6_e2m3_fp6_e2m3_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 2048 fp 16 False
+perplexity: 5.71484375
+
+==> fp6_e2m3_fp6_e2m3_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 256 bfloat 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_fp6_e2m3_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 256 fp 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_fp6_e2m3_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 2 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp6_e2m3_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 2 fp 16 False
+perplexity: 5.5234375
+
+==> fp6_e2m3_fp6_e2m3_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 32 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp6_e2m3_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 32 fp 16 False
+perplexity: 5.5390625
+
+==> fp6_e2m3_fp6_e2m3_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 4096 bfloat 16 False
+perplexity: 6.125
+
+==> fp6_e2m3_fp6_e2m3_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 4096 fp 16 False
+perplexity: 6.1484375
+
+==> fp6_e2m3_fp6_e2m3_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 4 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp6_e2m3_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 4 fp 16 False
+perplexity: 5.52734375
+
+==> fp6_e2m3_fp6_e2m3_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 512 bfloat 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_fp6_e2m3_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 512 fp 16 False
+perplexity: 5.58984375
+
+==> fp6_e2m3_fp6_e2m3_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 64 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp6_e2m3_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 64 fp 16 False
+perplexity: 5.5390625
+
+==> fp6_e2m3_fp6_e2m3_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 8192 bfloat 16 False
+perplexity: 6.21875
+
+==> fp6_e2m3_fp6_e2m3_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 8192 fp 16 False
+perplexity: 6.3203125
+
+==> fp6_e2m3_fp6_e2m3_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 8 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp6_e2m3_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp6_e2m3 8 fp 16 False
+perplexity: 5.53515625
+
+==> fp6_e2m3_fp8_e4m3_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 1024 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp8_e4m3_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 1024 fp 16 False
+perplexity: 5.55078125
+
+==> fp6_e2m3_fp8_e4m3_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 128 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp8_e4m3_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 128 fp 16 False
+perplexity: 5.546875
+
+==> fp6_e2m3_fp8_e4m3_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 16384 bfloat 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_fp8_e4m3_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 16384 fp 16 False
+perplexity: 5.5546875
+
+==> fp6_e2m3_fp8_e4m3_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 16 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp8_e4m3_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 16 fp 16 False
+perplexity: 5.5546875
+
+==> fp6_e2m3_fp8_e4m3_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 2048 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp8_e4m3_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 2048 fp 16 False
+perplexity: 5.55078125
+
+==> fp6_e2m3_fp8_e4m3_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 256 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp8_e4m3_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 256 fp 16 False
+perplexity: 5.546875
+
+==> fp6_e2m3_fp8_e4m3_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 2 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp8_e4m3_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 2 fp 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_fp8_e4m3_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 32 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp8_e4m3_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 32 fp 16 False
+perplexity: 5.5546875
+
+==> fp6_e2m3_fp8_e4m3_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 4096 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp8_e4m3_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 4096 fp 16 False
+perplexity: 5.5546875
+
+==> fp6_e2m3_fp8_e4m3_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 4 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp8_e4m3_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 4 fp 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_fp8_e4m3_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 512 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp8_e4m3_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 512 fp 16 False
+perplexity: 5.546875
+
+==> fp6_e2m3_fp8_e4m3_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 64 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp8_e4m3_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 64 fp 16 False
+perplexity: 5.55078125
+
+==> fp6_e2m3_fp8_e4m3_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 8192 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp8_e4m3_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 8192 fp 16 False
+perplexity: 5.5546875
+
+==> fp6_e2m3_fp8_e4m3_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 8 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_fp8_e4m3_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e4m3 8 fp 16 False
+perplexity: 5.5546875
+
+==> fp6_e2m3_fp8_e5m2_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 1024 bfloat 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_fp8_e5m2_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 1024 fp 16 False
+perplexity: 5.58203125
+
+==> fp6_e2m3_fp8_e5m2_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 128 bfloat 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_fp8_e5m2_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 128 fp 16 False
+perplexity: 5.578125
+
+==> fp6_e2m3_fp8_e5m2_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 16384 bfloat 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_fp8_e5m2_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 16384 fp 16 False
+perplexity: 5.59375
+
+==> fp6_e2m3_fp8_e5m2_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 16 bfloat 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_fp8_e5m2_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 16 fp 16 False
+perplexity: 5.58203125
+
+==> fp6_e2m3_fp8_e5m2_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 2048 bfloat 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_fp8_e5m2_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 2048 fp 16 False
+perplexity: 5.58203125
+
+==> fp6_e2m3_fp8_e5m2_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 256 bfloat 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_fp8_e5m2_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 256 fp 16 False
+perplexity: 5.578125
+
+==> fp6_e2m3_fp8_e5m2_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 2 bfloat 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_fp8_e5m2_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 2 fp 16 False
+perplexity: 5.58984375
+
+==> fp6_e2m3_fp8_e5m2_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 32 bfloat 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_fp8_e5m2_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 32 fp 16 False
+perplexity: 5.58203125
+
+==> fp6_e2m3_fp8_e5m2_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 4096 bfloat 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_fp8_e5m2_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 4096 fp 16 False
+perplexity: 5.59765625
+
+==> fp6_e2m3_fp8_e5m2_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 4 bfloat 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_fp8_e5m2_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 4 fp 16 False
+perplexity: 5.58984375
+
+==> fp6_e2m3_fp8_e5m2_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 512 bfloat 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_fp8_e5m2_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 512 fp 16 False
+perplexity: 5.578125
+
+==> fp6_e2m3_fp8_e5m2_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 64 bfloat 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_fp8_e5m2_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 64 fp 16 False
+perplexity: 5.578125
+
+==> fp6_e2m3_fp8_e5m2_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 8192 bfloat 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_fp8_e5m2_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 8192 fp 16 False
+perplexity: 5.59375
+
+==> fp6_e2m3_fp8_e5m2_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 8 bfloat 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_fp8_e5m2_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 fp8_e5m2 8 fp 16 False
+perplexity: 5.58203125
+
+==> fp6_e2m3_int4_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 1024 bfloat 16 False
+perplexity: 57933824.0
+
+==> fp6_e2m3_int4_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 1024 fp 16 False
+perplexity: inf
+
+==> fp6_e2m3_int4_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 128 bfloat 16 False
+perplexity: 7.21875
+
+==> fp6_e2m3_int4_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 128 fp 16 False
+perplexity: 7.2109375
+
+==> fp6_e2m3_int4_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 16384 bfloat 16 False
+perplexity: 1493172224.0
+
+==> fp6_e2m3_int4_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 16384 fp 16 False
+perplexity: inf
+
+==> fp6_e2m3_int4_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 16 bfloat 16 False
+perplexity: 5.84375
+
+==> fp6_e2m3_int4_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 16 fp 16 False
+perplexity: 5.828125
+
+==> fp6_e2m3_int4_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 2048 bfloat 16 False
+perplexity: 484442112.0
+
+==> fp6_e2m3_int4_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 2048 fp 16 False
+perplexity: inf
+
+==> fp6_e2m3_int4_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 256 bfloat 16 False
+perplexity: 11.25
+
+==> fp6_e2m3_int4_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 256 fp 16 False
+perplexity: 11.2265625
+
+==> fp6_e2m3_int4_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 2 bfloat 16 False
+perplexity: 5.625
+
+==> fp6_e2m3_int4_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 2 fp 16 False
+perplexity: 5.6171875
+
+==> fp6_e2m3_int4_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 32 bfloat 16 False
+perplexity: 5.96875
+
+==> fp6_e2m3_int4_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 32 fp 16 False
+perplexity: 6.0
+
+==> fp6_e2m3_int4_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 4096 bfloat 16 False
+perplexity: 5905580032.0
+
+==> fp6_e2m3_int4_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 4096 fp 16 False
+perplexity: inf
+
+==> fp6_e2m3_int4_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 4 bfloat 16 False
+perplexity: 5.65625
+
+==> fp6_e2m3_int4_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 4 fp 16 False
+perplexity: 5.66015625
+
+==> fp6_e2m3_int4_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 512 bfloat 16 False
+perplexity: 179.0
+
+==> fp6_e2m3_int4_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 512 fp 16 False
+perplexity: 180.375
+
+==> fp6_e2m3_int4_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 64 bfloat 16 False
+perplexity: 6.3125
+
+==> fp6_e2m3_int4_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 64 fp 16 False
+perplexity: 6.33203125
+
+==> fp6_e2m3_int4_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 8192 bfloat 16 False
+perplexity: 8589934592.0
+
+==> fp6_e2m3_int4_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 8192 fp 16 False
+perplexity: inf
+
+==> fp6_e2m3_int4_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 8 bfloat 16 False
+perplexity: 5.71875
+
+==> fp6_e2m3_int4_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int4 8 fp 16 False
+perplexity: 5.7265625
+
+==> fp6_e2m3_int8_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 1024 bfloat 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_int8_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 1024 fp 16 False
+perplexity: 5.56640625
+
+==> fp6_e2m3_int8_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 128 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_int8_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 128 fp 16 False
+perplexity: 5.51953125
+
+==> fp6_e2m3_int8_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 16384 bfloat 16 False
+perplexity: 5.65625
+
+==> fp6_e2m3_int8_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 16384 fp 16 False
+perplexity: 5.67578125
+
+==> fp6_e2m3_int8_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 16 bfloat 16 False
+perplexity: 5.5
+
+==> fp6_e2m3_int8_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 16 fp 16 False
+perplexity: 5.5078125
+
+==> fp6_e2m3_int8_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 2048 bfloat 16 False
+perplexity: 5.5625
+
+==> fp6_e2m3_int8_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 2048 fp 16 False
+perplexity: 5.59375
+
+==> fp6_e2m3_int8_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 256 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_int8_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 256 fp 16 False
+perplexity: 5.52734375
+
+==> fp6_e2m3_int8_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 2 bfloat 16 False
+perplexity: 5.5
+
+==> fp6_e2m3_int8_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 2 fp 16 False
+perplexity: 5.5
+
+==> fp6_e2m3_int8_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 32 bfloat 16 False
+perplexity: 5.5
+
+==> fp6_e2m3_int8_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 32 fp 16 False
+perplexity: 5.51171875
+
+==> fp6_e2m3_int8_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 4096 bfloat 16 False
+perplexity: 5.65625
+
+==> fp6_e2m3_int8_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 4096 fp 16 False
+perplexity: 5.6640625
+
+==> fp6_e2m3_int8_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 4 bfloat 16 False
+perplexity: 5.5
+
+==> fp6_e2m3_int8_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 4 fp 16 False
+perplexity: 5.5078125
+
+==> fp6_e2m3_int8_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 512 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_int8_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 512 fp 16 False
+perplexity: 5.5390625
+
+==> fp6_e2m3_int8_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 64 bfloat 16 False
+perplexity: 5.53125
+
+==> fp6_e2m3_int8_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 64 fp 16 False
+perplexity: 5.51171875
+
+==> fp6_e2m3_int8_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 8192 bfloat 16 False
+perplexity: 5.65625
+
+==> fp6_e2m3_int8_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 8192 fp 16 False
+perplexity: 5.6640625
+
+==> fp6_e2m3_int8_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 8 bfloat 16 False
+perplexity: 5.5
+
+==> fp6_e2m3_int8_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp6_e2m3 int8 8 fp 16 False
+perplexity: 5.5078125
+
+==> fp8_e4m3_fp16_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 1024 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp16_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 1024 fp 16 False
+perplexity: 5.51953125
+
+==> fp8_e4m3_fp16_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 128 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp16_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 128 fp 16 False
+perplexity: 5.52734375
+
+==> fp8_e4m3_fp16_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 16384 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp16_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 16384 fp 16 False
+perplexity: 5.51171875
+
+==> fp8_e4m3_fp16_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 16 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp16_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 16 fp 16 False
+perplexity: 5.546875
+
+==> fp8_e4m3_fp16_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 2048 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp16_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 2048 fp 16 False
+perplexity: 5.51953125
+
+==> fp8_e4m3_fp16_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 256 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp16_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 256 fp 16 False
+perplexity: 5.5234375
+
+==> fp8_e4m3_fp16_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 2 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp16_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 2 fp 16 False
+perplexity: 5.55078125
+
+==> fp8_e4m3_fp16_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 32 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp16_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 32 fp 16 False
+perplexity: 5.5390625
+
+==> fp8_e4m3_fp16_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 4096 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp16_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 4096 fp 16 False
+perplexity: 5.51171875
+
+==> fp8_e4m3_fp16_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 4 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp16_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 4 fp 16 False
+perplexity: 5.55078125
+
+==> fp8_e4m3_fp16_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 512 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp16_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 512 fp 16 False
+perplexity: 5.5234375
+
+==> fp8_e4m3_fp16_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 64 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp16_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 64 fp 16 False
+perplexity: 5.53515625
+
+==> fp8_e4m3_fp16_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 8192 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp16_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 8192 fp 16 False
+perplexity: 5.51171875
+
+==> fp8_e4m3_fp16_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 8 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp16_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp16 8 fp 16 False
+perplexity: 5.55078125
+
+==> fp8_e4m3_fp4_e2m1_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 1024 bfloat 16 False
+perplexity: 9.5
+
+==> fp8_e4m3_fp4_e2m1_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 1024 fp 16 False
+perplexity: 9.65625
+
+==> fp8_e4m3_fp4_e2m1_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 128 bfloat 16 False
+perplexity: 6.46875
+
+==> fp8_e4m3_fp4_e2m1_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 128 fp 16 False
+perplexity: 6.484375
+
+==> fp8_e4m3_fp4_e2m1_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 16384 bfloat 16 False
+perplexity: 11072.0
+
+==> fp8_e4m3_fp4_e2m1_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 16384 fp 16 False
+perplexity: 11976.0
+
+==> fp8_e4m3_fp4_e2m1_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 16 bfloat 16 False
+perplexity: 6.28125
+
+==> fp8_e4m3_fp4_e2m1_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 16 fp 16 False
+perplexity: 6.30078125
+
+==> fp8_e4m3_fp4_e2m1_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 2048 bfloat 16 False
+perplexity: 87.0
+
+==> fp8_e4m3_fp4_e2m1_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 2048 fp 16 False
+perplexity: 100.8125
+
+==> fp8_e4m3_fp4_e2m1_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 256 bfloat 16 False
+perplexity: 6.6875
+
+==> fp8_e4m3_fp4_e2m1_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 256 fp 16 False
+perplexity: 6.67578125
+
+==> fp8_e4m3_fp4_e2m1_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 2 bfloat 16 False
+perplexity: 6.40625
+
+==> fp8_e4m3_fp4_e2m1_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 2 fp 16 False
+perplexity: 6.4375
+
+==> fp8_e4m3_fp4_e2m1_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 32 bfloat 16 False
+perplexity: 6.28125
+
+==> fp8_e4m3_fp4_e2m1_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 32 fp 16 False
+perplexity: 6.30859375
+
+==> fp8_e4m3_fp4_e2m1_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 4096 bfloat 16 False
+perplexity: 9152.0
+
+==> fp8_e4m3_fp4_e2m1_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 4096 fp 16 False
+perplexity: 9184.0
+
+==> fp8_e4m3_fp4_e2m1_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 4 bfloat 16 False
+perplexity: 6.375
+
+==> fp8_e4m3_fp4_e2m1_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 4 fp 16 False
+perplexity: 6.375
+
+==> fp8_e4m3_fp4_e2m1_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 512 bfloat 16 False
+perplexity: 7.34375
+
+==> fp8_e4m3_fp4_e2m1_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 512 fp 16 False
+perplexity: 7.3515625
+
+==> fp8_e4m3_fp4_e2m1_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 64 bfloat 16 False
+perplexity: 6.375
+
+==> fp8_e4m3_fp4_e2m1_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 64 fp 16 False
+perplexity: 6.36328125
+
+==> fp8_e4m3_fp4_e2m1_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 8192 bfloat 16 False
+perplexity: 8640.0
+
+==> fp8_e4m3_fp4_e2m1_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 8192 fp 16 False
+perplexity: 11072.0
+
+==> fp8_e4m3_fp4_e2m1_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 8 bfloat 16 False
+perplexity: 6.3125
+
+==> fp8_e4m3_fp4_e2m1_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp4_e2m1 8 fp 16 False
+perplexity: 6.33203125
+
+==> fp8_e4m3_fp6_e2m3_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 1024 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e4m3_fp6_e2m3_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 1024 fp 16 False
+perplexity: 5.6328125
+
+==> fp8_e4m3_fp6_e2m3_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 128 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp6_e2m3_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 128 fp 16 False
+perplexity: 5.56640625
+
+==> fp8_e4m3_fp6_e2m3_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 16384 bfloat 16 False
+perplexity: 6.5625
+
+==> fp8_e4m3_fp6_e2m3_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 16384 fp 16 False
+perplexity: 6.578125
+
+==> fp8_e4m3_fp6_e2m3_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 16 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp6_e2m3_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 16 fp 16 False
+perplexity: 5.5703125
+
+==> fp8_e4m3_fp6_e2m3_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 2048 bfloat 16 False
+perplexity: 5.71875
+
+==> fp8_e4m3_fp6_e2m3_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 2048 fp 16 False
+perplexity: 5.7109375
+
+==> fp8_e4m3_fp6_e2m3_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 256 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp6_e2m3_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 256 fp 16 False
+perplexity: 5.58203125
+
+==> fp8_e4m3_fp6_e2m3_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 2 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp6_e2m3_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 2 fp 16 False
+perplexity: 5.58203125
+
+==> fp8_e4m3_fp6_e2m3_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 32 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp6_e2m3_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 32 fp 16 False
+perplexity: 5.56640625
+
+==> fp8_e4m3_fp6_e2m3_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 4096 bfloat 16 False
+perplexity: 6.21875
+
+==> fp8_e4m3_fp6_e2m3_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 4096 fp 16 False
+perplexity: 6.25390625
+
+==> fp8_e4m3_fp6_e2m3_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 4 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp6_e2m3_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 4 fp 16 False
+perplexity: 5.58203125
+
+==> fp8_e4m3_fp6_e2m3_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 512 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e4m3_fp6_e2m3_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 512 fp 16 False
+perplexity: 5.60546875
+
+==> fp8_e4m3_fp6_e2m3_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 64 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp6_e2m3_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 64 fp 16 False
+perplexity: 5.56640625
+
+==> fp8_e4m3_fp6_e2m3_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 8192 bfloat 16 False
+perplexity: 6.375
+
+==> fp8_e4m3_fp6_e2m3_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 8192 fp 16 False
+perplexity: 6.38671875
+
+==> fp8_e4m3_fp6_e2m3_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 8 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp6_e2m3_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp6_e2m3 8 fp 16 False
+perplexity: 5.578125
+
+==> fp8_e4m3_fp8_e4m3_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 1024 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp8_e4m3_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 1024 fp 16 False
+perplexity: 5.55078125
+
+==> fp8_e4m3_fp8_e4m3_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 128 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp8_e4m3_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 128 fp 16 False
+perplexity: 5.56640625
+
+==> fp8_e4m3_fp8_e4m3_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 16384 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp8_e4m3_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 16384 fp 16 False
+perplexity: 5.546875
+
+==> fp8_e4m3_fp8_e4m3_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 16 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp8_e4m3_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 16 fp 16 False
+perplexity: 5.59765625
+
+==> fp8_e4m3_fp8_e4m3_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 2048 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp8_e4m3_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 2048 fp 16 False
+perplexity: 5.55078125
+
+==> fp8_e4m3_fp8_e4m3_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 256 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp8_e4m3_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 256 fp 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp8_e4m3_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 2 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e4m3_fp8_e4m3_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 2 fp 16 False
+perplexity: 5.625
+
+==> fp8_e4m3_fp8_e4m3_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 32 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp8_e4m3_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 32 fp 16 False
+perplexity: 5.58984375
+
+==> fp8_e4m3_fp8_e4m3_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 4096 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp8_e4m3_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 4096 fp 16 False
+perplexity: 5.546875
+
+==> fp8_e4m3_fp8_e4m3_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 4 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e4m3_fp8_e4m3_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 4 fp 16 False
+perplexity: 5.6171875
+
+==> fp8_e4m3_fp8_e4m3_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 512 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp8_e4m3_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 512 fp 16 False
+perplexity: 5.5546875
+
+==> fp8_e4m3_fp8_e4m3_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 64 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp8_e4m3_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 64 fp 16 False
+perplexity: 5.578125
+
+==> fp8_e4m3_fp8_e4m3_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 8192 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_fp8_e4m3_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 8192 fp 16 False
+perplexity: 5.546875
+
+==> fp8_e4m3_fp8_e4m3_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 8 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e4m3_fp8_e4m3_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e4m3 8 fp 16 False
+perplexity: 5.609375
+
+==> fp8_e4m3_fp8_e5m2_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 1024 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp8_e5m2_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 1024 fp 16 False
+perplexity: 5.58984375
+
+==> fp8_e4m3_fp8_e5m2_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 128 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp8_e5m2_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 128 fp 16 False
+perplexity: 5.59765625
+
+==> fp8_e4m3_fp8_e5m2_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 16384 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp8_e5m2_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 16384 fp 16 False
+perplexity: 5.578125
+
+==> fp8_e4m3_fp8_e5m2_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 16 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e4m3_fp8_e5m2_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 16 fp 16 False
+perplexity: 5.6328125
+
+==> fp8_e4m3_fp8_e5m2_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 2048 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp8_e5m2_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 2048 fp 16 False
+perplexity: 5.578125
+
+==> fp8_e4m3_fp8_e5m2_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 256 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp8_e5m2_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 256 fp 16 False
+perplexity: 5.59375
+
+==> fp8_e4m3_fp8_e5m2_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 2 bfloat 16 False
+perplexity: 5.65625
+
+==> fp8_e4m3_fp8_e5m2_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 2 fp 16 False
+perplexity: 5.66015625
+
+==> fp8_e4m3_fp8_e5m2_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 32 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e4m3_fp8_e5m2_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 32 fp 16 False
+perplexity: 5.62109375
+
+==> fp8_e4m3_fp8_e5m2_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 4096 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp8_e5m2_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 4096 fp 16 False
+perplexity: 5.578125
+
+==> fp8_e4m3_fp8_e5m2_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 4 bfloat 16 False
+perplexity: 5.65625
+
+==> fp8_e4m3_fp8_e5m2_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 4 fp 16 False
+perplexity: 5.65625
+
+==> fp8_e4m3_fp8_e5m2_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 512 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp8_e5m2_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 512 fp 16 False
+perplexity: 5.58984375
+
+==> fp8_e4m3_fp8_e5m2_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 64 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e4m3_fp8_e5m2_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 64 fp 16 False
+perplexity: 5.6171875
+
+==> fp8_e4m3_fp8_e5m2_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 8192 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_fp8_e5m2_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 8192 fp 16 False
+perplexity: 5.578125
+
+==> fp8_e4m3_fp8_e5m2_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 8 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e4m3_fp8_e5m2_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 fp8_e5m2 8 fp 16 False
+perplexity: 5.64453125
+
+==> fp8_e4m3_int4_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 1024 bfloat 16 False
+perplexity: 65536000.0
+
+==> fp8_e4m3_int4_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 1024 fp 16 False
+perplexity: inf
+
+==> fp8_e4m3_int4_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 128 bfloat 16 False
+perplexity: 7.21875
+
+==> fp8_e4m3_int4_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 128 fp 16 False
+perplexity: 7.26171875
+
+==> fp8_e4m3_int4_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 16384 bfloat 16 False
+perplexity: 1920991232.0
+
+==> fp8_e4m3_int4_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 16384 fp 16 False
+perplexity: inf
+
+==> fp8_e4m3_int4_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 16 bfloat 16 False
+perplexity: 5.90625
+
+==> fp8_e4m3_int4_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 16 fp 16 False
+perplexity: 5.87890625
+
+==> fp8_e4m3_int4_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 2048 bfloat 16 False
+perplexity: 1027604480.0
+
+==> fp8_e4m3_int4_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 2048 fp 16 False
+perplexity: inf
+
+==> fp8_e4m3_int4_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 256 bfloat 16 False
+perplexity: 11.0625
+
+==> fp8_e4m3_int4_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 256 fp 16 False
+perplexity: 11.3125
+
+==> fp8_e4m3_int4_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 2 bfloat 16 False
+perplexity: 5.65625
+
+==> fp8_e4m3_int4_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 2 fp 16 False
+perplexity: 5.6875
+
+==> fp8_e4m3_int4_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 32 bfloat 16 False
+perplexity: 6.03125
+
+==> fp8_e4m3_int4_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 32 fp 16 False
+perplexity: 6.046875
+
+==> fp8_e4m3_int4_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 4096 bfloat 16 False
+perplexity: 5200936960.0
+
+==> fp8_e4m3_int4_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 4096 fp 16 False
+perplexity: inf
+
+==> fp8_e4m3_int4_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 4 bfloat 16 False
+perplexity: 5.71875
+
+==> fp8_e4m3_int4_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 4 fp 16 False
+perplexity: 5.73046875
+
+==> fp8_e4m3_int4_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 512 bfloat 16 False
+perplexity: 185.0
+
+==> fp8_e4m3_int4_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 512 fp 16 False
+perplexity: 184.0
+
+==> fp8_e4m3_int4_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 64 bfloat 16 False
+perplexity: 6.375
+
+==> fp8_e4m3_int4_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 64 fp 16 False
+perplexity: 6.375
+
+==> fp8_e4m3_int4_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 8192 bfloat 16 False
+perplexity: 9730785280.0
+
+==> fp8_e4m3_int4_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 8192 fp 16 False
+perplexity: inf
+
+==> fp8_e4m3_int4_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 8 bfloat 16 False
+perplexity: 5.8125
+
+==> fp8_e4m3_int4_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int4 8 fp 16 False
+perplexity: 5.78125
+
+==> fp8_e4m3_int8_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 1024 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_int8_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 1024 fp 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_int8_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 128 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_int8_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 128 fp 16 False
+perplexity: 5.53515625
+
+==> fp8_e4m3_int8_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 16384 bfloat 16 False
+perplexity: 5.65625
+
+==> fp8_e4m3_int8_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 16384 fp 16 False
+perplexity: 5.6640625
+
+==> fp8_e4m3_int8_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 16 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_int8_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 16 fp 16 False
+perplexity: 5.546875
+
+==> fp8_e4m3_int8_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 2048 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_int8_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 2048 fp 16 False
+perplexity: 5.58203125
+
+==> fp8_e4m3_int8_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 256 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_int8_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 256 fp 16 False
+perplexity: 5.5390625
+
+==> fp8_e4m3_int8_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 2 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_int8_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 2 fp 16 False
+perplexity: 5.55078125
+
+==> fp8_e4m3_int8_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 32 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_int8_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 32 fp 16 False
+perplexity: 5.5390625
+
+==> fp8_e4m3_int8_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 4096 bfloat 16 False
+perplexity: 5.65625
+
+==> fp8_e4m3_int8_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 4096 fp 16 False
+perplexity: 5.64453125
+
+==> fp8_e4m3_int8_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 4 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_int8_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 4 fp 16 False
+perplexity: 5.5546875
+
+==> fp8_e4m3_int8_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 512 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e4m3_int8_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 512 fp 16 False
+perplexity: 5.5546875
+
+==> fp8_e4m3_int8_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 64 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_int8_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 64 fp 16 False
+perplexity: 5.53515625
+
+==> fp8_e4m3_int8_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 8192 bfloat 16 False
+perplexity: 5.65625
+
+==> fp8_e4m3_int8_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 8192 fp 16 False
+perplexity: 5.65625
+
+==> fp8_e4m3_int8_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 8 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e4m3_int8_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e4m3 int8 8 fp 16 False
+perplexity: 5.55078125
+
+==> fp8_e5m2_fp16_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 1024 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e5m2_fp16_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 1024 fp 16 False
+perplexity: 5.53515625
+
+==> fp8_e5m2_fp16_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 128 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e5m2_fp16_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 128 fp 16 False
+perplexity: 5.5390625
+
+==> fp8_e5m2_fp16_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 16384 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e5m2_fp16_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 16384 fp 16 False
+perplexity: 5.52734375
+
+==> fp8_e5m2_fp16_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 16 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp16_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 16 fp 16 False
+perplexity: 5.5546875
+
+==> fp8_e5m2_fp16_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 2048 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e5m2_fp16_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 2048 fp 16 False
+perplexity: 5.52734375
+
+==> fp8_e5m2_fp16_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 256 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e5m2_fp16_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 256 fp 16 False
+perplexity: 5.5390625
+
+==> fp8_e5m2_fp16_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 2 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp16_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 2 fp 16 False
+perplexity: 5.56640625
+
+==> fp8_e5m2_fp16_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 32 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e5m2_fp16_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 32 fp 16 False
+perplexity: 5.55078125
+
+==> fp8_e5m2_fp16_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 4096 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e5m2_fp16_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 4096 fp 16 False
+perplexity: 5.52734375
+
+==> fp8_e5m2_fp16_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 4 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp16_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 4 fp 16 False
+perplexity: 5.56640625
+
+==> fp8_e5m2_fp16_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 512 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e5m2_fp16_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 512 fp 16 False
+perplexity: 5.5390625
+
+==> fp8_e5m2_fp16_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 64 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e5m2_fp16_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 64 fp 16 False
+perplexity: 5.546875
+
+==> fp8_e5m2_fp16_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 8192 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e5m2_fp16_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 8192 fp 16 False
+perplexity: 5.52734375
+
+==> fp8_e5m2_fp16_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 8 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp16_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp16 8 fp 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp4_e2m1_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 1024 bfloat 16 False
+perplexity: 9.5
+
+==> fp8_e5m2_fp4_e2m1_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 1024 fp 16 False
+perplexity: 9.671875
+
+==> fp8_e5m2_fp4_e2m1_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 128 bfloat 16 False
+perplexity: 6.5625
+
+==> fp8_e5m2_fp4_e2m1_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 128 fp 16 False
+perplexity: 6.5859375
+
+==> fp8_e5m2_fp4_e2m1_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 16384 bfloat 16 False
+perplexity: 4928.0
+
+==> fp8_e5m2_fp4_e2m1_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 16384 fp 16 False
+perplexity: 5568.0
+
+==> fp8_e5m2_fp4_e2m1_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 16 bfloat 16 False
+perplexity: 6.375
+
+==> fp8_e5m2_fp4_e2m1_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 16 fp 16 False
+perplexity: 6.39453125
+
+==> fp8_e5m2_fp4_e2m1_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 2048 bfloat 16 False
+perplexity: 56.25
+
+==> fp8_e5m2_fp4_e2m1_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 2048 fp 16 False
+perplexity: 64.0625
+
+==> fp8_e5m2_fp4_e2m1_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 256 bfloat 16 False
+perplexity: 6.78125
+
+==> fp8_e5m2_fp4_e2m1_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 256 fp 16 False
+perplexity: 6.79296875
+
+==> fp8_e5m2_fp4_e2m1_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 2 bfloat 16 False
+perplexity: 6.53125
+
+==> fp8_e5m2_fp4_e2m1_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 2 fp 16 False
+perplexity: 6.5546875
+
+==> fp8_e5m2_fp4_e2m1_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 32 bfloat 16 False
+perplexity: 6.375
+
+==> fp8_e5m2_fp4_e2m1_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 32 fp 16 False
+perplexity: 6.40234375
+
+==> fp8_e5m2_fp4_e2m1_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 4096 bfloat 16 False
+perplexity: 3376.0
+
+==> fp8_e5m2_fp4_e2m1_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 4096 fp 16 False
+perplexity: 4074.0
+
+==> fp8_e5m2_fp4_e2m1_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 4 bfloat 16 False
+perplexity: 6.46875
+
+==> fp8_e5m2_fp4_e2m1_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 4 fp 16 False
+perplexity: 6.484375
+
+==> fp8_e5m2_fp4_e2m1_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 512 bfloat 16 False
+perplexity: 7.375
+
+==> fp8_e5m2_fp4_e2m1_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 512 fp 16 False
+perplexity: 7.4921875
+
+==> fp8_e5m2_fp4_e2m1_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 64 bfloat 16 False
+perplexity: 6.46875
+
+==> fp8_e5m2_fp4_e2m1_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 64 fp 16 False
+perplexity: 6.46875
+
+==> fp8_e5m2_fp4_e2m1_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 8192 bfloat 16 False
+perplexity: 3824.0
+
+==> fp8_e5m2_fp4_e2m1_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 8192 fp 16 False
+perplexity: 4544.0
+
+==> fp8_e5m2_fp4_e2m1_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 8 bfloat 16 False
+perplexity: 6.40625
+
+==> fp8_e5m2_fp4_e2m1_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp4_e2m1 8 fp 16 False
+perplexity: 6.43359375
+
+==> fp8_e5m2_fp6_e2m3_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 1024 bfloat 16 False
+perplexity: 5.65625
+
+==> fp8_e5m2_fp6_e2m3_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 1024 fp 16 False
+perplexity: 5.6875
+
+==> fp8_e5m2_fp6_e2m3_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 128 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp6_e2m3_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 128 fp 16 False
+perplexity: 5.58984375
+
+==> fp8_e5m2_fp6_e2m3_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 16384 bfloat 16 False
+perplexity: 6.40625
+
+==> fp8_e5m2_fp6_e2m3_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 16384 fp 16 False
+perplexity: 6.4375
+
+==> fp8_e5m2_fp6_e2m3_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 16 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp6_e2m3_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 16 fp 16 False
+perplexity: 5.59375
+
+==> fp8_e5m2_fp6_e2m3_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 2048 bfloat 16 False
+perplexity: 5.75
+
+==> fp8_e5m2_fp6_e2m3_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 2048 fp 16 False
+perplexity: 5.77734375
+
+==> fp8_e5m2_fp6_e2m3_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 256 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e5m2_fp6_e2m3_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 256 fp 16 False
+perplexity: 5.6171875
+
+==> fp8_e5m2_fp6_e2m3_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 2 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp6_e2m3_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 2 fp 16 False
+perplexity: 5.59765625
+
+==> fp8_e5m2_fp6_e2m3_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 32 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp6_e2m3_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 32 fp 16 False
+perplexity: 5.58984375
+
+==> fp8_e5m2_fp6_e2m3_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 4096 bfloat 16 False
+perplexity: 6.125
+
+==> fp8_e5m2_fp6_e2m3_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 4096 fp 16 False
+perplexity: 6.19140625
+
+==> fp8_e5m2_fp6_e2m3_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 4 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp6_e2m3_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 4 fp 16 False
+perplexity: 5.59765625
+
+==> fp8_e5m2_fp6_e2m3_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 512 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e5m2_fp6_e2m3_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 512 fp 16 False
+perplexity: 5.64453125
+
+==> fp8_e5m2_fp6_e2m3_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 64 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp6_e2m3_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 64 fp 16 False
+perplexity: 5.58984375
+
+==> fp8_e5m2_fp6_e2m3_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 8192 bfloat 16 False
+perplexity: 6.21875
+
+==> fp8_e5m2_fp6_e2m3_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 8192 fp 16 False
+perplexity: 6.265625
+
+==> fp8_e5m2_fp6_e2m3_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 8 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp6_e2m3_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp6_e2m3 8 fp 16 False
+perplexity: 5.59375
+
+==> fp8_e5m2_fp8_e4m3_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 1024 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp8_e4m3_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 1024 fp 16 False
+perplexity: 5.56640625
+
+==> fp8_e5m2_fp8_e4m3_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 128 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp8_e4m3_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 128 fp 16 False
+perplexity: 5.58203125
+
+==> fp8_e5m2_fp8_e4m3_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 16384 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e5m2_fp8_e4m3_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 16384 fp 16 False
+perplexity: 5.5546875
+
+==> fp8_e5m2_fp8_e4m3_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 16 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e5m2_fp8_e4m3_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 16 fp 16 False
+perplexity: 5.6171875
+
+==> fp8_e5m2_fp8_e4m3_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 2048 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e5m2_fp8_e4m3_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 2048 fp 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp8_e4m3_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 256 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp8_e4m3_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 256 fp 16 False
+perplexity: 5.58203125
+
+==> fp8_e5m2_fp8_e4m3_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 2 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e5m2_fp8_e4m3_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 2 fp 16 False
+perplexity: 5.64453125
+
+==> fp8_e5m2_fp8_e4m3_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 32 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp8_e4m3_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 32 fp 16 False
+perplexity: 5.60546875
+
+==> fp8_e5m2_fp8_e4m3_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 4096 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e5m2_fp8_e4m3_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 4096 fp 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp8_e4m3_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 4 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e5m2_fp8_e4m3_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 4 fp 16 False
+perplexity: 5.63671875
+
+==> fp8_e5m2_fp8_e4m3_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 512 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp8_e4m3_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 512 fp 16 False
+perplexity: 5.578125
+
+==> fp8_e5m2_fp8_e4m3_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 64 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp8_e4m3_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 64 fp 16 False
+perplexity: 5.59765625
+
+==> fp8_e5m2_fp8_e4m3_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 8192 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e5m2_fp8_e4m3_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 8192 fp 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_fp8_e4m3_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 8 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e5m2_fp8_e4m3_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e4m3 8 fp 16 False
+perplexity: 5.625
+
+==> fp8_e5m2_fp8_e5m2_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 1024 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e5m2_fp8_e5m2_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 1024 fp 16 False
+perplexity: 5.609375
+
+==> fp8_e5m2_fp8_e5m2_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 128 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e5m2_fp8_e5m2_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 128 fp 16 False
+perplexity: 5.625
+
+==> fp8_e5m2_fp8_e5m2_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 16384 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e5m2_fp8_e5m2_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 16384 fp 16 False
+perplexity: 5.59765625
+
+==> fp8_e5m2_fp8_e5m2_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 16 bfloat 16 False
+perplexity: 5.65625
+
+==> fp8_e5m2_fp8_e5m2_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 16 fp 16 False
+perplexity: 5.66015625
+
+==> fp8_e5m2_fp8_e5m2_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 2048 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e5m2_fp8_e5m2_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 2048 fp 16 False
+perplexity: 5.60546875
+
+==> fp8_e5m2_fp8_e5m2_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 256 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e5m2_fp8_e5m2_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 256 fp 16 False
+perplexity: 5.62109375
+
+==> fp8_e5m2_fp8_e5m2_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 2 bfloat 16 False
+perplexity: 5.65625
+
+==> fp8_e5m2_fp8_e5m2_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 2 fp 16 False
+perplexity: 5.67578125
+
+==> fp8_e5m2_fp8_e5m2_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 32 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e5m2_fp8_e5m2_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 32 fp 16 False
+perplexity: 5.6484375
+
+==> fp8_e5m2_fp8_e5m2_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 4096 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e5m2_fp8_e5m2_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 4096 fp 16 False
+perplexity: 5.60546875
+
+==> fp8_e5m2_fp8_e5m2_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 4 bfloat 16 False
+perplexity: 5.65625
+
+==> fp8_e5m2_fp8_e5m2_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 4 fp 16 False
+perplexity: 5.67578125
+
+==> fp8_e5m2_fp8_e5m2_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 512 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e5m2_fp8_e5m2_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 512 fp 16 False
+perplexity: 5.62109375
+
+==> fp8_e5m2_fp8_e5m2_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 64 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e5m2_fp8_e5m2_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 64 fp 16 False
+perplexity: 5.63671875
+
+==> fp8_e5m2_fp8_e5m2_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 8192 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e5m2_fp8_e5m2_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 8192 fp 16 False
+perplexity: 5.60546875
+
+==> fp8_e5m2_fp8_e5m2_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 8 bfloat 16 False
+perplexity: 5.65625
+
+==> fp8_e5m2_fp8_e5m2_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 fp8_e5m2 8 fp 16 False
+perplexity: 5.671875
+
+==> fp8_e5m2_int4_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 1024 bfloat 16 False
+perplexity: 39845888.0
+
+==> fp8_e5m2_int4_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 1024 fp 16 False
+perplexity: inf
+
+==> fp8_e5m2_int4_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 128 bfloat 16 False
+perplexity: 7.34375
+
+==> fp8_e5m2_int4_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 128 fp 16 False
+perplexity: 7.3671875
+
+==> fp8_e5m2_int4_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 16384 bfloat 16 False
+perplexity: 57933824.0
+
+==> fp8_e5m2_int4_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 16384 fp 16 False
+perplexity: inf
+
+==> fp8_e5m2_int4_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 16 bfloat 16 False
+perplexity: 5.90625
+
+==> fp8_e5m2_int4_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 16 fp 16 False
+perplexity: 5.9140625
+
+==> fp8_e5m2_int4_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 2048 bfloat 16 False
+perplexity: 1166016512.0
+
+==> fp8_e5m2_int4_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 2048 fp 16 False
+perplexity: inf
+
+==> fp8_e5m2_int4_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 256 bfloat 16 False
+perplexity: 11.25
+
+==> fp8_e5m2_int4_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 256 fp 16 False
+perplexity: 11.3984375
+
+==> fp8_e5m2_int4_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 2 bfloat 16 False
+perplexity: 5.71875
+
+==> fp8_e5m2_int4_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 2 fp 16 False
+perplexity: 5.7109375
+
+==> fp8_e5m2_int4_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 32 bfloat 16 False
+perplexity: 6.0625
+
+==> fp8_e5m2_int4_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 32 fp 16 False
+perplexity: 6.09765625
+
+==> fp8_e5m2_int4_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 4096 bfloat 16 False
+perplexity: 108003328.0
+
+==> fp8_e5m2_int4_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 4096 fp 16 False
+perplexity: inf
+
+==> fp8_e5m2_int4_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 4 bfloat 16 False
+perplexity: 5.75
+
+==> fp8_e5m2_int4_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 4 fp 16 False
+perplexity: 5.76171875
+
+==> fp8_e5m2_int4_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 512 bfloat 16 False
+perplexity: 139.0
+
+==> fp8_e5m2_int4_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 512 fp 16 False
+perplexity: 140.0
+
+==> fp8_e5m2_int4_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 64 bfloat 16 False
+perplexity: 6.40625
+
+==> fp8_e5m2_int4_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 64 fp 16 False
+perplexity: 6.43359375
+
+==> fp8_e5m2_int4_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 8192 bfloat 16 False
+perplexity: 122683392.0
+
+==> fp8_e5m2_int4_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 8192 fp 16 False
+perplexity: inf
+
+==> fp8_e5m2_int4_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 8 bfloat 16 False
+perplexity: 5.8125
+
+==> fp8_e5m2_int4_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int4 8 fp 16 False
+perplexity: 5.81640625
+
+==> fp8_e5m2_int8_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 1024 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e5m2_int8_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 1024 fp 16 False
+perplexity: 5.609375
+
+==> fp8_e5m2_int8_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 128 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e5m2_int8_block128_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 128 fp 16 False
+perplexity: 5.546875
+
+==> fp8_e5m2_int8_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 16384 bfloat 16 False
+perplexity: 5.71875
+
+==> fp8_e5m2_int8_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 16384 fp 16 False
+perplexity: 5.71484375
+
+==> fp8_e5m2_int8_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 16 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e5m2_int8_block16_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 16 fp 16 False
+perplexity: 5.5546875
+
+==> fp8_e5m2_int8_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 2048 bfloat 16 False
+perplexity: 5.625
+
+==> fp8_e5m2_int8_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 2048 fp 16 False
+perplexity: 5.63671875
+
+==> fp8_e5m2_int8_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 256 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_int8_block256_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 256 fp 16 False
+perplexity: 5.56640625
+
+==> fp8_e5m2_int8_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 2 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_int8_block2_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 2 fp 16 False
+perplexity: 5.56640625
+
+==> fp8_e5m2_int8_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 32 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e5m2_int8_block32_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 32 fp 16 False
+perplexity: 5.55078125
+
+==> fp8_e5m2_int8_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 4096 bfloat 16 False
+perplexity: 5.71875
+
+==> fp8_e5m2_int8_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 4096 fp 16 False
+perplexity: 5.69140625
+
+==> fp8_e5m2_int8_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 4 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_int8_block4_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 4 fp 16 False
+perplexity: 5.56640625
+
+==> fp8_e5m2_int8_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 512 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_int8_block512_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 512 fp 16 False
+perplexity: 5.58984375
+
+==> fp8_e5m2_int8_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 64 bfloat 16 False
+perplexity: 5.53125
+
+==> fp8_e5m2_int8_block64_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 64 fp 16 False
+perplexity: 5.55078125
+
+==> fp8_e5m2_int8_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 8192 bfloat 16 False
+perplexity: 5.71875
+
+==> fp8_e5m2_int8_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 8192 fp 16 False
+perplexity: 5.703125
+
+==> fp8_e5m2_int8_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 8 bfloat 16 False
+perplexity: 5.5625
+
+==> fp8_e5m2_int8_block8_fp.log <==
+meta-llama/Llama-2-7b-hf fp8_e5m2 int8 8 fp 16 False
+perplexity: 5.5625
+
+==> int4_fp16_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 1024 bfloat 16 False
+perplexity: 9.0625
+
+==> int4_fp16_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 1024 fp 16 False
+perplexity: 9.0390625
+
+==> int4_fp16_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 128 bfloat 16 False
+perplexity: 6.0625
+
+==> int4_fp16_block128_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 128 fp 16 False
+perplexity: 6.1015625
+
+==> int4_fp16_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 16384 bfloat 16 False
+perplexity: 31.125
+
+==> int4_fp16_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 16384 fp 16 False
+perplexity: 30.8125
+
+==> int4_fp16_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 16 bfloat 16 False
+perplexity: 5.84375
+
+==> int4_fp16_block16_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 16 fp 16 False
+perplexity: 5.8515625
+
+==> int4_fp16_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 2048 bfloat 16 False
+perplexity: 11.625
+
+==> int4_fp16_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 2048 fp 16 False
+perplexity: 11.6484375
+
+==> int4_fp16_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 256 bfloat 16 False
+perplexity: 6.3125
+
+==> int4_fp16_block256_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 256 fp 16 False
+perplexity: 6.33203125
+
+==> int4_fp16_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 2 bfloat 16 False
+perplexity: 5.625
+
+==> int4_fp16_block2_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 2 fp 16 False
+perplexity: 5.6328125
+
+==> int4_fp16_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 32 bfloat 16 False
+perplexity: 5.9375
+
+==> int4_fp16_block32_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 32 fp 16 False
+perplexity: 5.94921875
+
+==> int4_fp16_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 4096 bfloat 16 False
+perplexity: 27.5
+
+==> int4_fp16_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 4096 fp 16 False
+perplexity: 27.234375
+
+==> int4_fp16_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 4 bfloat 16 False
+perplexity: 5.71875
+
+==> int4_fp16_block4_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 4 fp 16 False
+perplexity: 5.69921875
+
+==> int4_fp16_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 512 bfloat 16 False
+perplexity: 6.78125
+
+==> int4_fp16_block512_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 512 fp 16 False
+perplexity: 6.80078125
+
+==> int4_fp16_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 64 bfloat 16 False
+perplexity: 6.03125
+
+==> int4_fp16_block64_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 64 fp 16 False
+perplexity: 6.01953125
+
+==> int4_fp16_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 8192 bfloat 16 False
+perplexity: 31.125
+
+==> int4_fp16_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 8192 fp 16 False
+perplexity: 30.921875
+
+==> int4_fp16_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 8 bfloat 16 False
+perplexity: 5.75
+
+==> int4_fp16_block8_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp16 8 fp 16 False
+perplexity: 5.7734375
+
+==> int4_fp4_e2m1_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 1024 bfloat 16 False
+perplexity: 29.25
+
+==> int4_fp4_e2m1_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 1024 fp 16 False
+perplexity: 29.046875
+
+==> int4_fp4_e2m1_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 128 bfloat 16 False
+perplexity: 7.375
+
+==> int4_fp4_e2m1_block128_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 128 fp 16 False
+perplexity: 7.43359375
+
+==> int4_fp4_e2m1_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 16384 bfloat 16 False
+perplexity: 606208.0
+
+==> int4_fp4_e2m1_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 16384 fp 16 False
+perplexity: inf
+
+==> int4_fp4_e2m1_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 16 bfloat 16 False
+perplexity: 6.6875
+
+==> int4_fp4_e2m1_block16_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 16 fp 16 False
+perplexity: 6.68359375
+
+==> int4_fp4_e2m1_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 2048 bfloat 16 False
+perplexity: 3168.0
+
+==> int4_fp4_e2m1_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 2048 fp 16 False
+perplexity: 3148.0
+
+==> int4_fp4_e2m1_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 256 bfloat 16 False
+perplexity: 8.0
+
+==> int4_fp4_e2m1_block256_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 256 fp 16 False
+perplexity: 7.97265625
+
+==> int4_fp4_e2m1_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 2 bfloat 16 False
+perplexity: 6.53125
+
+==> int4_fp4_e2m1_block2_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 2 fp 16 False
+perplexity: 6.5390625
+
+==> int4_fp4_e2m1_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 32 bfloat 16 False
+perplexity: 6.84375
+
+==> int4_fp4_e2m1_block32_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 32 fp 16 False
+perplexity: 6.875
+
+==> int4_fp4_e2m1_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 4096 bfloat 16 False
+perplexity: 729088.0
+
+==> int4_fp4_e2m1_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 4096 fp 16 False
+perplexity: inf
+
+==> int4_fp4_e2m1_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 4 bfloat 16 False
+perplexity: 6.53125
+
+==> int4_fp4_e2m1_block4_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 4 fp 16 False
+perplexity: 6.546875
+
+==> int4_fp4_e2m1_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 512 bfloat 16 False
+perplexity: 9.8125
+
+==> int4_fp4_e2m1_block512_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 512 fp 16 False
+perplexity: 9.75
+
+==> int4_fp4_e2m1_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 64 bfloat 16 False
+perplexity: 7.09375
+
+==> int4_fp4_e2m1_block64_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 64 fp 16 False
+perplexity: 7.11328125
+
+==> int4_fp4_e2m1_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 8192 bfloat 16 False
+perplexity: 937984.0
+
+==> int4_fp4_e2m1_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 8192 fp 16 False
+perplexity: inf
+
+==> int4_fp4_e2m1_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 8 bfloat 16 False
+perplexity: 6.5625
+
+==> int4_fp4_e2m1_block8_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp4_e2m1 8 fp 16 False
+perplexity: 6.5703125
+
+==> int4_fp6_e2m3_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 1024 bfloat 16 False
+perplexity: 9.5
+
+==> int4_fp6_e2m3_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 1024 fp 16 False
+perplexity: 9.484375
+
+==> int4_fp6_e2m3_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 128 bfloat 16 False
+perplexity: 6.1875
+
+==> int4_fp6_e2m3_block128_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 128 fp 16 False
+perplexity: 6.15625
+
+==> int4_fp6_e2m3_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 16384 bfloat 16 False
+perplexity: 56.25
+
+==> int4_fp6_e2m3_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 16384 fp 16 False
+perplexity: 55.6875
+
+==> int4_fp6_e2m3_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 16 bfloat 16 False
+perplexity: 5.90625
+
+==> int4_fp6_e2m3_block16_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 16 fp 16 False
+perplexity: 5.88671875
+
+==> int4_fp6_e2m3_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 2048 bfloat 16 False
+perplexity: 13.1875
+
+==> int4_fp6_e2m3_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 2048 fp 16 False
+perplexity: 13.1484375
+
+==> int4_fp6_e2m3_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 256 bfloat 16 False
+perplexity: 6.40625
+
+==> int4_fp6_e2m3_block256_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 256 fp 16 False
+perplexity: 6.40625
+
+==> int4_fp6_e2m3_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 2 bfloat 16 False
+perplexity: 5.65625
+
+==> int4_fp6_e2m3_block2_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 2 fp 16 False
+perplexity: 5.6640625
+
+==> int4_fp6_e2m3_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 32 bfloat 16 False
+perplexity: 5.96875
+
+==> int4_fp6_e2m3_block32_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 32 fp 16 False
+perplexity: 5.984375
+
+==> int4_fp6_e2m3_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 4096 bfloat 16 False
+perplexity: 43.25
+
+==> int4_fp6_e2m3_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 4096 fp 16 False
+perplexity: 42.9375
+
+==> int4_fp6_e2m3_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 4 bfloat 16 False
+perplexity: 5.71875
+
+==> int4_fp6_e2m3_block4_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 4 fp 16 False
+perplexity: 5.7265625
+
+==> int4_fp6_e2m3_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 512 bfloat 16 False
+perplexity: 6.9375
+
+==> int4_fp6_e2m3_block512_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 512 fp 16 False
+perplexity: 6.94140625
+
+==> int4_fp6_e2m3_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 64 bfloat 16 False
+perplexity: 6.0625
+
+==> int4_fp6_e2m3_block64_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 64 fp 16 False
+perplexity: 6.05859375
+
+==> int4_fp6_e2m3_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 8192 bfloat 16 False
+perplexity: 58.0
+
+==> int4_fp6_e2m3_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 8192 fp 16 False
+perplexity: 55.25
+
+==> int4_fp6_e2m3_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 8 bfloat 16 False
+perplexity: 5.8125
+
+==> int4_fp6_e2m3_block8_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp6_e2m3 8 fp 16 False
+perplexity: 5.80078125
+
+==> int4_fp8_e4m3_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 1024 bfloat 16 False
+perplexity: 9.0625
+
+==> int4_fp8_e4m3_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 1024 fp 16 False
+perplexity: 9.109375
+
+==> int4_fp8_e4m3_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 128 bfloat 16 False
+perplexity: 6.125
+
+==> int4_fp8_e4m3_block128_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 128 fp 16 False
+perplexity: 6.1484375
+
+==> int4_fp8_e4m3_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 16384 bfloat 16 False
+perplexity: 31.125
+
+==> int4_fp8_e4m3_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 16384 fp 16 False
+perplexity: 31.359375
+
+==> int4_fp8_e4m3_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 16 bfloat 16 False
+perplexity: 5.90625
+
+==> int4_fp8_e4m3_block16_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 16 fp 16 False
+perplexity: 5.9140625
+
+==> int4_fp8_e4m3_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 2048 bfloat 16 False
+perplexity: 11.625
+
+==> int4_fp8_e4m3_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 2048 fp 16 False
+perplexity: 11.78125
+
+==> int4_fp8_e4m3_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 256 bfloat 16 False
+perplexity: 6.375
+
+==> int4_fp8_e4m3_block256_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 256 fp 16 False
+perplexity: 6.375
+
+==> int4_fp8_e4m3_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 2 bfloat 16 False
+perplexity: 5.71875
+
+==> int4_fp8_e4m3_block2_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 2 fp 16 False
+perplexity: 5.703125
+
+==> int4_fp8_e4m3_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 32 bfloat 16 False
+perplexity: 5.96875
+
+==> int4_fp8_e4m3_block32_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 32 fp 16 False
+perplexity: 6.0078125
+
+==> int4_fp8_e4m3_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 4096 bfloat 16 False
+perplexity: 27.5
+
+==> int4_fp8_e4m3_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 4096 fp 16 False
+perplexity: 27.5
+
+==> int4_fp8_e4m3_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 4 bfloat 16 False
+perplexity: 5.75
+
+==> int4_fp8_e4m3_block4_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 4 fp 16 False
+perplexity: 5.76171875
+
+==> int4_fp8_e4m3_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 512 bfloat 16 False
+perplexity: 6.84375
+
+==> int4_fp8_e4m3_block512_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 512 fp 16 False
+perplexity: 6.85546875
+
+==> int4_fp8_e4m3_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 64 bfloat 16 False
+perplexity: 6.0625
+
+==> int4_fp8_e4m3_block64_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 64 fp 16 False
+perplexity: 6.0703125
+
+==> int4_fp8_e4m3_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 8192 bfloat 16 False
+perplexity: 31.125
+
+==> int4_fp8_e4m3_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 8192 fp 16 False
+perplexity: 31.359375
+
+==> int4_fp8_e4m3_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 8 bfloat 16 False
+perplexity: 5.8125
+
+==> int4_fp8_e4m3_block8_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e4m3 8 fp 16 False
+perplexity: 5.828125
+
+==> int4_fp8_e5m2_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 1024 bfloat 16 False
+perplexity: 9.1875
+
+==> int4_fp8_e5m2_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 1024 fp 16 False
+perplexity: 9.2109375
+
+==> int4_fp8_e5m2_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 128 bfloat 16 False
+perplexity: 6.21875
+
+==> int4_fp8_e5m2_block128_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 128 fp 16 False
+perplexity: 6.203125
+
+==> int4_fp8_e5m2_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 16384 bfloat 16 False
+perplexity: 32.0
+
+==> int4_fp8_e5m2_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 16384 fp 16 False
+perplexity: 32.15625
+
+==> int4_fp8_e5m2_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 16 bfloat 16 False
+perplexity: 5.9375
+
+==> int4_fp8_e5m2_block16_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 16 fp 16 False
+perplexity: 5.9609375
+
+==> int4_fp8_e5m2_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 2048 bfloat 16 False
+perplexity: 12.0
+
+==> int4_fp8_e5m2_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 2048 fp 16 False
+perplexity: 11.9453125
+
+==> int4_fp8_e5m2_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 256 bfloat 16 False
+perplexity: 6.40625
+
+==> int4_fp8_e5m2_block256_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 256 fp 16 False
+perplexity: 6.4375
+
+==> int4_fp8_e5m2_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 2 bfloat 16 False
+perplexity: 5.75
+
+==> int4_fp8_e5m2_block2_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 2 fp 16 False
+perplexity: 5.73828125
+
+==> int4_fp8_e5m2_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 32 bfloat 16 False
+perplexity: 6.03125
+
+==> int4_fp8_e5m2_block32_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 32 fp 16 False
+perplexity: 6.05859375
+
+==> int4_fp8_e5m2_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 4096 bfloat 16 False
+perplexity: 28.375
+
+==> int4_fp8_e5m2_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 4096 fp 16 False
+perplexity: 28.375
+
+==> int4_fp8_e5m2_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 4 bfloat 16 False
+perplexity: 5.8125
+
+==> int4_fp8_e5m2_block4_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 4 fp 16 False
+perplexity: 5.8046875
+
+==> int4_fp8_e5m2_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 512 bfloat 16 False
+perplexity: 6.875
+
+==> int4_fp8_e5m2_block512_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 512 fp 16 False
+perplexity: 6.921875
+
+==> int4_fp8_e5m2_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 64 bfloat 16 False
+perplexity: 6.125
+
+==> int4_fp8_e5m2_block64_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 64 fp 16 False
+perplexity: 6.125
+
+==> int4_fp8_e5m2_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 8192 bfloat 16 False
+perplexity: 32.0
+
+==> int4_fp8_e5m2_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 8192 fp 16 False
+perplexity: 32.34375
+
+==> int4_fp8_e5m2_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 8 bfloat 16 False
+perplexity: 5.90625
+
+==> int4_fp8_e5m2_block8_fp.log <==
+meta-llama/Llama-2-7b-hf int4 fp8_e5m2 8 fp 16 False
+perplexity: 5.87890625
+
+==> int4_int4_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int4 1024 bfloat 16 False
+perplexity: 427819008.0
+
+==> int4_int4_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int4 1024 fp 16 False
+perplexity: inf
+
+==> int4_int4_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int4 128 bfloat 16 False
+perplexity: 8.5
+
+==> int4_int4_block128_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int4 128 fp 16 False
+perplexity: 8.625
+
+==> int4_int4_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int4 16384 bfloat 16 False
+perplexity: 45088768.0
+
+==> int4_int4_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int4 16384 fp 16 False
+perplexity: inf
+
+==> int4_int4_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int4 16 bfloat 16 False
+perplexity: 6.28125
+
+==> int4_int4_block16_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int4 16 fp 16 False
+perplexity: 6.27734375
+
+==> int4_int4_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int4 2048 bfloat 16 False
+perplexity: 229638144.0
+
+==> int4_int4_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int4 2048 fp 16 False
+perplexity: inf
+
+==> int4_int4_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int4 256 bfloat 16 False
+perplexity: 16.625
+
+==> int4_int4_block256_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int4 256 fp 16 False
+perplexity: 16.6875
+
+==> int4_int4_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int4 2 bfloat 16 False
+perplexity: 5.75
+
+==> int4_int4_block2_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int4 2 fp 16 False
+perplexity: 5.77734375
+
+==> int4_int4_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int4 32 bfloat 16 False
+perplexity: 6.625
+
+==> int4_int4_block32_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int4 32 fp 16 False
+perplexity: 6.6484375
+
+==> int4_int4_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int4 4096 bfloat 16 False
+perplexity: 229638144.0
+
+==> int4_int4_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int4 4096 fp 16 False
+perplexity: inf
+
+==> int4_int4_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int4 4 bfloat 16 False
+perplexity: 5.90625
+
+==> int4_int4_block4_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int4 4 fp 16 False
+perplexity: 5.890625
+
+==> int4_int4_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int4 512 bfloat 16 False
+perplexity: 940.0
+
+==> int4_int4_block512_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int4 512 fp 16 False
+perplexity: 1018.0
+
+==> int4_int4_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int4 64 bfloat 16 False
+perplexity: 7.21875
+
+==> int4_int4_block64_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int4 64 fp 16 False
+perplexity: 7.1953125
+
+==> int4_int4_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int4 8192 bfloat 16 False
+perplexity: 139460608.0
+
+==> int4_int4_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int4 8192 fp 16 False
+perplexity: inf
+
+==> int4_int4_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int4 8 bfloat 16 False
+perplexity: 6.03125
+
+==> int4_int4_block8_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int4 8 fp 16 False
+perplexity: 6.046875
+
+==> int4_int8_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int8 1024 bfloat 16 False
+perplexity: 9.1875
+
+==> int4_int8_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int8 1024 fp 16 False
+perplexity: 9.1796875
+
+==> int4_int8_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int8 128 bfloat 16 False
+perplexity: 6.125
+
+==> int4_int8_block128_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int8 128 fp 16 False
+perplexity: 6.109375
+
+==> int4_int8_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int8 16384 bfloat 16 False
+perplexity: 39.25
+
+==> int4_int8_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int8 16384 fp 16 False
+perplexity: 38.875
+
+==> int4_int8_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int8 16 bfloat 16 False
+perplexity: 5.84375
+
+==> int4_int8_block16_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int8 16 fp 16 False
+perplexity: 5.85546875
+
+==> int4_int8_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int8 2048 bfloat 16 False
+perplexity: 12.1875
+
+==> int4_int8_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int8 2048 fp 16 False
+perplexity: 12.1796875
+
+==> int4_int8_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int8 256 bfloat 16 False
+perplexity: 6.375
+
+==> int4_int8_block256_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int8 256 fp 16 False
+perplexity: 6.3515625
+
+==> int4_int8_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int8 2 bfloat 16 False
+perplexity: 5.625
+
+==> int4_int8_block2_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int8 2 fp 16 False
+perplexity: 5.6328125
+
+==> int4_int8_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int8 32 bfloat 16 False
+perplexity: 5.9375
+
+==> int4_int8_block32_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int8 32 fp 16 False
+perplexity: 5.94921875
+
+==> int4_int8_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int8 4096 bfloat 16 False
+perplexity: 32.5
+
+==> int4_int8_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int8 4096 fp 16 False
+perplexity: 32.28125
+
+==> int4_int8_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int8 4 bfloat 16 False
+perplexity: 5.71875
+
+==> int4_int8_block4_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int8 4 fp 16 False
+perplexity: 5.69921875
+
+==> int4_int8_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int8 512 bfloat 16 False
+perplexity: 6.84375
+
+==> int4_int8_block512_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int8 512 fp 16 False
+perplexity: 6.83984375
+
+==> int4_int8_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int8 64 bfloat 16 False
+perplexity: 6.03125
+
+==> int4_int8_block64_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int8 64 fp 16 False
+perplexity: 6.0234375
+
+==> int4_int8_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int8 8192 bfloat 16 False
+perplexity: 39.25
+
+==> int4_int8_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int8 8192 fp 16 False
+perplexity: 38.71875
+
+==> int4_int8_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf int4 int8 8 bfloat 16 False
+perplexity: 5.75
+
+==> int4_int8_block8_fp.log <==
+meta-llama/Llama-2-7b-hf int4 int8 8 fp 16 False
+perplexity: 5.7734375
+
+==> int8_fp16_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 1024 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp16_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 1024 fp 16 False
+perplexity: 5.4765625
+
+==> int8_fp16_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 128 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp16_block128_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 128 fp 16 False
+perplexity: 5.4765625
+
+==> int8_fp16_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 16384 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp16_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 16384 fp 16 False
+perplexity: 5.48046875
+
+==> int8_fp16_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 16 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp16_block16_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 16 fp 16 False
+perplexity: 5.46875
+
+==> int8_fp16_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 2048 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp16_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 2048 fp 16 False
+perplexity: 5.4765625
+
+==> int8_fp16_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 256 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp16_block256_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 256 fp 16 False
+perplexity: 5.4765625
+
+==> int8_fp16_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 2 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp16_block2_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 2 fp 16 False
+perplexity: 5.46875
+
+==> int8_fp16_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 32 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp16_block32_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 32 fp 16 False
+perplexity: 5.4765625
+
+==> int8_fp16_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 4096 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp16_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 4096 fp 16 False
+perplexity: 5.4765625
+
+==> int8_fp16_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 4 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp16_block4_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 4 fp 16 False
+perplexity: 5.46875
+
+==> int8_fp16_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 512 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp16_block512_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 512 fp 16 False
+perplexity: 5.4765625
+
+==> int8_fp16_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 64 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp16_block64_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 64 fp 16 False
+perplexity: 5.4765625
+
+==> int8_fp16_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 8192 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp16_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 8192 fp 16 False
+perplexity: 5.48046875
+
+==> int8_fp16_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 8 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp16_block8_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp16 8 fp 16 False
+perplexity: 5.46875
+
+==> int8_fp4_e2m1_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 1024 bfloat 16 False
+perplexity: 9.3125
+
+==> int8_fp4_e2m1_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 1024 fp 16 False
+perplexity: 9.3984375
+
+==> int8_fp4_e2m1_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 128 bfloat 16 False
+perplexity: 6.375
+
+==> int8_fp4_e2m1_block128_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 128 fp 16 False
+perplexity: 6.38671875
+
+==> int8_fp4_e2m1_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 16384 bfloat 16 False
+perplexity: 7136.0
+
+==> int8_fp4_e2m1_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 16384 fp 16 False
+perplexity: 8560.0
+
+==> int8_fp4_e2m1_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 16 bfloat 16 False
+perplexity: 6.125
+
+==> int8_fp4_e2m1_block16_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 16 fp 16 False
+perplexity: 6.1484375
+
+==> int8_fp4_e2m1_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 2048 bfloat 16 False
+perplexity: 61.75
+
+==> int8_fp4_e2m1_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 2048 fp 16 False
+perplexity: 70.125
+
+==> int8_fp4_e2m1_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 256 bfloat 16 False
+perplexity: 6.5625
+
+==> int8_fp4_e2m1_block256_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 256 fp 16 False
+perplexity: 6.60546875
+
+==> int8_fp4_e2m1_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 2 bfloat 16 False
+perplexity: 6.1875
+
+==> int8_fp4_e2m1_block2_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 2 fp 16 False
+perplexity: 6.21484375
+
+==> int8_fp4_e2m1_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 32 bfloat 16 False
+perplexity: 6.1875
+
+==> int8_fp4_e2m1_block32_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 32 fp 16 False
+perplexity: 6.171875
+
+==> int8_fp4_e2m1_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 4096 bfloat 16 False
+perplexity: 5216.0
+
+==> int8_fp4_e2m1_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 4096 fp 16 False
+perplexity: 6164.0
+
+==> int8_fp4_e2m1_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 4 bfloat 16 False
+perplexity: 6.1875
+
+==> int8_fp4_e2m1_block4_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 4 fp 16 False
+perplexity: 6.1796875
+
+==> int8_fp4_e2m1_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 512 bfloat 16 False
+perplexity: 7.21875
+
+==> int8_fp4_e2m1_block512_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 512 fp 16 False
+perplexity: 7.26171875
+
+==> int8_fp4_e2m1_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 64 bfloat 16 False
+perplexity: 6.21875
+
+==> int8_fp4_e2m1_block64_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 64 fp 16 False
+perplexity: 6.234375
+
+==> int8_fp4_e2m1_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 8192 bfloat 16 False
+perplexity: 5920.0
+
+==> int8_fp4_e2m1_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 8192 fp 16 False
+perplexity: 6772.0
+
+==> int8_fp4_e2m1_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 8 bfloat 16 False
+perplexity: 6.125
+
+==> int8_fp4_e2m1_block8_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp4_e2m1 8 fp 16 False
+perplexity: 6.15625
+
+==> int8_fp6_e2m3_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 1024 bfloat 16 False
+perplexity: 5.625
+
+==> int8_fp6_e2m3_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 1024 fp 16 False
+perplexity: 5.6171875
+
+==> int8_fp6_e2m3_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 128 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_fp6_e2m3_block128_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 128 fp 16 False
+perplexity: 5.51953125
+
+==> int8_fp6_e2m3_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 16384 bfloat 16 False
+perplexity: 6.40625
+
+==> int8_fp6_e2m3_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 16384 fp 16 False
+perplexity: 6.43359375
+
+==> int8_fp6_e2m3_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 16 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp6_e2m3_block16_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 16 fp 16 False
+perplexity: 5.49609375
+
+==> int8_fp6_e2m3_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 2048 bfloat 16 False
+perplexity: 5.71875
+
+==> int8_fp6_e2m3_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 2048 fp 16 False
+perplexity: 5.69921875
+
+==> int8_fp6_e2m3_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 256 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_fp6_e2m3_block256_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 256 fp 16 False
+perplexity: 5.546875
+
+==> int8_fp6_e2m3_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 2 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp6_e2m3_block2_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 2 fp 16 False
+perplexity: 5.4921875
+
+==> int8_fp6_e2m3_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 32 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp6_e2m3_block32_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 32 fp 16 False
+perplexity: 5.5
+
+==> int8_fp6_e2m3_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 4096 bfloat 16 False
+perplexity: 6.125
+
+==> int8_fp6_e2m3_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 4096 fp 16 False
+perplexity: 6.16015625
+
+==> int8_fp6_e2m3_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 4 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp6_e2m3_block4_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 4 fp 16 False
+perplexity: 5.4921875
+
+==> int8_fp6_e2m3_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 512 bfloat 16 False
+perplexity: 5.5625
+
+==> int8_fp6_e2m3_block512_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 512 fp 16 False
+perplexity: 5.5625
+
+==> int8_fp6_e2m3_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 64 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp6_e2m3_block64_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 64 fp 16 False
+perplexity: 5.5
+
+==> int8_fp6_e2m3_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 8192 bfloat 16 False
+perplexity: 6.21875
+
+==> int8_fp6_e2m3_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 8192 fp 16 False
+perplexity: 6.265625
+
+==> int8_fp6_e2m3_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 8 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp6_e2m3_block8_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp6_e2m3 8 fp 16 False
+perplexity: 5.49609375
+
+==> int8_fp8_e4m3_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 1024 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp8_e4m3_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 1024 fp 16 False
+perplexity: 5.5
+
+==> int8_fp8_e4m3_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 128 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp8_e4m3_block128_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 128 fp 16 False
+perplexity: 5.5078125
+
+==> int8_fp8_e4m3_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 16384 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp8_e4m3_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 16384 fp 16 False
+perplexity: 5.5
+
+==> int8_fp8_e4m3_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 16 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_fp8_e4m3_block16_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 16 fp 16 False
+perplexity: 5.51953125
+
+==> int8_fp8_e4m3_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 2048 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp8_e4m3_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 2048 fp 16 False
+perplexity: 5.5
+
+==> int8_fp8_e4m3_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 256 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp8_e4m3_block256_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 256 fp 16 False
+perplexity: 5.5078125
+
+==> int8_fp8_e4m3_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 2 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_fp8_e4m3_block2_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 2 fp 16 False
+perplexity: 5.51953125
+
+==> int8_fp8_e4m3_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 32 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp8_e4m3_block32_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 32 fp 16 False
+perplexity: 5.51171875
+
+==> int8_fp8_e4m3_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 4096 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp8_e4m3_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 4096 fp 16 False
+perplexity: 5.5
+
+==> int8_fp8_e4m3_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 4 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_fp8_e4m3_block4_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 4 fp 16 False
+perplexity: 5.51953125
+
+==> int8_fp8_e4m3_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 512 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp8_e4m3_block512_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 512 fp 16 False
+perplexity: 5.5078125
+
+==> int8_fp8_e4m3_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 64 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp8_e4m3_block64_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 64 fp 16 False
+perplexity: 5.51171875
+
+==> int8_fp8_e4m3_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 8192 bfloat 16 False
+perplexity: 5.5
+
+==> int8_fp8_e4m3_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 8192 fp 16 False
+perplexity: 5.5
+
+==> int8_fp8_e4m3_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 8 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_fp8_e4m3_block8_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e4m3 8 fp 16 False
+perplexity: 5.51953125
+
+==> int8_fp8_e5m2_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 1024 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_fp8_e5m2_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 1024 fp 16 False
+perplexity: 5.546875
+
+==> int8_fp8_e5m2_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 128 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_fp8_e5m2_block128_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 128 fp 16 False
+perplexity: 5.546875
+
+==> int8_fp8_e5m2_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 16384 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_fp8_e5m2_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 16384 fp 16 False
+perplexity: 5.546875
+
+==> int8_fp8_e5m2_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 16 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_fp8_e5m2_block16_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 16 fp 16 False
+perplexity: 5.55078125
+
+==> int8_fp8_e5m2_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 2048 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_fp8_e5m2_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 2048 fp 16 False
+perplexity: 5.546875
+
+==> int8_fp8_e5m2_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 256 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_fp8_e5m2_block256_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 256 fp 16 False
+perplexity: 5.55078125
+
+==> int8_fp8_e5m2_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 2 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_fp8_e5m2_block2_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 2 fp 16 False
+perplexity: 5.5625
+
+==> int8_fp8_e5m2_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 32 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_fp8_e5m2_block32_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 32 fp 16 False
+perplexity: 5.55078125
+
+==> int8_fp8_e5m2_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 4096 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_fp8_e5m2_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 4096 fp 16 False
+perplexity: 5.546875
+
+==> int8_fp8_e5m2_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 4 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_fp8_e5m2_block4_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 4 fp 16 False
+perplexity: 5.5546875
+
+==> int8_fp8_e5m2_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 512 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_fp8_e5m2_block512_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 512 fp 16 False
+perplexity: 5.546875
+
+==> int8_fp8_e5m2_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 64 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_fp8_e5m2_block64_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 64 fp 16 False
+perplexity: 5.55078125
+
+==> int8_fp8_e5m2_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 8192 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_fp8_e5m2_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 8192 fp 16 False
+perplexity: 5.546875
+
+==> int8_fp8_e5m2_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 8 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_fp8_e5m2_block8_fp.log <==
+meta-llama/Llama-2-7b-hf int8 fp8_e5m2 8 fp 16 False
+perplexity: 5.55078125
+
+==> int8_int4_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int4 1024 bfloat 16 False
+perplexity: 57933824.0
+
+==> int8_int4_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int4 1024 fp 16 False
+perplexity: inf
+
+==> int8_int4_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int4 128 bfloat 16 False
+perplexity: 7.21875
+
+==> int8_int4_block128_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int4 128 fp 16 False
+perplexity: 7.23828125
+
+==> int8_int4_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int4 16384 bfloat 16 False
+perplexity: 84410368.0
+
+==> int8_int4_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int4 16384 fp 16 False
+perplexity: inf
+
+==> int8_int4_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int4 16 bfloat 16 False
+perplexity: 5.8125
+
+==> int8_int4_block16_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int4 16 fp 16 False
+perplexity: 5.79296875
+
+==> int8_int4_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int4 2048 bfloat 16 False
+perplexity: 1493172224.0
+
+==> int8_int4_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int4 2048 fp 16 False
+perplexity: inf
+
+==> int8_int4_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int4 256 bfloat 16 False
+perplexity: 11.25
+
+==> int8_int4_block256_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int4 256 fp 16 False
+perplexity: 11.265625
+
+==> int8_int4_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int4 2 bfloat 16 False
+perplexity: 5.5625
+
+==> int8_int4_block2_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int4 2 fp 16 False
+perplexity: 5.58203125
+
+==> int8_int4_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int4 32 bfloat 16 False
+perplexity: 5.96875
+
+==> int8_int4_block32_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int4 32 fp 16 False
+perplexity: 5.97265625
+
+==> int8_int4_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int4 4096 bfloat 16 False
+perplexity: 427819008.0
+
+==> int8_int4_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int4 4096 fp 16 False
+perplexity: inf
+
+==> int8_int4_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int4 4 bfloat 16 False
+perplexity: 5.625
+
+==> int8_int4_block4_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int4 4 fp 16 False
+perplexity: 5.6328125
+
+==> int8_int4_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int4 512 bfloat 16 False
+perplexity: 185.0
+
+==> int8_int4_block512_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int4 512 fp 16 False
+perplexity: 181.125
+
+==> int8_int4_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int4 64 bfloat 16 False
+perplexity: 6.3125
+
+==> int8_int4_block64_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int4 64 fp 16 False
+perplexity: 6.3125
+
+==> int8_int4_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int4 8192 bfloat 16 False
+perplexity: 624951296.0
+
+==> int8_int4_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int4 8192 fp 16 False
+perplexity: inf
+
+==> int8_int4_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int4 8 bfloat 16 False
+perplexity: 5.71875
+
+==> int8_int4_block8_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int4 8 fp 16 False
+perplexity: 5.69140625
+
+==> int8_int8_block1024_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int8 1024 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_int8_block1024_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int8 1024 fp 16 False
+perplexity: 5.5390625
+
+==> int8_int8_block128_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int8 128 bfloat 16 False
+perplexity: 5.5
+
+==> int8_int8_block128_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int8 128 fp 16 False
+perplexity: 5.484375
+
+==> int8_int8_block16384_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int8 16384 bfloat 16 False
+perplexity: 5.65625
+
+==> int8_int8_block16384_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int8 16384 fp 16 False
+perplexity: 5.65625
+
+==> int8_int8_block16_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int8 16 bfloat 16 False
+perplexity: 5.5
+
+==> int8_int8_block16_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int8 16 fp 16 False
+perplexity: 5.4765625
+
+==> int8_int8_block2048_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int8 2048 bfloat 16 False
+perplexity: 5.5625
+
+==> int8_int8_block2048_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int8 2048 fp 16 False
+perplexity: 5.56640625
+
+==> int8_int8_block256_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int8 256 bfloat 16 False
+perplexity: 5.5
+
+==> int8_int8_block256_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int8 256 fp 16 False
+perplexity: 5.5
+
+==> int8_int8_block2_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int8 2 bfloat 16 False
+perplexity: 5.4375
+
+==> int8_int8_block2_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int8 2 fp 16 False
+perplexity: 5.46875
+
+==> int8_int8_block32_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int8 32 bfloat 16 False
+perplexity: 5.5
+
+==> int8_int8_block32_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int8 32 fp 16 False
+perplexity: 5.4765625
+
+==> int8_int8_block4096_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int8 4096 bfloat 16 False
+perplexity: 5.625
+
+==> int8_int8_block4096_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int8 4096 fp 16 False
+perplexity: 5.6328125
+
+==> int8_int8_block4_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int8 4 bfloat 16 False
+perplexity: 5.5
+
+==> int8_int8_block4_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int8 4 fp 16 False
+perplexity: 5.46875
+
+==> int8_int8_block512_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int8 512 bfloat 16 False
+perplexity: 5.53125
+
+==> int8_int8_block512_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int8 512 fp 16 False
+perplexity: 5.51953125
+
+==> int8_int8_block64_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int8 64 bfloat 16 False
+perplexity: 5.5
+
+==> int8_int8_block64_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int8 64 fp 16 False
+perplexity: 5.4765625
+
+==> int8_int8_block8192_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int8 8192 bfloat 16 False
+perplexity: 5.65625
+
+==> int8_int8_block8192_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int8 8192 fp 16 False
+perplexity: 5.6484375
+
+==> int8_int8_block8_bfloat.log <==
+meta-llama/Llama-2-7b-hf int8 int8 8 bfloat 16 False
+perplexity: 5.5
+
+==> int8_int8_block8_fp.log <==
+meta-llama/Llama-2-7b-hf int8 int8 8 fp 16 False
+perplexity: 5.46875
