@@ -2,8 +2,10 @@
 
 # Arrays for all the options
 w_elem_options=("int8" "int4" "fp8_e5m2" "fp8_e4m3" "fp6_e2m3" "fp4_e2m1")
-a_elem_options=("int8" "int4" "fp8_e5m2" "fp8_e4m3" "fp6_e2m3" "fp4_e2m1")
-block_size_options=("2" "4" "8" "16" "32" "64" "128" "256" "512" "1024")
+a_elem_options=("int8" "int4" "fp8_e5m2" "fp8_e4m3" "fp6_e2m3" "fp4_e2m1" "fp16")
+# a_elem_options=("fp16")
+block_size_options=("2" "4" "8" "16" "32" "64" "128" "256" "512" "1024" "2048" "4096" "8192" "16384")
+# block_size_options=("2048" "4096" "8192" "16384")
 scalar_format_options=("fp" "bfloat")
 
 # Iterate over all combinations of w_elem, a_elem, block_size, and scalar_format
