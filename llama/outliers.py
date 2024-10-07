@@ -35,17 +35,18 @@ def activation_hook(module, input, output, activations_dict, layer_name):
 def check_outliers(activations_dict, threshold=3):
     outlier_info = {}
     for layer_name, activations in activations_dict.items():
-        mean = np.mean(activations)
-        std = np.std(activations)
-        max_val = np.max(np.abs(activations))
-        min_val = np.min(np.abs(activations))
-        outliers = np.abs(activations - mean) > threshold * std
-        percentage_outliers = np.sum(outliers) / activations.size * 100
+        abs_act = np.abs(activations)
+        mean = np.mean(abs_act)
+        std = np.std(abs_act)
+        max_val = np.max(abs_act)
+        min_val = np.min(abs_act)
+        outliers = np.abs(abs_act - mean) > threshold * std
+        percentage_outliers = np.sum(outliers) / abs_act.size * 100
         outlier_info[layer_name] = {
             'mean': mean,
             'std': std,
-            'max_abs': max_val,
-            'min_abs': min_val,  
+            'max': max_val,
+            'min': min_val,  
             'outliers_percent': percentage_outliers
         }
     return outlier_info
@@ -56,21 +57,18 @@ def check_weights(model, threshold=3):
     for name, param in model.named_parameters():
         if 'weight' in name:  # Focus on weight parameters only
             weights = param.detach().cpu().numpy()
+            weights = np.abs(weights)
             mean = np.mean(weights)
             std = np.std(weights)
-            max_val = np.max(weights)
-            min_val = np.min(weights)
-            max_abs_val = np.max(np.abs(weights))  # Max absolute value
-            min_abs_val = np.min(np.abs(weights))  # Min absolute value (ignores sign)
+            max_abs_val = np.max(weights)  # Max absolute value
+            min_abs_val = np.min(weights)  # Min absolute value (ignores sign)
             outliers = np.abs(weights - mean) > threshold * std
             percentage_outliers = np.sum(outliers) / weights.size * 100
             weight_info[name] = {
                 'mean': mean,
                 'std': std,
-                'max': max_val,
-                'min': min_val,
-                'max_abs': max_abs_val,
-                'min_abs': min_abs_val,
+                'max': max_abs_val,
+                'min': min_abs_val,
                 'outliers_percent': percentage_outliers
             }
     return weight_info
@@ -118,7 +116,7 @@ class Evaluator:
             outlier_info = check_outliers(activations_dict)
 
             for layer, info in outlier_info.items():
-                print(f"Activations Layer {layer}: Mean: {info['mean']}, Std: {info['std']}, Max: {info['max_abs']}, Min: {info['min_abs']}, Outliers: {info['outliers_percent']}%")
+                print(f"Activations (abs) Layer {layer}: Mean: {info['mean']}, Std: {info['std']}, Max: {info['max']}, Min: {info['min']}, Outliers: {info['outliers_percent']}%")
 
             # for layer, info in outlier_info.items():
             #     print(f"Layer {layer}: Mean: {info['mean']}, Std: {info['std']}, Max: {info['max_abs']}, Min: {info['min_abs']}, Outliers: {info['outliers_percent']}%")
@@ -172,7 +170,7 @@ model = LlamaForCausalLM.from_pretrained(
 # Check weights
 weight_info = check_weights(model)
 for layer, info in weight_info.items():
-    print(f"Weights Layer {layer}: Mean: {info['mean']}, Std: {info['std']}, Max: {info['max']}, Min: {info['min']}, Max Abs: {info['max_abs']}, Min Abs: {info['min_abs']}, Outliers: {info['outliers_percent']}%")
+    print(f"Weights (abs) Layer {layer}: Mean: {info['mean']}, Std: {info['std']}, Max Abs: {info['max']}, Min Abs: {info['min']}, Outliers: {info['outliers_percent']}%")
 
 print(f"-------------------------------------------"
 )
