@@ -124,7 +124,7 @@ class Evaluator:
             outlier_info = check_outliers(activations_dict)
 
             for layer, info in outlier_info.items():
-                print(f"Activations (abs) Layer {layer}: Mean: {info['mean']}, Std: {info['std']}, Max: {info['max']}, Min: {info['min']}, Outliers: {info['outliers_percent']}%")
+                print(f"Activations (abs) Layer {layer}: Mean: {info['mean']}, Std: {info['std']}, Max: {info['max']}, Min: {info['min']}, Abs Max: {info['max_abs']}, Abs Min: {info['min_abs']}, Outliers: {info['outliers_percent']}%")
 
             # for layer, info in outlier_info.items():
             #     print(f"Layer {layer}: Mean: {info['mean']}, Std: {info['std']}, Max: {info['max_abs']}, Min: {info['min_abs']}, Outliers: {info['outliers_percent']}%")
@@ -178,7 +178,7 @@ model = LlamaForCausalLM.from_pretrained(
 # Check weights
 weight_info = check_weights(model)
 for layer, info in weight_info.items():
-    print(f"Weights (abs) Layer {layer}: Mean: {info['mean']}, Std: {info['std']}, Max Abs: {info['max']}, Min Abs: {info['min']}, Outliers: {info['outliers_percent']}%")
+    print(f"Weights (abs) Layer {layer}: Mean: {info['mean']}, Std: {info['std']}, Max: {info['max']}, Min: {info['min']}, Abs Max: {info['max_abs']}, Abs Min: {info['min_abs']}, Outliers: {info['outliers_percent']}%")
 
 print(f"-------------------------------------------"
 )
