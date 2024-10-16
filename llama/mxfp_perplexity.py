@@ -27,6 +27,7 @@ parser.add_argument('--a_elem', help='activation format', default="int8")
 parser.add_argument('--block_size', help='microscaling block size', default=32)
 parser.add_argument('--scalar_format', help='fp or bfloat', default="fp")
 parser.add_argument('--scalar_width', help='width of scalar elems', default=16)
+# parser.add_argument('--change_block', help='test of blocking effects', default=False)
 parser.add_argument('--quantize_backprop', help='quantization of back prop (True or False)', default=False)
 
 args = parser.parse_args()
