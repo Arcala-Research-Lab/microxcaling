@@ -41,7 +41,7 @@ args = parser.parse_args()
 # Utilized perplexity calculations from this file
 # https://github.com/mit-han-lab/smoothquant/blob/main/examples/smoothquant_llama_demo.ipynb
 
-# device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 class Evaluator:
@@ -118,8 +118,12 @@ if not args.baseline:
     mx_mapping.inject_pyt_ops(mx_specs)
 
 # Load the model
+# model = LlamaForCausalLM.from_pretrained(
+#     args.model, torch_dtype=torch.float16, device_map="auto",token="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"
+# )
+
 model = LlamaForCausalLM.from_pretrained(
-    args.model, torch_dtype=torch.float16, device_map="auto",token="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"
+    args.model, torch_dtype=torch.float16, device_map=None,token="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"
 )
 
 # Function to apply pruning with optional fine-tuning
@@ -151,10 +155,30 @@ def prune_and_finetune_model(method, model, target_sparsity, num_iterations, fin
     # initial_ppl = evaluator.evaluate(model)
     # print(f"Perplexity before pruning: {initial_ppl}")
 
+    print(f"{args.model}")
+    if args.baseline:
+        print(f"No Quantization")
+    else: 
+        print(f" {args.w_elem} {args.a_elem} {args.block_size} {args.scalar_format} {args.scalar_width} {args.quantize_backprop}")
+    print(f"{args.pruning_method} {args.target_sparsity} {args.num_iterations} {args.fine_tune} {args.fine_tune_steps} {args.fine_tune_iterations}")
+
+    # def check_parameter_devices(parameters_to_prune):
+    #     for module, param_name in parameters_to_prune:
+    #         param = getattr(module, param_name)
+    #         print(f'Module: {module}, Parameter: {param_name}, Device: {param.device}')
+
+    # # Example usage:
+    # parameters_to_prune = [(module, 'weight') for module in model.modules() if isinstance(module, (nn.Linear, nn.Conv2d))]
+    # check_parameter_devices(parameters_to_prune)
+
     if method == "none":
         pass
     elif method == "oneshot":
+        print("Starting global unstructured pruning...")
         prune.global_unstructured(parameters_to_prune, pruning_method=prune.L1Unstructured, amount=target_sparsity)
+        
+        print("Moving tensors to GPU...")
+        model.to(device)  # Move model to the GPU
 
         print("Evaluating model after oneshot pruning...")
         post_prune_ppl = evaluator.evaluate(model)
@@ -199,5 +223,5 @@ prune_and_finetune_model(args.pruning_method, model, args.target_sparsity, args.
 
 # Evaluate the model
 final_ppl = evaluator.evaluate(model)
-print(f"{args.model} {args.w_elem} {args.a_elem} {args.block_size} {args.scalar_format} {args.scalar_width} {args.quantize_backprop}")
+# print(f"{args.model} {args.w_elem} {args.a_elem} {args.block_size} {args.scalar_format} {args.scalar_width} {args.quantize_backprop}")
 print(f"Final Perplexity: {final_ppl}")
