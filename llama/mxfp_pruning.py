@@ -27,7 +27,7 @@ parser.add_argument('--block_size', help='Microscaling block size', default=32)
 parser.add_argument('--scalar_format', help='fp or bfloat', default="fp")
 parser.add_argument('--scalar_width', help='Width of scalar elements', default=16)
 parser.add_argument('--quantize_backprop', help='Quantization of back-prop (True or False)', default=False)
-parser.add_argument('--pruning_method', help='Pruning method: oneshot, iterative, lottery_ticket', default='oneshot')
+parser.add_argument('--pruning_method', help='Pruning method: none, oneshot, iterative, lottery_ticket', default='none')
 parser.add_argument('--target_sparsity', help='Target sparsity (0 to 1)', default=0.2, type=float)
 parser.add_argument('--num_iterations', help='Number of iterations for iterative and lottery ticket pruning', default=10, type=int)
 parser.add_argument('--fine_tune', help='Fine-tune the model after pruning', default=False, action='store_true')
@@ -147,11 +147,13 @@ def prune_and_finetune_model(method, model, target_sparsity, num_iterations, fin
             lr_scheduler_type='linear',         # Use a linear scheduler with warm-up
         )
 
-    print("Evaluating model before pruning...")
-    initial_ppl = evaluator.evaluate(model)
-    print(f"Perplexity before pruning: {initial_ppl}")
+    # print("Evaluating model before pruning...")
+    # initial_ppl = evaluator.evaluate(model)
+    # print(f"Perplexity before pruning: {initial_ppl}")
 
-    if method == "oneshot":
+    if method == "none":
+        pass
+    elif method == "oneshot":
         prune.global_unstructured(parameters_to_prune, pruning_method=prune.L1Unstructured, amount=target_sparsity)
 
         print("Evaluating model after oneshot pruning...")
