@@ -33,6 +33,7 @@ parser.add_argument('--num_iterations', help='Number of iterations for iterative
 parser.add_argument('--fine_tune', help='Fine-tune the model after pruning', default=False, action='store_true')
 parser.add_argument('--fine_tune_steps', help='Number of steps for fine-tuning after each pruning iteration', default=100, type=int)
 parser.add_argument('--fine_tune_iterations', help='Number of iterations for fine-tuning', default=3, type=int)
+parser.add_argument('--post_pruning_quant', help='Quantize after pruning', default=False, action='store_true')
 
 # parser.add_argument('--change_block', help='test of blocking effects', default=False)
 
@@ -115,7 +116,9 @@ if not args.baseline:
         'quantize_backprop': args.quantize_backprop,
     }
     mx_specs = finalize_mx_specs(mx_specs)
-    mx_mapping.inject_pyt_ops(mx_specs)
+
+    if not args.post_pruning_quant:
+        mx_mapping.inject_pyt_ops(mx_specs)
 
 # Load the model
 # model = LlamaForCausalLM.from_pretrained(
@@ -176,7 +179,11 @@ def prune_and_finetune_model(method, model, target_sparsity, num_iterations, fin
     elif method == "oneshot":
         print("Starting global unstructured pruning...")
         prune.global_unstructured(parameters_to_prune, pruning_method=prune.L1Unstructured, amount=target_sparsity)
-        
+
+        # inject MX layers after pruning    
+        if not args.post_pruning_quant:
+            mx_mapping.inject_pyt_ops(mx_specs)
+    
         print("Moving tensors to GPU...")
         model.to(device)  # Move model to the GPU
 
@@ -198,8 +205,17 @@ def prune_and_finetune_model(method, model, target_sparsity, num_iterations, fin
     else:
         for iteration in range(num_iterations):
             prune.global_unstructured(parameters_to_prune, pruning_method=prune.L1Unstructured, amount=target_sparsity / num_iterations)
+            
+            # Need to fix this - need to load without repopulating pruned weights
             if method == "lottery_ticket":
                 model.load_state_dict(initial_state_dict)  # Reset weights to initial
+
+            # inject MX layers after pruning    
+                if not args.post_pruning_quant:
+                    mx_mapping.inject_pyt_ops(mx_specs)
+
+            print("Moving tensors to GPU...")
+            model.to(device)  # Move model to the GPU
 
             print(f"Evaluating model after pruning iteration {iteration + 1}...")
             immediate_ppl = evaluator.evaluate(model)
