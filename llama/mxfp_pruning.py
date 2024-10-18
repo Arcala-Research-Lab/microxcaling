@@ -115,9 +115,8 @@ if not args.baseline:
         # For quantization-aware finetuning, do backward pass in FP32
         'quantize_backprop': args.quantize_backprop,
     }
-    mx_specs = finalize_mx_specs(mx_specs)
-
     if not args.post_pruning_quant:
+        mx_specs = finalize_mx_specs(mx_specs)
         mx_mapping.inject_pyt_ops(mx_specs)
 
 # Load the model
@@ -128,6 +127,32 @@ if not args.baseline:
 model = LlamaForCausalLM.from_pretrained(
     args.model, torch_dtype=torch.float16, device_map=None,token="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"
 )
+
+def verify_sparsity(model):
+    total_params = 0
+    zero_params = 0
+    
+    for module in model.modules():
+        if isinstance(module, (nn.Linear, nn.Conv2d)):
+            weight = module.weight
+            total_params += weight.numel()
+            zero_params += torch.sum(weight == 0).item()
+    
+    sparsity = zero_params / total_params
+    print(f"Total Parameters: {total_params}")
+    print(f"Zero Parameters: {zero_params}")
+    print(f"Sparsity: {sparsity:.2%}")
+
+# Function to remove pruning from all layers that have weights
+def remove_pruning(model):
+    for name, module in model.named_modules():
+        # Check if the module has a 'weight' attribute
+        if hasattr(module, 'weight'):
+            try:
+                prune.remove(module, 'weight')
+                print(f"Pruning removed and made permanent for {name}.")
+            except ValueError:
+                print(f"No pruning applied to the weights of {name}, skipping...")
 
 # Function to apply pruning with optional fine-tuning
 def prune_and_finetune_model(method, model, target_sparsity, num_iterations, fine_tune, fine_tune_steps, fine_tune_iterations, evaluator):
@@ -181,15 +206,42 @@ def prune_and_finetune_model(method, model, target_sparsity, num_iterations, fin
         prune.global_unstructured(parameters_to_prune, pruning_method=prune.L1Unstructured, amount=target_sparsity)
 
         # inject MX layers after pruning    
-        if not args.post_pruning_quant:
+        if args.post_pruning_quant:
+            print("Saving pruned state_dict")
+
+            # Make the pruning permanent by removing the reparameterization for each layer
+            remove_pruning(model)
+
+            # Call this function after pruning
+            print("Verifying sparsity after remove_pruning")
+            verify_sparsity(model)
+
+            pruned_state_dict = model.state_dict()
+
+            # quantizing model after pruning
             mx_mapping.inject_pyt_ops(mx_specs)
-    
+            model = LlamaForCausalLM.from_pretrained(
+                args.model, torch_dtype=torch.float16, device_map=None,token="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"
+            )
+            print("Loading pruned weights from state_dict")
+            model.load_state_dict(pruned_state_dict)
+
+            # # Call this function after pruning
+            # verify_sparsity(model)
+            # print("Verifying sparsity after load_state_dict")
+
+        else:
+            # Make the pruning permanent by removing the reparameterization for each layer
+            remove_pruning(model)
+
         print("Moving tensors to GPU...")
         model.to(device)  # Move model to the GPU
 
         print("Evaluating model after oneshot pruning...")
         post_prune_ppl = evaluator.evaluate(model)
         print(f"Perplexity after oneshot pruning: {post_prune_ppl}")
+
+
 
         if fine_tune:
             trainer = Trainer(
