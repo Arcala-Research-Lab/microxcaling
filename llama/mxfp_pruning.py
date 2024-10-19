@@ -133,6 +133,7 @@ def verify_sparsity(model):
     zero_params = 0
     
     for module in model.modules():
+        print(f"module {module}")
         if isinstance(module, (nn.Linear, nn.Conv2d)):
             weight = module.weight
             total_params += weight.numel()
@@ -216,15 +217,18 @@ def prune_and_finetune_model(method, model, target_sparsity, num_iterations, fin
             print("Verifying sparsity after remove_pruning")
             verify_sparsity(model)
 
-            pruned_state_dict = model.state_dict()
+            # pruned_state_dict = model.state_dict()
 
             # quantizing model after pruning
             mx_mapping.inject_pyt_ops(mx_specs)
-            model = LlamaForCausalLM.from_pretrained(
-                args.model, torch_dtype=torch.float16, device_map=None,token="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"
-            )
-            print("Loading pruned weights from state_dict")
-            model.load_state_dict(pruned_state_dict)
+
+            # testing to see if we can just inject mxfp layers without redefining model
+
+            # model = LlamaForCausalLM.from_pretrained(
+            #     args.model, torch_dtype=torch.float16, device_map=None,token="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"
+            # )
+            # print("Loading pruned weights from state_dict")
+            # model.load_state_dict(pruned_state_dict)
 
             # # Call this function after pruning
             # verify_sparsity(model)
