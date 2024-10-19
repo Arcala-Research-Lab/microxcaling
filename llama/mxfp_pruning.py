@@ -17,6 +17,11 @@ from transformers.models.llama.modeling_llama import (
     LlamaMLP,
 )
 
+os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'expandable_segments:True'
+
+# from accelerate import Accelerator
+# accelerator = Accelerator()
+
 # Argument parser settings
 parser = argparse.ArgumentParser()
 parser.add_argument('--baseline', help='No quantization', default=False, action='store_true')
@@ -80,8 +85,30 @@ class Evaluator:
 tokenizer = LlamaTokenizer.from_pretrained("meta-llama/Llama-2-7b-hf",token="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" )
 dataset = load_dataset('wikitext', 'wikitext-2-raw-v1', split='test')
 
+# Add a padding token if it doesn't exist
+if tokenizer.pad_token is None:
+    tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+
+dataset2 = load_dataset('wikitext', 'wikitext-2-raw-v1')
+
+# Split dataset
+train_dataset = dataset2['train']
+validation_dataset = dataset2['validation']
+
+# Tokenize the dataset
+def tokenize_function(examples):
+    tokens = tokenizer(examples['text'], truncation=True, padding='max_length', max_length=2048)
+    tokens['labels'] = tokens['input_ids'].copy()
+    return tokens
+# def tokenize_function(examples):
+#     return tokenizer(examples['text'], truncation=True, padding='max_length', max_length=2048)
+
+tokenized_train = train_dataset.map(tokenize_function, batched=True)
+tokenized_validation = validation_dataset.map(tokenize_function, batched=True)
+
 # Tokenize the dataset
 tokenized_dataset = dataset.map(lambda e: tokenizer(e['text'], truncation=True, padding=False), batched=True)
+# tokenized_dataset = dataset.map(lambda e: tokenizer(e['text'], truncation=True, padding='max_length', max_length=2048), batched=True)
 
 # Count the total number of tokens
 total_tokens = sum(len(token_ids) for token_ids in tokenized_dataset['input_ids'])
@@ -123,17 +150,58 @@ if not args.baseline:
 # model = LlamaForCausalLM.from_pretrained(
 #     args.model, torch_dtype=torch.float16, device_map="auto",token="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"
 # )
+testing = False
 
-model = LlamaForCausalLM.from_pretrained(
-    args.model, torch_dtype=torch.float16, device_map=None,token="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"
-)
+if not testing:
+    model = LlamaForCausalLM.from_pretrained(
+        args.model, torch_dtype=torch.float16, device_map=None,token="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"
+    )
+
+else:
+    model = LlamaForCausalLM.from_pretrained(
+        args.model, torch_dtype=torch.float16, device_map="auto",token="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"
+    )
+
+# Define a common function to get new training arguments for fine-tuning
+def get_training_args():
+    return TrainingArguments(
+        output_dir='./results',
+        learning_rate=5e-5,
+        weight_decay=0.01,
+        adam_beta1=0.9, 
+        adam_beta2=0.999,
+        adam_epsilon=1e-6,
+        max_grad_norm=1.0,
+        per_device_train_batch_size=1,      # Depending on GPU memory, you might need to adjust this
+        gradient_accumulation_steps=8,      # Accumulate gradients for larger effective batch size
+        logging_dir='./logs',
+        save_steps=False,
+        logging_steps=100,                  # Updated to control logging frequency
+        max_steps=args.fine_tune_steps,          # Limit the number of training steps
+        warmup_steps=100,                   # Warm-up steps for the learning rate scheduler
+        lr_scheduler_type='linear',         # Use a linear scheduler with warm-up
+        # fp16=True
+    )
+
+# if testing:
+#     trainer = Trainer(
+#         model=model,                         # the instantiated 🤗 Transformers model to be trained
+#         args=get_training_args(),            # training arguments, defined above
+#         train_dataset=tokenized_train,
+#         eval_dataset=tokenized_validation
+#     )
+#     trainer.train()
+#     print("Evaluating model after fine-tuning...")
+#     post_fine_tuning_ppl = evaluator.evaluate(model)
+#     print(f"Perplexity after fine-tuning: {post_fine_tuning_ppl}")
+
 
 def verify_sparsity(model):
     total_params = 0
     zero_params = 0
     
     for module in model.modules():
-        print(f"module {module}")
+        # print(f"module {module}")
         if isinstance(module, (nn.Linear, nn.Conv2d)):
             weight = module.weight
             total_params += weight.numel()
@@ -151,34 +219,17 @@ def remove_pruning(model):
         if hasattr(module, 'weight'):
             try:
                 prune.remove(module, 'weight')
-                print(f"Pruning removed and made permanent for {name}.")
+                # print(f"Pruning removed and made permanent for {name}.")
             except ValueError:
-                print(f"No pruning applied to the weights of {name}, skipping...")
+                pass
+                # print(f"No pruning applied to the weights of {name}, skipping...")
 
 # Function to apply pruning with optional fine-tuning
 def prune_and_finetune_model(method, model, target_sparsity, num_iterations, fine_tune, fine_tune_steps, fine_tune_iterations, evaluator):
     parameters_to_prune = [(module, 'weight') for module in model.modules() if isinstance(module, (nn.Linear, nn.Conv2d))]
     initial_state_dict = model.state_dict()
 
-    # Define a common function to get new training arguments for fine-tuning
-    def get_training_args():
-        return TrainingArguments(
-            output_dir='./results',
-            learning_rate=5e-5,
-            weight_decay=0.01,
-            adam_beta1=0.9,
-            adam_beta2=0.999,
-            adam_epsilon=1e-6,
-            max_grad_norm=1.0,
-            per_device_train_batch_size=8,      # Depending on GPU memory, you might need to adjust this
-            gradient_accumulation_steps=4,      # Accumulate gradients for larger effective batch size
-            logging_dir='./logs',
-            save_steps=False,
-            logging_steps=100,                  # Updated to control logging frequency
-            max_steps=fine_tune_steps,          # Limit the number of training steps
-            warmup_steps=100,                   # Warm-up steps for the learning rate scheduler
-            lr_scheduler_type='linear',         # Use a linear scheduler with warm-up
-        )
+
 
     # print("Evaluating model before pruning...")
     # initial_ppl = evaluator.evaluate(model)
@@ -207,7 +258,7 @@ def prune_and_finetune_model(method, model, target_sparsity, num_iterations, fin
         prune.global_unstructured(parameters_to_prune, pruning_method=prune.L1Unstructured, amount=target_sparsity)
 
         # inject MX layers after pruning    
-        if args.post_pruning_quant:
+        if args.post_pruning_quant and not args.fine_tune:
             print("Saving pruned state_dict")
 
             # Make the pruning permanent by removing the reparameterization for each layer
@@ -217,46 +268,59 @@ def prune_and_finetune_model(method, model, target_sparsity, num_iterations, fin
             print("Verifying sparsity after remove_pruning")
             verify_sparsity(model)
 
-            # pruned_state_dict = model.state_dict()
-
             # quantizing model after pruning
             mx_mapping.inject_pyt_ops(mx_specs)
-
-            # testing to see if we can just inject mxfp layers without redefining model
-
-            # model = LlamaForCausalLM.from_pretrained(
-            #     args.model, torch_dtype=torch.float16, device_map=None,token="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"
-            # )
-            # print("Loading pruned weights from state_dict")
-            # model.load_state_dict(pruned_state_dict)
-
-            # # Call this function after pruning
-            # verify_sparsity(model)
-            # print("Verifying sparsity after load_state_dict")
 
         else:
             # Make the pruning permanent by removing the reparameterization for each layer
             remove_pruning(model)
+            print("Verifying sparsity after remove_pruning")
+            verify_sparsity(model)
 
-        print("Moving tensors to GPU...")
-        model.to(device)  # Move model to the GPU
+        if not args.fine_tune:
+            print("Moving tensors to GPU...")
+            model.to(device)  # Move model to the GPU
+        # model = accelerator.prepare(model)
 
-        print("Evaluating model after oneshot pruning...")
-        post_prune_ppl = evaluator.evaluate(model)
-        print(f"Perplexity after oneshot pruning: {post_prune_ppl}")
+        if args.post_pruning_quant and not args.fine_tune:
+            print("Evaluating model after pruning and quantization...")
+        else:
+            print("Evaluating model after pruning...")
 
-
+        if not args.fine_tune:
+            post_prune_ppl = evaluator.evaluate(model)
+            print(f"Perplexity: {post_prune_ppl}")
 
         if fine_tune:
+            # Ensure the model is aware of the new padding token
+            print(f"Resizing token embeddings")
+            model.resize_token_embeddings(len(tokenizer))
+            model.gradient_checkpointing_enable()
+            torch.cuda.empty_cache()
+
+            model.save_pretrained('./pruned_model')
+            model = LlamaForCausalLM.from_pretrained(
+                './pruned_model', torch_dtype=torch.float16, device_map="auto",token="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"
+            )
+
             trainer = Trainer(
                 model=model,                         # the instantiated 🤗 Transformers model to be trained
                 args=get_training_args(),            # training arguments, defined above
-                train_dataset=tokenized_dataset,     # training dataset
+                train_dataset=tokenized_train,
+                eval_dataset=tokenized_validation
             )
+            print(f"Starting fine-tuning")
             trainer.train()
             print("Evaluating model after fine-tuning...")
             post_fine_tuning_ppl = evaluator.evaluate(model)
             print(f"Perplexity after fine-tuning: {post_fine_tuning_ppl}")
+
+        if args.post_pruning_quant and args.fine_tune:
+            # quantizing model after pruning
+            mx_mapping.inject_pyt_ops(mx_specs)
+            print("Evaluating model after pruning, fine-tuning, and quantization...")
+            post_fine_tuning_ppl = evaluator.evaluate(model)
+            print(f"Perplexity: {post_fine_tuning_ppl}")
 
     else:
         for iteration in range(num_iterations):
