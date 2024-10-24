@@ -1,0 +1,2446 @@
+==> baseline_wanda_magnitude_10.log <==
+Verifying sparsity
+Total Parameters: 6607077376
+Zero Parameters: 649529726
+Sparsity: 9.83%
+Perplexity: 5.54869270324707
+
+==> baseline_wanda_magnitude_20.log <==
+Verifying sparsity
+Total Parameters: 6607077376
+Zero Parameters: 1299254223
+Sparsity: 19.66%
+Perplexity: 5.714303970336914
+
+==> baseline_wanda_magnitude_30.log <==
+Verifying sparsity
+Total Parameters: 6607077376
+Zero Parameters: 1946944199
+Sparsity: 29.47%
+Perplexity: 6.231780529022217
+
+==> baseline_wanda_magnitude_50.log <==
+Verifying sparsity
+Total Parameters: 6607077376
+Zero Parameters: 3244691398
+Sparsity: 49.11%
+Perplexity: 16.0299129486084
+
+==> baseline_wanda_magnitude_60.log <==
+Verifying sparsity
+Total Parameters: 6607077376
+Zero Parameters: 3893779163
+Sparsity: 58.93%
+Perplexity: 1924.4014892578125
+
+==> baseline_wanda_sparsegpt_10.log <==
+Verifying sparsity
+Total Parameters: 6607077376
+Zero Parameters: 647603710
+Sparsity: 9.80%
+Perplexity: 5.485862731933594
+
+==> baseline_wanda_sparsegpt_20.log <==
+Verifying sparsity
+Total Parameters: 6607077376
+Zero Parameters: 1295205195
+Sparsity: 19.60%
+Perplexity: 5.578799724578857
+
+==> baseline_wanda_sparsegpt_30.log <==
+Verifying sparsity
+Total Parameters: 6607077376
+Zero Parameters: 1942808520
+Sparsity: 29.40%
+Perplexity: 5.859008312225342
+
+==> baseline_wanda_sparsegpt_40.log <==
+
+==> baseline_wanda_sparsegpt_50.log <==
+Verifying sparsity
+Total Parameters: 6607077376
+Zero Parameters: 3238013387
+Sparsity: 49.01%
+Perplexity: 8.941478729248047
+
+==> baseline_wanda_sparsegpt_60.log <==
+Verifying sparsity
+Total Parameters: 6607077376
+Zero Parameters: 3885608006
+Sparsity: 58.81%
+Perplexity: 26.248868942260742
+
+==> baseline_wanda_wanda_10.log <==
+Verifying sparsity
+Total Parameters: 6607077376
+Zero Parameters: 646758599
+Sparsity: 9.79%
+Perplexity: 5.4957170486450195
+
+==> baseline_wanda_wanda_20.log <==
+Verifying sparsity
+Total Parameters: 6607077376
+Zero Parameters: 1294876871
+Sparsity: 19.60%
+Perplexity: 5.6115336418151855
+
+==> baseline_wanda_wanda_30.log <==
+Verifying sparsity
+Total Parameters: 6607077376
+Zero Parameters: 1941766343
+Sparsity: 29.39%
+Perplexity: 5.79411506652832
+
+==> baseline_wanda_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.078125
+
+==> baseline_wanda_wanda_50.log <==
+Verifying sparsity
+Total Parameters: 6607077376
+Zero Parameters: 3238002887
+Sparsity: 49.01%
+Perplexity: 7.301934242248535
+
+==> baseline_wanda_wanda_60.log <==
+Verifying sparsity
+Total Parameters: 6607077376
+Zero Parameters: 3884761287
+Sparsity: 58.80%
+Perplexity: 13.372395515441895
+
+==> baseline_wanda_wanda_70.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.7 sparsity: 0.7
+Perplexity: 77.0
+
+==> baseline_wanda_wanda_80.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.8 sparsity: 0.8
+Perplexity: 3828.0
+
+==> baseline_wanda_wanda_90.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.9 sparsity: 0.9
+Perplexity: inf
+
+==> int2_fp16_block128_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 45920.0
+
+==> int2_fp16_block16_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 5928.0
+
+==> int2_fp16_block1_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 400.25
+
+==> int2_fp16_block2_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 632.0
+
+==> int2_fp16_block32_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 16624.0
+
+==> int2_fp16_block4_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 1167.0
+
+==> int2_fp16_block64_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 37760.0
+
+==> int2_fp16_block8_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 3568.0
+
+==> int3_fp16_block128_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 12.4921875
+
+==> int3_fp16_block16_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 7.98828125
+
+==> int3_fp16_block1_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 7.015625
+
+==> int3_fp16_block2_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 7.28125
+
+==> int3_fp16_block32_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 8.46875
+
+==> int3_fp16_block4_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 7.55078125
+
+==> int3_fp16_block64_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 9.734375
+
+==> int3_fp16_block8_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 7.7421875
+
+==> int4_fp16_block128_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 6.1015625
+
+==> int4_fp16_block128_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 6.15625
+
+==> int4_fp16_block128_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.76171875
+
+==> int4_fp16_block128_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 17.484375
+
+==> int4_fp16_block128_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 2322.0
+
+==> int4_fp16_block128_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 6.11328125
+
+==> int4_fp16_block128_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 6.1875
+
+==> int4_fp16_block128_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 6.48828125
+
+==> int4_fp16_block128_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 10.5
+
+==> int4_fp16_block128_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 37.96875
+
+==> int4_fp16_block128_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 6.109375
+
+==> int4_fp16_block128_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 6.19140625
+
+==> int4_fp16_block128_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 6.4140625
+
+==> int4_fp16_block128_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.75390625
+
+==> int4_fp16_block128_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 8.3203125
+
+==> int4_fp16_block128_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 16.75
+
+==> int4_fp16_block16_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.85546875
+
+==> int4_fp16_block16_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.953125
+
+==> int4_fp16_block16_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.515625
+
+==> int4_fp16_block16_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 16.421875
+
+==> int4_fp16_block16_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 2033.0
+
+==> int4_fp16_block16_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.8671875
+
+==> int4_fp16_block16_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.94921875
+
+==> int4_fp16_block16_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 6.25390625
+
+==> int4_fp16_block16_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 9.8828125
+
+==> int4_fp16_block16_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 33.3125
+
+==> int4_fp16_block16_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.875
+
+==> int4_fp16_block16_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.984375
+
+==> int4_fp16_block16_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 6.19140625
+
+==> int4_fp16_block16_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.52734375
+
+==> int4_fp16_block16_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.94140625
+
+==> int4_fp16_block16_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 15.4921875
+
+==> int4_fp16_block1_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.2265625
+
+==> int4_fp16_block2_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.671875
+
+==> int4_fp16_block2_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.81640625
+
+==> int4_fp16_block2_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.34375
+
+==> int4_fp16_block2_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 17.6875
+
+==> int4_fp16_block2_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 3540.0
+
+==> int4_fp16_block2_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.6484375
+
+==> int4_fp16_block2_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.75
+
+==> int4_fp16_block2_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 6.0546875
+
+==> int4_fp16_block2_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 9.4296875
+
+==> int4_fp16_block2_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 30.328125
+
+==> int4_fp16_block2_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.66015625
+
+==> int4_fp16_block2_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.77734375
+
+==> int4_fp16_block2_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.9765625
+
+==> int4_fp16_block2_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.2890625
+
+==> int4_fp16_block2_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.71484375
+
+==> int4_fp16_block2_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 15.1640625
+
+==> int4_fp16_block32_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.94921875
+
+==> int4_fp16_block32_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 6.0078125
+
+==> int4_fp16_block32_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.609375
+
+==> int4_fp16_block32_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 17.078125
+
+==> int4_fp16_block32_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1627.0
+
+==> int4_fp16_block32_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.953125
+
+==> int4_fp16_block32_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 6.01953125
+
+==> int4_fp16_block32_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 6.3203125
+
+==> int4_fp16_block32_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 10.0390625
+
+==> int4_fp16_block32_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 34.84375
+
+==> int4_fp16_block32_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.9609375
+
+==> int4_fp16_block32_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 6.0546875
+
+==> int4_fp16_block32_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 6.265625
+
+==> int4_fp16_block32_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.60546875
+
+==> int4_fp16_block32_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 8.0234375
+
+==> int4_fp16_block32_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 15.34375
+
+==> int4_fp16_block4_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.7109375
+
+==> int4_fp16_block4_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.8515625
+
+==> int4_fp16_block4_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.3828125
+
+==> int4_fp16_block4_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 17.109375
+
+==> int4_fp16_block4_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 3076.0
+
+==> int4_fp16_block4_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.7109375
+
+==> int4_fp16_block4_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.8125
+
+==> int4_fp16_block4_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 6.11328125
+
+==> int4_fp16_block4_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 9.546875
+
+==> int4_fp16_block4_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 31.59375
+
+==> int4_fp16_block4_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.7265625
+
+==> int4_fp16_block4_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.84375
+
+==> int4_fp16_block4_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 6.0546875
+
+==> int4_fp16_block4_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.375
+
+==> int4_fp16_block4_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.7734375
+
+==> int4_fp16_block4_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 15.3671875
+
+==> int4_fp16_block64_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 6.01953125
+
+==> int4_fp16_block64_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 6.0703125
+
+==> int4_fp16_block64_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.6953125
+
+==> int4_fp16_block64_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 17.375
+
+==> int4_fp16_block64_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1773.0
+
+==> int4_fp16_block64_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 6.03125
+
+==> int4_fp16_block64_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 6.08984375
+
+==> int4_fp16_block64_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 6.39453125
+
+==> int4_fp16_block64_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 10.28125
+
+==> int4_fp16_block64_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 35.9375
+
+==> int4_fp16_block64_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 6.0234375
+
+==> int4_fp16_block64_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 6.11328125
+
+==> int4_fp16_block64_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 6.33203125
+
+==> int4_fp16_block64_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.6640625
+
+==> int4_fp16_block64_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 8.1015625
+
+==> int4_fp16_block64_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 15.5546875
+
+==> int4_fp16_block8_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.7734375
+
+==> int4_fp16_block8_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.890625
+
+==> int4_fp16_block8_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.43359375
+
+==> int4_fp16_block8_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 16.328125
+
+==> int4_fp16_block8_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 2386.0
+
+==> int4_fp16_block8_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.78125
+
+==> int4_fp16_block8_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.875
+
+==> int4_fp16_block8_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 6.1796875
+
+==> int4_fp16_block8_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 9.65625
+
+==> int4_fp16_block8_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 32.21875
+
+==> int4_fp16_block8_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.79296875
+
+==> int4_fp16_block8_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.9140625
+
+==> int4_fp16_block8_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 6.11328125
+
+==> int4_fp16_block8_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.44921875
+
+==> int4_fp16_block8_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.8359375
+
+==> int4_fp16_block8_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 15.25
+
+==> int5_fp16_block128_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.66015625
+
+==> int5_fp16_block128_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.81640625
+
+==> int5_fp16_block128_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.3515625
+
+==> int5_fp16_block128_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 16.75
+
+==> int5_fp16_block128_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1672.0
+
+==> int5_fp16_block128_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.66015625
+
+==> int5_fp16_block128_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.75390625
+
+==> int5_fp16_block128_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 6.0546875
+
+==> int5_fp16_block128_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 9.2890625
+
+==> int5_fp16_block128_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 29.171875
+
+==> int5_fp16_block128_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.6640625
+
+==> int5_fp16_block128_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.80078125
+
+==> int5_fp16_block128_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.99609375
+
+==> int5_fp16_block128_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.30859375
+
+==> int5_fp16_block128_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.625
+
+==> int5_fp16_block128_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 14.4140625
+
+==> int5_fp16_block16_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.609375
+
+==> int5_fp16_block16_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.78125
+
+==> int5_fp16_block16_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.30859375
+
+==> int5_fp16_block16_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 16.546875
+
+==> int5_fp16_block16_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 2064.0
+
+==> int5_fp16_block16_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.59765625
+
+==> int5_fp16_block16_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.69921875
+
+==> int5_fp16_block16_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.984375
+
+==> int5_fp16_block16_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 9.15625
+
+==> int5_fp16_block16_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 27.9375
+
+==> int5_fp16_block16_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.609375
+
+==> int5_fp16_block16_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.73828125
+
+==> int5_fp16_block16_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.92578125
+
+==> int5_fp16_block16_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.22265625
+
+==> int5_fp16_block16_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.51953125
+
+==> int5_fp16_block16_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 14.2734375
+
+==> int5_fp16_block1_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.11328125
+
+==> int5_fp16_block2_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.58203125
+
+==> int5_fp16_block2_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.75
+
+==> int5_fp16_block2_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.265625
+
+==> int5_fp16_block2_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 16.296875
+
+==> int5_fp16_block2_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 2172.0
+
+==> int5_fp16_block2_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.5390625
+
+==> int5_fp16_block2_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.63671875
+
+==> int5_fp16_block2_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.9140625
+
+==> int5_fp16_block2_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 9.0859375
+
+==> int5_fp16_block2_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 27.1875
+
+==> int5_fp16_block2_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.55078125
+
+==> int5_fp16_block2_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.6640625
+
+==> int5_fp16_block2_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.85546875
+
+==> int5_fp16_block2_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.14453125
+
+==> int5_fp16_block2_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.3828125
+
+==> int5_fp16_block2_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 13.6953125
+
+==> int5_fp16_block32_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.62109375
+
+==> int5_fp16_block32_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.79296875
+
+==> int5_fp16_block32_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.328125
+
+==> int5_fp16_block32_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 16.453125
+
+==> int5_fp16_block32_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1932.0
+
+==> int5_fp16_block32_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.62109375
+
+==> int5_fp16_block32_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.7265625
+
+==> int5_fp16_block32_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 6.01171875
+
+==> int5_fp16_block32_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 9.1796875
+
+==> int5_fp16_block32_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 27.671875
+
+==> int5_fp16_block32_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.625
+
+==> int5_fp16_block32_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.76171875
+
+==> int5_fp16_block32_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.953125
+
+==> int5_fp16_block32_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.2578125
+
+==> int5_fp16_block32_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.55078125
+
+==> int5_fp16_block32_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 14.0234375
+
+==> int5_fp16_block4_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.59375
+
+==> int5_fp16_block4_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.76171875
+
+==> int5_fp16_block4_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.27734375
+
+==> int5_fp16_block4_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 16.359375
+
+==> int5_fp16_block4_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 2048.0
+
+==> int5_fp16_block4_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.5625
+
+==> int5_fp16_block4_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.6640625
+
+==> int5_fp16_block4_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.94921875
+
+==> int5_fp16_block4_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 9.140625
+
+==> int5_fp16_block4_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 27.671875
+
+==> int5_fp16_block4_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.578125
+
+==> int5_fp16_block4_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.69140625
+
+==> int5_fp16_block4_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.890625
+
+==> int5_fp16_block4_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.1796875
+
+==> int5_fp16_block4_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.43359375
+
+==> int5_fp16_block4_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 13.8046875
+
+==> int5_fp16_block64_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.63671875
+
+==> int5_fp16_block64_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.8046875
+
+==> int5_fp16_block64_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.33203125
+
+==> int5_fp16_block64_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 16.421875
+
+==> int5_fp16_block64_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1895.0
+
+==> int5_fp16_block64_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.63671875
+
+==> int5_fp16_block64_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.73828125
+
+==> int5_fp16_block64_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 6.03125
+
+==> int5_fp16_block64_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 9.234375
+
+==> int5_fp16_block64_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 28.109375
+
+==> int5_fp16_block64_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.64453125
+
+==> int5_fp16_block64_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.77734375
+
+==> int5_fp16_block64_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.97265625
+
+==> int5_fp16_block64_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.28515625
+
+==> int5_fp16_block64_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.59375
+
+==> int5_fp16_block64_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 14.1875
+
+==> int5_fp16_block8_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.60546875
+
+==> int5_fp16_block8_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.765625
+
+==> int5_fp16_block8_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.28515625
+
+==> int5_fp16_block8_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 16.328125
+
+==> int5_fp16_block8_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1994.0
+
+==> int5_fp16_block8_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.5703125
+
+==> int5_fp16_block8_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.67578125
+
+==> int5_fp16_block8_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.9609375
+
+==> int5_fp16_block8_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 9.15625
+
+==> int5_fp16_block8_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 28.046875
+
+==> int5_fp16_block8_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.59375
+
+==> int5_fp16_block8_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.71484375
+
+==> int5_fp16_block8_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.91015625
+
+==> int5_fp16_block8_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.19921875
+
+==> int5_fp16_block8_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.4765625
+
+==> int5_fp16_block8_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 14.1875
+
+==> int6_fp16_block128_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.5703125
+
+==> int6_fp16_block128_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.73828125
+
+==> int6_fp16_block128_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.25390625
+
+==> int6_fp16_block128_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.671875
+
+==> int6_fp16_block128_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1692.0
+
+==> int6_fp16_block128_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.5234375
+
+==> int6_fp16_block128_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.6171875
+
+==> int6_fp16_block128_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.90234375
+
+==> int6_fp16_block128_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 9.0390625
+
+==> int6_fp16_block128_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 27.671875
+
+==> int6_fp16_block128_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.53515625
+
+==> int6_fp16_block128_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.65625
+
+==> int6_fp16_block128_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.84375
+
+==> int6_fp16_block128_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.1328125
+
+==> int6_fp16_block128_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.40234375
+
+==> int6_fp16_block128_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 14.2421875
+
+==> int6_fp16_block16_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.56640625
+
+==> int6_fp16_block16_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.7265625
+
+==> int6_fp16_block16_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.234375
+
+==> int6_fp16_block16_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.703125
+
+==> int6_fp16_block16_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1589.0
+
+==> int6_fp16_block16_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.51171875
+
+==> int6_fp16_block16_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.59765625
+
+==> int6_fp16_block16_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.88671875
+
+==> int6_fp16_block16_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 9.0390625
+
+==> int6_fp16_block16_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 27.234375
+
+==> int6_fp16_block16_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.5234375
+
+==> int6_fp16_block16_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.63671875
+
+==> int6_fp16_block16_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.828125
+
+==> int6_fp16_block16_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.12109375
+
+==> int6_fp16_block16_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.390625
+
+==> int6_fp16_block16_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 14.1015625
+
+==> int6_fp16_block1_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.078125
+
+==> int6_fp16_block2_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.55078125
+
+==> int6_fp16_block2_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.71484375
+
+==> int6_fp16_block2_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.234375
+
+==> int6_fp16_block2_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.859375
+
+==> int6_fp16_block2_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1725.0
+
+==> int6_fp16_block2_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.49609375
+
+==> int6_fp16_block2_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.58203125
+
+==> int6_fp16_block2_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.8671875
+
+==> int6_fp16_block2_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 8.984375
+
+==> int6_fp16_block2_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 26.921875
+
+==> int6_fp16_block2_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.5078125
+
+==> int6_fp16_block2_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.62109375
+
+==> int6_fp16_block2_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.8046875
+
+==> int6_fp16_block2_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.0859375
+
+==> int6_fp16_block2_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.33984375
+
+==> int6_fp16_block2_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 13.78125
+
+==> int6_fp16_block32_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.56640625
+
+==> int6_fp16_block32_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.73046875
+
+==> int6_fp16_block32_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.24609375
+
+==> int6_fp16_block32_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.765625
+
+==> int6_fp16_block32_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1614.0
+
+==> int6_fp16_block32_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.51953125
+
+==> int6_fp16_block32_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.609375
+
+==> int6_fp16_block32_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.8984375
+
+==> int6_fp16_block32_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 9.0390625
+
+==> int6_fp16_block32_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 27.453125
+
+==> int6_fp16_block32_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.52734375
+
+==> int6_fp16_block32_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.64453125
+
+==> int6_fp16_block32_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.83984375
+
+==> int6_fp16_block32_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.12109375
+
+==> int6_fp16_block32_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.41796875
+
+==> int6_fp16_block32_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 14.5546875
+
+==> int6_fp16_block4_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.55078125
+
+==> int6_fp16_block4_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.72265625
+
+==> int6_fp16_block4_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.234375
+
+==> int6_fp16_block4_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.796875
+
+==> int6_fp16_block4_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1692.0
+
+==> int6_fp16_block4_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.5
+
+==> int6_fp16_block4_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.58203125
+
+==> int6_fp16_block4_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.8671875
+
+==> int6_fp16_block4_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 9.0
+
+==> int6_fp16_block4_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 26.96875
+
+==> int6_fp16_block4_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.5078125
+
+==> int6_fp16_block4_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.62109375
+
+==> int6_fp16_block4_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.8046875
+
+==> int6_fp16_block4_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.08984375
+
+==> int6_fp16_block4_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.3515625
+
+==> int6_fp16_block4_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 13.96875
+
+==> int6_fp16_block64_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.56640625
+
+==> int6_fp16_block64_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.73828125
+
+==> int6_fp16_block64_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.25390625
+
+==> int6_fp16_block64_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.828125
+
+==> int6_fp16_block64_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1698.0
+
+==> int6_fp16_block64_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.51953125
+
+==> int6_fp16_block64_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.609375
+
+==> int6_fp16_block64_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.90234375
+
+==> int6_fp16_block64_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 9.0546875
+
+==> int6_fp16_block64_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 27.890625
+
+==> int6_fp16_block64_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.53515625
+
+==> int6_fp16_block64_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.6484375
+
+==> int6_fp16_block64_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.84375
+
+==> int6_fp16_block64_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.1328125
+
+==> int6_fp16_block64_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.41796875
+
+==> int6_fp16_block64_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 14.4375
+
+==> int6_fp16_block8_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.5625
+
+==> int6_fp16_block8_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.7265625
+
+==> int6_fp16_block8_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.2421875
+
+==> int6_fp16_block8_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.828125
+
+==> int6_fp16_block8_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1621.0
+
+==> int6_fp16_block8_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.5078125
+
+==> int6_fp16_block8_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.59375
+
+==> int6_fp16_block8_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.87890625
+
+==> int6_fp16_block8_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 9.015625
+
+==> int6_fp16_block8_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 27.1875
+
+==> int6_fp16_block8_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.51171875
+
+==> int6_fp16_block8_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.6328125
+
+==> int6_fp16_block8_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.81640625
+
+==> int6_fp16_block8_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.109375
+
+==> int6_fp16_block8_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.375
+
+==> int6_fp16_block8_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 13.9921875
+
+==> int7_fp16_block128_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.55078125
+
+==> int7_fp16_block128_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.72265625
+
+==> int7_fp16_block128_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.2421875
+
+==> int7_fp16_block128_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.953125
+
+==> int7_fp16_block128_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1746.0
+
+==> int7_fp16_block128_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.4921875
+
+==> int7_fp16_block128_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.58203125
+
+==> int7_fp16_block128_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.86328125
+
+==> int7_fp16_block128_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 8.96875
+
+==> int7_fp16_block128_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 26.765625
+
+==> int7_fp16_block128_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.5078125
+
+==> int7_fp16_block128_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.62109375
+
+==> int7_fp16_block128_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.80078125
+
+==> int7_fp16_block128_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.0859375
+
+==> int7_fp16_block128_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.296875
+
+==> int7_fp16_block128_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 13.2734375
+
+==> int7_fp16_block16_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.55078125
+
+==> int7_fp16_block16_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.71484375
+
+==> int7_fp16_block16_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.234375
+
+==> int7_fp16_block16_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.921875
+
+==> int7_fp16_block16_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1746.0
+
+==> int7_fp16_block16_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.4921875
+
+==> int7_fp16_block16_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.58203125
+
+==> int7_fp16_block16_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.86328125
+
+==> int7_fp16_block16_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 8.96875
+
+==> int7_fp16_block16_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 26.5625
+
+==> int7_fp16_block16_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.5078125
+
+==> int7_fp16_block16_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.62109375
+
+==> int7_fp16_block16_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.80078125
+
+==> int7_fp16_block16_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.0859375
+
+==> int7_fp16_block16_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.296875
+
+==> int7_fp16_block16_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 13.1953125
+
+==> int7_fp16_block1_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.0703125
+
+==> int7_fp16_block2_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.55078125
+
+==> int7_fp16_block2_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.71484375
+
+==> int7_fp16_block2_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.234375
+
+==> int7_fp16_block2_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.953125
+
+==> int7_fp16_block2_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1752.0
+
+==> int7_fp16_block2_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.484375
+
+==> int7_fp16_block2_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.578125
+
+==> int7_fp16_block2_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.86328125
+
+==> int7_fp16_block2_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 8.9296875
+
+==> int7_fp16_block2_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 26.25
+
+==> int7_fp16_block2_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.49609375
+
+==> int7_fp16_block2_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.6171875
+
+==> int7_fp16_block2_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.79296875
+
+==> int7_fp16_block2_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.0703125
+
+==> int7_fp16_block2_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.28125
+
+==> int7_fp16_block2_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 13.1953125
+
+==> int7_fp16_block32_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.55078125
+
+==> int7_fp16_block32_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.71484375
+
+==> int7_fp16_block32_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.234375
+
+==> int7_fp16_block32_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.921875
+
+==> int7_fp16_block32_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1773.0
+
+==> int7_fp16_block32_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.49609375
+
+==> int7_fp16_block32_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.58203125
+
+==> int7_fp16_block32_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.86328125
+
+==> int7_fp16_block32_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 8.96875
+
+==> int7_fp16_block32_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 26.8125
+
+==> int7_fp16_block32_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.5078125
+
+==> int7_fp16_block32_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.62109375
+
+==> int7_fp16_block32_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.8046875
+
+==> int7_fp16_block32_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.0859375
+
+==> int7_fp16_block32_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.296875
+
+==> int7_fp16_block32_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 13.25
+
+==> int7_fp16_block4_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.55078125
+
+==> int7_fp16_block4_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.71484375
+
+==> int7_fp16_block4_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.234375
+
+==> int7_fp16_block4_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.921875
+
+==> int7_fp16_block4_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1732.0
+
+==> int7_fp16_block4_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.484375
+
+==> int7_fp16_block4_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.58203125
+
+==> int7_fp16_block4_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.86328125
+
+==> int7_fp16_block4_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 8.9453125
+
+==> int7_fp16_block4_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 26.34375
+
+==> int7_fp16_block4_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.5
+
+==> int7_fp16_block4_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.6171875
+
+==> int7_fp16_block4_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.80078125
+
+==> int7_fp16_block4_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.0703125
+
+==> int7_fp16_block4_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.28125
+
+==> int7_fp16_block4_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 13.171875
+
+==> int7_fp16_block64_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.55078125
+
+==> int7_fp16_block64_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.72265625
+
+==> int7_fp16_block64_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.234375
+
+==> int7_fp16_block64_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.859375
+
+==> int7_fp16_block64_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1759.0
+
+==> int7_fp16_block64_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.4921875
+
+==> int7_fp16_block64_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.58203125
+
+==> int7_fp16_block64_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.86328125
+
+==> int7_fp16_block64_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 8.96875
+
+==> int7_fp16_block64_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 26.765625
+
+==> int7_fp16_block64_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.5078125
+
+==> int7_fp16_block64_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.62109375
+
+==> int7_fp16_block64_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.80078125
+
+==> int7_fp16_block64_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.0859375
+
+==> int7_fp16_block64_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.296875
+
+==> int7_fp16_block64_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 13.2734375
+
+==> int7_fp16_block8_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.55078125
+
+==> int7_fp16_block8_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.71484375
+
+==> int7_fp16_block8_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.234375
+
+==> int7_fp16_block8_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.984375
+
+==> int7_fp16_block8_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1801.0
+
+==> int7_fp16_block8_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.4921875
+
+==> int7_fp16_block8_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.58203125
+
+==> int7_fp16_block8_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.86328125
+
+==> int7_fp16_block8_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 8.9453125
+
+==> int7_fp16_block8_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 26.296875
+
+==> int7_fp16_block8_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.5
+
+==> int7_fp16_block8_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.6171875
+
+==> int7_fp16_block8_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.80078125
+
+==> int7_fp16_block8_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.078125
+
+==> int7_fp16_block8_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.2890625
+
+==> int7_fp16_block8_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 13.2265625
+
+==> int8_fp16_block128_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.55078125
+
+==> int8_fp16_block128_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.71484375
+
+==> int8_fp16_block128_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.234375
+
+==> int8_fp16_block128_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.921875
+
+==> int8_fp16_block128_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1725.0
+
+==> int8_fp16_block128_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.484375
+
+==> int8_fp16_block128_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.58203125
+
+==> int8_fp16_block128_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.86328125
+
+==> int8_fp16_block128_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 8.9453125
+
+==> int8_fp16_block128_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 26.203125
+
+==> int8_fp16_block128_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.5
+
+==> int8_fp16_block128_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.6171875
+
+==> int8_fp16_block128_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.80078125
+
+==> int8_fp16_block128_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.078125
+
+==> int8_fp16_block128_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.3046875
+
+==> int8_fp16_block128_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 13.328125
+
+==> int8_fp16_block16_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.55078125
+
+==> int8_fp16_block16_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.71484375
+
+==> int8_fp16_block16_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.234375
+
+==> int8_fp16_block16_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.921875
+
+==> int8_fp16_block16_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1685.0
+
+==> int8_fp16_block16_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.484375
+
+==> int8_fp16_block16_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.58203125
+
+==> int8_fp16_block16_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.86328125
+
+==> int8_fp16_block16_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 8.9453125
+
+==> int8_fp16_block16_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 26.296875
+
+==> int8_fp16_block16_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.49609375
+
+==> int8_fp16_block16_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.609375
+
+==> int8_fp16_block16_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.79296875
+
+==> int8_fp16_block16_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.0703125
+
+==> int8_fp16_block16_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.2890625
+
+==> int8_fp16_block16_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 13.2734375
+
+==> int8_fp16_block1_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.0703125
+
+==> int8_fp16_block2_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.546875
+
+==> int8_fp16_block2_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.71484375
+
+==> int8_fp16_block2_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.234375
+
+==> int8_fp16_block2_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.890625
+
+==> int8_fp16_block2_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1719.0
+
+==> int8_fp16_block2_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.484375
+
+==> int8_fp16_block2_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.578125
+
+==> int8_fp16_block2_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.85546875
+
+==> int8_fp16_block2_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 8.9296875
+
+==> int8_fp16_block2_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 26.203125
+
+==> int8_fp16_block2_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.49609375
+
+==> int8_fp16_block2_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.609375
+
+==> int8_fp16_block2_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.79296875
+
+==> int8_fp16_block2_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.06640625
+
+==> int8_fp16_block2_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.28125
+
+==> int8_fp16_block2_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 13.2265625
+
+==> int8_fp16_block32_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.55078125
+
+==> int8_fp16_block32_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.71484375
+
+==> int8_fp16_block32_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.234375
+
+==> int8_fp16_block32_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.921875
+
+==> int8_fp16_block32_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1698.0
+
+==> int8_fp16_block32_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.484375
+
+==> int8_fp16_block32_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.58203125
+
+==> int8_fp16_block32_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.86328125
+
+==> int8_fp16_block32_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 8.9453125
+
+==> int8_fp16_block32_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 26.140625
+
+==> int8_fp16_block32_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.49609375
+
+==> int8_fp16_block32_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.6171875
+
+==> int8_fp16_block32_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.80078125
+
+==> int8_fp16_block32_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.078125
+
+==> int8_fp16_block32_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.296875
+
+==> int8_fp16_block32_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 13.2734375
+
+==> int8_fp16_block4_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.546875
+
+==> int8_fp16_block4_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.71484375
+
+==> int8_fp16_block4_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.234375
+
+==> int8_fp16_block4_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.890625
+
+==> int8_fp16_block4_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1725.0
+
+==> int8_fp16_block4_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.484375
+
+==> int8_fp16_block4_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.578125
+
+==> int8_fp16_block4_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.85546875
+
+==> int8_fp16_block4_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 8.9296875
+
+==> int8_fp16_block4_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 26.25
+
+==> int8_fp16_block4_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.49609375
+
+==> int8_fp16_block4_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.609375
+
+==> int8_fp16_block4_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.79296875
+
+==> int8_fp16_block4_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.06640625
+
+==> int8_fp16_block4_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.28125
+
+==> int8_fp16_block4_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 13.2265625
+
+==> int8_fp16_block64_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.55078125
+
+==> int8_fp16_block64_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.71484375
+
+==> int8_fp16_block64_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.234375
+
+==> int8_fp16_block64_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.921875
+
+==> int8_fp16_block64_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1692.0
+
+==> int8_fp16_block64_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.484375
+
+==> int8_fp16_block64_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.58203125
+
+==> int8_fp16_block64_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.86328125
+
+==> int8_fp16_block64_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 8.9453125
+
+==> int8_fp16_block64_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 26.140625
+
+==> int8_fp16_block64_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.49609375
+
+==> int8_fp16_block64_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.6171875
+
+==> int8_fp16_block64_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.80078125
+
+==> int8_fp16_block64_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.078125
+
+==> int8_fp16_block64_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.296875
+
+==> int8_fp16_block64_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 13.328125
+
+==> int8_fp16_block8_magnitude_10.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.1
+Perplexity: 5.546875
+
+==> int8_fp16_block8_magnitude_20.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.2
+Perplexity: 5.71484375
+
+==> int8_fp16_block8_magnitude_30.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.3
+Perplexity: 6.234375
+
+==> int8_fp16_block8_magnitude_50.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.5
+Perplexity: 15.890625
+
+==> int8_fp16_block8_magnitude_60.log <==
+Loading model: vita-group/llama-2-7b_magnitude_unstructured sparsity: 0.6
+Perplexity: 1712.0
+
+==> int8_fp16_block8_sparsegpt_10.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.1
+Perplexity: 5.484375
+
+==> int8_fp16_block8_sparsegpt_20.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.2
+Perplexity: 5.578125
+
+==> int8_fp16_block8_sparsegpt_30.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.3
+Perplexity: 5.86328125
+
+==> int8_fp16_block8_sparsegpt_50.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.5
+Perplexity: 8.9296875
+
+==> int8_fp16_block8_sparsegpt_60.log <==
+Loading model: vita-group/llama-2-7b_sparsegpt_unstructured sparsity: 0.6
+Perplexity: 26.25
+
+==> int8_fp16_block8_wanda_10.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.1
+Perplexity: 5.49609375
+
+==> int8_fp16_block8_wanda_20.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.2
+Perplexity: 5.609375
+
+==> int8_fp16_block8_wanda_30.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.3
+Perplexity: 5.79296875
+
+==> int8_fp16_block8_wanda_40.log <==
+Loading model: vashistht/pruned-wanda-sparsity-0.4 sparsity: 0.4
+Perplexity: 6.06640625
+
+==> int8_fp16_block8_wanda_50.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.5
+Perplexity: 7.28125
+
+==> int8_fp16_block8_wanda_60.log <==
+Loading model: vita-group/llama-2-7b_wanda_unstructured sparsity: 0.6
+Perplexity: 13.2265625
