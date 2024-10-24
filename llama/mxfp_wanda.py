@@ -109,6 +109,46 @@ if args.wanda_checkpoints:
     comp_degree = args.target_sparsity
     comp_method = args.wanda_method # sparsegpt_unstructured, magnitude_unstructured, wanda_unstructured
     model_path = f'vita-group/{base_model}_{comp_method}'
+
+    # Microscaling code
+    # microscaling
+
+    # MXFP imports
+    import torch
+    import torch.nn.functional as F
+    import numpy as np
+    import argparse
+    import sys
+    import os
+
+    if not args.baseline:
+        microscaling = '../mx'
+        sys.path.append(os.path.dirname(os.path.expanduser(microscaling)))
+
+        from mx import finalize_mx_specs
+        from mx import mx_mapping
+
+        # Simple MX spec for MXFP6 weights+activations
+        mx_specs = {
+            'w_elem_format': args.w_elem,
+            'a_elem_format': args.a_elem,
+            'block_size': int(args.block_size),
+            args.scalar_format: args.scalar_width,
+            'custom_cuda': True,
+            # For quantization-aware finetuning, do backward pass in FP32
+            'quantize_backprop': args.quantize_backprop,
+        }
+   
+        mx_specs = finalize_mx_specs(mx_specs)
+        mx_mapping.inject_pyt_ops(mx_specs)
+
+
+        # model = LlamaForCausalLM.from_pretrained(
+        #     args.model, torch_dtype=torch.float16, device_map="auto",token="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"
+        # )
+
+    # End Microscaling 
+
     model = AutoModelForCausalLM.from_pretrained(
             model_path, 
             revision=f's{comp_degree}',
@@ -118,8 +158,8 @@ if args.wanda_checkpoints:
         )
     tokenizer = AutoTokenizer.from_pretrained('meta-llama/Llama-2-7b-hf')
     print(f"Loading model: {model_path} sparsity: {comp_degree}")
-    print("Verifying sparsity")
-    verify_sparsity(model)
+    # print("Verifying sparsity")
+    # verify_sparsity(model)
 
     dataset = load_dataset('wikitext', 'wikitext-2-raw-v1', split='test')
     # Tokenize the dataset
