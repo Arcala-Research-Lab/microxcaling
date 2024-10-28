@@ -209,8 +209,14 @@ def linear(
     name=None,
 ):
     mx_assert_test(mx_specs)
-    if mx_specs is None:
+    # code to test not quantizing lm_head
+    if mx_specs is None or name == "skip":
+        print("skip => no mx quantization")
         return f_linear(input, weight, bias=bias)
+
+    # original code    
+    # if mx_specs is None:
+    #     return f_linear(input, weight, bias=bias)
 
     mx_specs = apply_mx_specs(mx_specs)
 
@@ -219,6 +225,7 @@ def linear(
 
 
 class Linear(torch.nn.Linear):
+    total_count = 0
     def __init__(
         self,
         in_features,
@@ -231,8 +238,21 @@ class Linear(torch.nn.Linear):
         self.mx_none = mx_specs is None
 
         self.name = name
+
+        # skip last linear layer - debug code
+        Linear.total_count += 1
+        # print(f"Linear.total_count: {Linear.total_count} ")
+
+            # print("skipping 1st and 225th layer")
+
+
         self.prequantized_weights = False
-        self.mx_specs = apply_mx_specs(mx_specs)
+        if Linear.total_count == 225:
+            print("skipping quantization of this layer")
+            self.name = "skip"
+            self.mx_specs = apply_mx_specs(None)
+        else:
+            self.mx_specs = apply_mx_specs(mx_specs)
         super().__init__(in_features, out_features, bias)
 
     def apply_mx_specs(self, mx_specs):
