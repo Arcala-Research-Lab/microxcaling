@@ -18,6 +18,8 @@ from transformers import LlamaTokenizer
 # from smoothquant.fake_quant import quantize_llama_like
 import tqdm
 
+import random
+
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--baseline', help='No quantization', default=False)
@@ -29,8 +31,104 @@ parser.add_argument('--scalar_format', help='fp or bfloat', default="fp")
 parser.add_argument('--scalar_width', help='width of scalar elems', default=16)
 # parser.add_argument('--change_block', help='test of blocking effects', default=False)
 parser.add_argument('--quantize_backprop', help='quantization of back prop (True or False)', default=False)
+parser.add_argument('--scale_bits', help='width of scalar elems', default=8)
+parser.add_argument('--seqlen', help='sequence length', default=2048)
 
 args = parser.parse_args()
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+def get_wikitext2(nsamples, seed, seqlen, tokenizer):
+    # Load train and test datasets
+    traindata = load_dataset('wikitext', 'wikitext-2-raw-v1', split='train')
+    testdata = load_dataset('wikitext', 'wikitext-2-raw-v1', split='test')
+
+    # Encode datasets
+    trainenc = tokenizer(" ".join(traindata['text']), return_tensors='pt')
+    testenc = tokenizer("\n\n".join(testdata['text']), return_tensors='pt')
+
+    # Generate samples from training set
+    random.seed(seed)
+    trainloader = []
+    for _ in range(nsamples):
+        i = random.randint(0, trainenc.input_ids.shape[1] - seqlen - 1)
+        j = i + seqlen
+        inp = trainenc.input_ids[:, i:j]
+        tar = inp.clone()
+        tar[:, :-1] = -100
+        trainloader.append((inp, tar))
+    return trainloader, testenc
+
+def get_loaders(name, nsamples=128, seed=0, seqlen=2048, tokenizer=None):
+    if 'wikitext2' in name:
+        return get_wikitext2(nsamples, seed, seqlen, tokenizer)
+    if "c4" in name:
+        return get_c4(nsamples, seed, seqlen, tokenizer)
+
+def eval_ppl(model, tokenizer, device=torch.device("cuda:0")):
+    # Set dataset
+    dataset = "wikitext2"
+
+    # Print status
+    print(f"evaluating on {dataset}")
+
+    # Get the test loader
+    _, testloader = get_loaders(
+        dataset, seed=0, seqlen=4096, tokenizer=tokenizer 
+    )
+
+    # Evaluate ppl in no grad context to avoid updating the model
+    with torch.no_grad():
+        ppl_test = eval_ppl_wikitext(model, testloader, 1, device)
+    return ppl_test 
+
+# Function to evaluate perplexity (ppl) specifically on the wikitext dataset
+def eval_ppl_wikitext(model, testenc, bs=1, device=None):
+    # Get input IDs
+    testenc = testenc.input_ids
+
+    # Calculate number of samples
+    nsamples = testenc.numel() // 4096
+
+    # List to store negative log likelihoods
+    nlls = []
+    print(f"nsamples {nsamples}")
+
+    # Loop through each batch
+    for i in range(0,nsamples,bs):
+        if i % 50 == 0:
+            print(f"sample {i}")
+
+        # Calculate end index
+        j = min(i+bs, nsamples)
+
+        # Prepare inputs and move to device
+        inputs = testenc[:,(i * 4096):(j * 4096)].to(device)
+        inputs = inputs.reshape(j-i, 4096)
+
+        # Forward pass through the model
+        lm_logits = model(inputs).logits
+
+        # Shift logits and labels for next token prediction
+        shift_logits = lm_logits[:, :-1, :].contiguous()
+        shift_labels = inputs[:, 1:]
+
+        # Compute loss
+        loss_fct = nn.CrossEntropyLoss()
+        loss = loss_fct(shift_logits.reshape(-1, shift_logits.size(-1)), shift_labels.reshape(-1))
+
+        # Calculate negative log likelihood
+        neg_log_likelihood = loss.float() * 4096 * (j-i)
+
+        # Append to list of negative log likelihoods
+        nlls.append(neg_log_likelihood)
+
+    # Compute perplexity
+    ppl = torch.exp(torch.stack(nlls).sum() / (nsamples * 4096))
+
+    # Empty CUDA cache to save memory
+    torch.cuda.empty_cache()
+
+    return ppl.item()
 
 class Evaluator:
     def __init__(self, dataset, tokenizer, device, n_samples=100):
@@ -46,22 +144,31 @@ class Evaluator:
 
     @torch.no_grad()
     def evaluate(self, model):
-        model.eval()
-        nlls = []
-        for i in tqdm.tqdm(range(self.n_samples), desc="Evaluating..."):
-            batch = self.dataset[:, (i * 2048) : ((i + 1) * 2048)].to(model.device)
-            with torch.no_grad():
-                lm_logits = model(batch).logits
-            shift_logits = lm_logits[:, :-1, :].contiguous().float()
-            shift_labels = self.dataset[:, (i * 2048) : ((i + 1) * 2048)][:, 1:]
-            loss_fct = nn.CrossEntropyLoss()
-            loss = loss_fct(
-                shift_logits.view(-1, shift_logits.size(-1)), shift_labels.view(-1)
-            )
-            neg_log_likelihood = loss.float() * 2048
-            nlls.append(neg_log_likelihood)
+        seqlen = int(args.seqlen)
 
-        return torch.exp(torch.stack(nlls).sum() / (self.n_samples * 2048))
+        if seqlen == 2048:
+            model.eval()
+            nlls = []
+
+            for i in tqdm.tqdm(range(self.n_samples), desc="Evaluating..."):
+                batch = self.dataset[:, (i * seqlen) : ((i + 1) * seqlen)].to(model.device)
+                with torch.no_grad():
+                    lm_logits = model(batch).logits
+                shift_logits = lm_logits[:, :-1, :].contiguous().float()
+                shift_labels = self.dataset[:, (i * seqlen) : ((i + 1) * seqlen)][:, 1:]
+                loss_fct = nn.CrossEntropyLoss()
+                loss = loss_fct(
+                    shift_logits.view(-1, shift_logits.size(-1)), shift_labels.view(-1)
+                )
+                neg_log_likelihood = loss.float() * seqlen
+                nlls.append(neg_log_likelihood)
+            ppl = torch.exp(torch.stack(nlls).sum() / (self.n_samples * seqlen))
+
+        elif seqlen == 4096:
+            ppl = eval_ppl(model, tokenizer, device)
+            
+
+        return ppl
 
 from datasets import load_dataset
 
@@ -98,6 +205,7 @@ if not args.baseline:
 
     # Simple MX spec for MXFP6 weights+activations
     mx_specs = {
+        'scale_bits': int(args.scale_bits),
         'w_elem_format': args.w_elem,
         'a_elem_format': args.a_elem,
         'block_size': int(args.block_size),

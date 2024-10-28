@@ -5,6 +5,7 @@ import torch.nn as nn
 from transformers import LlamaTokenizer, LlamaForCausalLM, Trainer, TrainingArguments
 from datasets import load_dataset
 import tqdm
+import random
 
 # Pruning utilities from PyTorch
 from torch.nn.utils import prune
@@ -39,7 +40,11 @@ parser.add_argument('--post_pruning_quant', help='Quantize after pruning', defau
 
 parser.add_argument('--wanda_checkpoints', help='pruned models', default=False, action='store_true')
 parser.add_argument('--wanda_method', help='Pruning method: sparsegpt_unstructured, magnitude_unstructured, wanda_unstructured', default="magnitude_unstructured")
+parser.add_argument('--verify', help='No quantization', default=False, action='store_true')
 # parser.add_argument('--change_block', help='test of blocking effects', default=False)
+parser.add_argument('--scale_bits', help='width of scalar elems', default=8)
+parser.add_argument('--seqlen', help='sequence length', default=2048)
+
 
 args = parser.parse_args()
 
@@ -47,6 +52,102 @@ args = parser.parse_args()
 # https://github.com/mit-han-lab/smoothquant/blob/main/examples/smoothquant_llama_demo.ipynb
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+
+# Wanda repo perplexity calculation
+
+def get_wikitext2(nsamples, seed, seqlen, tokenizer):
+    # Load train and test datasets
+    traindata = load_dataset('wikitext', 'wikitext-2-raw-v1', split='train')
+    testdata = load_dataset('wikitext', 'wikitext-2-raw-v1', split='test')
+
+    # Encode datasets
+    trainenc = tokenizer(" ".join(traindata['text']), return_tensors='pt')
+    testenc = tokenizer("\n\n".join(testdata['text']), return_tensors='pt')
+
+    # Generate samples from training set
+    random.seed(seed)
+    trainloader = []
+    for _ in range(nsamples):
+        i = random.randint(0, trainenc.input_ids.shape[1] - seqlen - 1)
+        j = i + seqlen
+        inp = trainenc.input_ids[:, i:j]
+        tar = inp.clone()
+        tar[:, :-1] = -100
+        trainloader.append((inp, tar))
+    return trainloader, testenc
+
+def get_loaders(name, nsamples=128, seed=0, seqlen=2048, tokenizer=None):
+    if 'wikitext2' in name:
+        return get_wikitext2(nsamples, seed, seqlen, tokenizer)
+    if "c4" in name:
+        return get_c4(nsamples, seed, seqlen, tokenizer)
+
+def eval_ppl(model, tokenizer, device=torch.device("cuda:0")):
+    # Set dataset
+    dataset = "wikitext2"
+
+    # Print status
+    print(f"evaluating on {dataset}")
+
+    # Get the test loader
+    _, testloader = get_loaders(
+        dataset, seed=0, seqlen=4096, tokenizer=tokenizer 
+    )
+
+    # Evaluate ppl in no grad context to avoid updating the model
+    with torch.no_grad():
+        ppl_test = eval_ppl_wikitext(model, testloader, 1, device)
+    return ppl_test 
+
+# Function to evaluate perplexity (ppl) specifically on the wikitext dataset
+def eval_ppl_wikitext(model, testenc, bs=1, device=None):
+    # Get input IDs
+    testenc = testenc.input_ids
+
+    # Calculate number of samples
+    nsamples = testenc.numel() // 4096
+
+    # List to store negative log likelihoods
+    nlls = []
+    print(f"nsamples {nsamples}")
+
+    # Loop through each batch
+    for i in range(0,nsamples,bs):
+        if i % 50 == 0:
+            print(f"sample {i}")
+
+        # Calculate end index
+        j = min(i+bs, nsamples)
+
+        # Prepare inputs and move to device
+        inputs = testenc[:,(i * 4096):(j * 4096)].to(device)
+        inputs = inputs.reshape(j-i, 4096)
+
+        # Forward pass through the model
+        lm_logits = model(inputs).logits
+
+        # Shift logits and labels for next token prediction
+        shift_logits = lm_logits[:, :-1, :].contiguous()
+        shift_labels = inputs[:, 1:]
+
+        # Compute loss
+        loss_fct = nn.CrossEntropyLoss()
+        loss = loss_fct(shift_logits.reshape(-1, shift_logits.size(-1)), shift_labels.reshape(-1))
+
+        # Calculate negative log likelihood
+        neg_log_likelihood = loss.float() * 4096 * (j-i)
+
+        # Append to list of negative log likelihoods
+        nlls.append(neg_log_likelihood)
+
+    # Compute perplexity
+    ppl = torch.exp(torch.stack(nlls).sum() / (nsamples * 4096))
+
+    # Empty CUDA cache to save memory
+    torch.cuda.empty_cache()
+
+    return ppl.item()
 
 
 class Evaluator:
@@ -63,22 +164,29 @@ class Evaluator:
 
     @torch.no_grad()
     def evaluate(self, model):
-        model.eval()
-        nlls = []
-        for i in tqdm.tqdm(range(self.n_samples), desc="Evaluating..."):
-            batch = self.dataset[:, (i * 2048) : ((i + 1) * 2048)].to(model.device)
-            with torch.no_grad():
-                lm_logits = model(batch).logits
-            shift_logits = lm_logits[:, :-1, :].contiguous().float()
-            shift_labels = self.dataset[:, (i * 2048) : ((i + 1) * 2048)][:, 1:]
-            loss_fct = nn.CrossEntropyLoss()
-            loss = loss_fct(
-                shift_logits.view(-1, shift_logits.size(-1)), shift_labels.view(-1)
-            )
-            neg_log_likelihood = loss.float() * 2048
-            nlls.append(neg_log_likelihood)
+        seqlen = int(args.seqlen)
 
-        return torch.exp(torch.stack(nlls).sum() / (self.n_samples * 2048))
+        if seqlen == 2048:
+            model.eval()
+            nlls = []
+            for i in tqdm.tqdm(range(self.n_samples), desc="Evaluating..."):
+                batch = self.dataset[:, (i * 2048) : ((i + 1) * 2048)].to(model.device)
+                with torch.no_grad():
+                    lm_logits = model(batch).logits
+                shift_logits = lm_logits[:, :-1, :].contiguous().float()
+                shift_labels = self.dataset[:, (i * 2048) : ((i + 1) * 2048)][:, 1:]
+                loss_fct = nn.CrossEntropyLoss()
+                loss = loss_fct(
+                    shift_logits.view(-1, shift_logits.size(-1)), shift_labels.view(-1)
+                )
+                neg_log_likelihood = loss.float() * 2048
+                nlls.append(neg_log_likelihood)
+            ppl = torch.exp(torch.stack(nlls).sum() / (self.n_samples * seqlen))
+
+        elif seqlen == 4096:
+            ppl = eval_ppl(model, tokenizer, device)
+
+        return ppl
 
 def verify_sparsity(model):
     total_params = 0
@@ -130,6 +238,7 @@ if args.wanda_checkpoints:
 
         # Simple MX spec for MXFP6 weights+activations
         mx_specs = {
+            'scale_bits': int(args.scale_bits),
             'w_elem_format': args.w_elem,
             'a_elem_format': args.a_elem,
             'block_size': int(args.block_size),
@@ -142,6 +251,7 @@ if args.wanda_checkpoints:
         mx_specs = finalize_mx_specs(mx_specs)
         mx_mapping.inject_pyt_ops(mx_specs)
 
+        print("injecting microscaling layers")
 
         # model = LlamaForCausalLM.from_pretrained(
         #     args.model, torch_dtype=torch.float16, device_map="auto",token="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"
@@ -149,13 +259,34 @@ if args.wanda_checkpoints:
 
     # End Microscaling 
 
-    model = AutoModelForCausalLM.from_pretrained(
+    # if (comp_method == "wanda_unstructured" and (comp_degree == 0.4 or comp_degree > 0.6)):
+    if args.target_sparsity == 0.0:
+        # instantiating baseline model
+        model = LlamaForCausalLM.from_pretrained(
+            args.model, torch_dtype=torch.float16, device_map="auto",token="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"
+        )
+    elif (comp_method == "wanda_unstructured"):
+        # using 40% sparsity checkpoint from https://huggingface.co/vashistht/pruned-wanda-sparsity-0.4/tree/main
+        model_path = "vashistht/pruned-wanda-sparsity-"
+        model_path += str(comp_degree)
+        model = AutoModelForCausalLM.from_pretrained(
             model_path, 
-            revision=f's{comp_degree}',
+            # revision=f's{comp_degree}',
             torch_dtype=torch.float16, 
             low_cpu_mem_usage=True, 
             device_map="auto"
         )
+
+    else: 
+        # Using repositories from UT Austin
+        model = AutoModelForCausalLM.from_pretrained(
+                model_path, 
+                revision=f's{comp_degree}',
+                torch_dtype=torch.float16, 
+                low_cpu_mem_usage=True, 
+                device_map="auto"
+            )
+
     tokenizer = AutoTokenizer.from_pretrained('meta-llama/Llama-2-7b-hf')
     print(f"Loading model: {model_path} sparsity: {comp_degree}")
     # print("Verifying sparsity")
@@ -308,7 +439,9 @@ else:
 
     # Function to apply pruning with optional fine-tuning
     def prune_and_finetune_model(method, model, target_sparsity, num_iterations, fine_tune, fine_tune_steps, fine_tune_iterations, evaluator):
-        parameters_to_prune = [(module, 'weight') for module in model.modules() if isinstance(module, (nn.Linear, nn.Conv2d))]
+        # parameters_to_prune = [(module, 'weight') for module in model.modules() if isinstance(module, (nn.Linear, nn.Conv2d))]
+        parameters_to_prune = [(module, 'weight') for name, module in model.named_modules() if (isinstance(module, (nn.Linear, nn.Conv2d)) and name != "lm_head")]
+
         initial_state_dict = model.state_dict()
 
 
