@@ -1,11 +1,24 @@
 #!/bin/bash
 
-# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.1 > wanda_logs/baseline_wanda_magnitude_10.log
-# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.2 > wanda_logs/baseline_wanda_magnitude_20.log
-# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.3 > wanda_logs/baseline_wanda_magnitude_30.log
-# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.4 > wanda_logs/baseline_wanda_magnitude_40.log
-# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.5 > wanda_logs/baseline_wanda_magnitude_50.log
-# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.6 > wanda_logs/baseline_wanda_magnitude_60.log
+# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.1 --seqlen 4096 > wanda_logs/baseline_wanda_magnitude_10_seqlen_4096.log
+# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.2 --seqlen 4096 > wanda_logs/baseline_wanda_magnitude_20_seqlen_4096.log
+# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.3 --seqlen 4096 > wanda_logs/baseline_wanda_magnitude_30_seqlen_4096.log
+# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.4 --seqlen 4096 > wanda_logs/baseline_wanda_magnitude_40_seqlen_4096.log
+# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.5 --seqlen 4096 > wanda_logs/baseline_wanda_magnitude_50_seqlen_4096.log
+# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.6 --seqlen 4096 > wanda_logs/baseline_wanda_magnitude_60_seqlen_4096.log
+# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.7 --seqlen 4096 > wanda_logs/baseline_wanda_magnitude_70_seqlen_4096.log
+# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.8 --seqlen 4096 > wanda_logs/baseline_wanda_magnitude_80_seqlen_4096.log
+# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.9 --seqlen 4096 > wanda_logs/baseline_wanda_magnitude_90_seqlen_4096.log
+
+python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.1 --wanda_method wanda_unstructured --seqlen 4096 > wanda_logs/baseline_wanda_wanda_10_seqlen_4096.log
+python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.2 --wanda_method wanda_unstructured --seqlen 4096 > wanda_logs/baseline_wanda_wanda_20_seqlen_4096.log
+python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.3 --wanda_method wanda_unstructured --seqlen 4096 > wanda_logs/baseline_wanda_wanda_30_seqlen_4096.log
+python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.4 --wanda_method wanda_unstructured --seqlen 4096 > wanda_logs/baseline_wanda_wanda_40_seqlen_4096.log
+python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.5 --wanda_method wanda_unstructured --seqlen 4096 > wanda_logs/baseline_wanda_wanda_50_seqlen_4096.log
+python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.6 --wanda_method wanda_unstructured --seqlen 4096 > wanda_logs/baseline_wanda_wanda_60_seqlen_4096.log
+python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.7 --wanda_method wanda_unstructured --seqlen 4096 > wanda_logs/baseline_wanda_wanda_70_seqlen_4096.log
+python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.8 --wanda_method wanda_unstructured --seqlen 4096 > wanda_logs/baseline_wanda_wanda_80_seqlen_4096.log
+python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.9 --wanda_method wanda_unstructured --seqlen 4096 > wanda_logs/baseline_wanda_wanda_90_seqlen_4096.log
 
 # python mxfp_wanda.py --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.1 > wanda_logs/baseline_wanda_wanda_10.log
 # python mxfp_wanda.py --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.2 > wanda_logs/baseline_wanda_wanda_20.log
@@ -724,7 +737,94 @@
 # python mxfp_wanda.py --w_elem int5 --a_elem fp16 --block_size 2 --wanda_checkpoints --wanda_method sparsegpt_unstructured --target_sparsity 0.6 > wanda_logs/int5_fp16_block2_sparsegpt_60.log
 
 
-python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.4 > wanda_logs/baseline_wanda_magnitude_40.log
+# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.4 --wanda_method wanda_unstructured > wanda_logs/baseline_wanda_wanda_40.log
+# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.7 --wanda_method wanda_unstructured > wanda_logs/baseline_wanda_wanda_70.log
+# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.8 --wanda_method wanda_unstructured > wanda_logs/baseline_wanda_wanda_80.log
+# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.9 --wanda_method wanda_unstructured > wanda_logs/baseline_wanda_wanda_90.log
+
+#### run these to verify
+# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.1 --wanda_method wanda_unstructured --verify > wanda_logs/verify_baseline_wanda_wanda_10.log
+# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.2 --wanda_method wanda_unstructured --verify > wanda_logs/verify_baseline_wanda_wanda_20.log
+# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.3 --wanda_method wanda_unstructured --verify > wanda_logs/verify_baseline_wanda_wanda_30.log
+# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.5 --wanda_method wanda_unstructured --verify > wanda_logs/verify_baseline_wanda_wanda_50.log
+# python mxfp_wanda.py --wanda_checkpoints --target_sparsity 0.6 --wanda_method wanda_unstructured --verify > wanda_logs/verify_baseline_wanda_wanda_60.log
+
+
+# python mxfp_wanda.py --w_elem int8 --a_elem fp16 --block_size 128 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int8_fp16_block128_wanda_40.log
+# python mxfp_wanda.py --w_elem int8 --a_elem fp16 --block_size 64 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int8_fp16_block64_wanda_40.log
+# python mxfp_wanda.py --w_elem int8 --a_elem fp16 --block_size 32 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int8_fp16_block32_wanda_40.log
+# python mxfp_wanda.py --w_elem int8 --a_elem fp16 --block_size 16 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int8_fp16_block16_wanda_40.log
+# python mxfp_wanda.py --w_elem int8 --a_elem fp16 --block_size 8 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int8_fp16_block8_wanda_40.log
+# python mxfp_wanda.py --w_elem int8 --a_elem fp16 --block_size 4 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int8_fp16_block4_wanda_40.log
+# python mxfp_wanda.py --w_elem int8 --a_elem fp16 --block_size 2 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int8_fp16_block2_wanda_40.log
+# python mxfp_wanda.py --w_elem int8 --a_elem fp16 --block_size 1 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int8_fp16_block1_wanda_40.log
+
+# python mxfp_wanda.py --w_elem int7 --a_elem fp16 --block_size 128 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int7_fp16_block128_wanda_40.log
+# python mxfp_wanda.py --w_elem int7 --a_elem fp16 --block_size 64 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int7_fp16_block64_wanda_40.log
+# python mxfp_wanda.py --w_elem int7 --a_elem fp16 --block_size 32 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int7_fp16_block32_wanda_40.log
+# python mxfp_wanda.py --w_elem int7 --a_elem fp16 --block_size 16 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int7_fp16_block16_wanda_40.log
+# python mxfp_wanda.py --w_elem int7 --a_elem fp16 --block_size 8 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int7_fp16_block8_wanda_40.log
+# python mxfp_wanda.py --w_elem int7 --a_elem fp16 --block_size 4 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int7_fp16_block4_wanda_40.log
+# python mxfp_wanda.py --w_elem int7 --a_elem fp16 --block_size 2 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int7_fp16_block2_wanda_40.log
+# python mxfp_wanda.py --w_elem int7 --a_elem fp16 --block_size 1 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int7_fp16_block1_wanda_40.log
+
+# python mxfp_wanda.py --w_elem int6 --a_elem fp16 --block_size 128 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int6_fp16_block128_wanda_40.log
+# python mxfp_wanda.py --w_elem int6 --a_elem fp16 --block_size 64 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int6_fp16_block64_wanda_40.log
+# python mxfp_wanda.py --w_elem int6 --a_elem fp16 --block_size 32 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int6_fp16_block32_wanda_40.log
+# python mxfp_wanda.py --w_elem int6 --a_elem fp16 --block_size 16 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int6_fp16_block16_wanda_40.log
+# python mxfp_wanda.py --w_elem int6 --a_elem fp16 --block_size 8 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int6_fp16_block8_wanda_40.log
+# python mxfp_wanda.py --w_elem int6 --a_elem fp16 --block_size 4 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int6_fp16_block4_wanda_40.log
+# python mxfp_wanda.py --w_elem int6 --a_elem fp16 --block_size 2 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int6_fp16_block2_wanda_40.log
+# python mxfp_wanda.py --w_elem int6 --a_elem fp16 --block_size 1 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int6_fp16_block1_wanda_40.log
+
+# python mxfp_wanda.py --w_elem int5 --a_elem fp16 --block_size 128 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int5_fp16_block128_wanda_40.log
+# python mxfp_wanda.py --w_elem int5 --a_elem fp16 --block_size 64 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int5_fp16_block64_wanda_40.log
+# python mxfp_wanda.py --w_elem int5 --a_elem fp16 --block_size 32 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int5_fp16_block32_wanda_40.log
+# python mxfp_wanda.py --w_elem int5 --a_elem fp16 --block_size 16 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int5_fp16_block16_wanda_40.log
+# python mxfp_wanda.py --w_elem int5 --a_elem fp16 --block_size 8 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int5_fp16_block8_wanda_40.log
+# python mxfp_wanda.py --w_elem int5 --a_elem fp16 --block_size 4 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int5_fp16_block4_wanda_40.log
+# python mxfp_wanda.py --w_elem int5 --a_elem fp16 --block_size 2 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int5_fp16_block2_wanda_40.log
+# python mxfp_wanda.py --w_elem int5 --a_elem fp16 --block_size 1 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int5_fp16_block1_wanda_40.log
+
+# python mxfp_wanda.py --w_elem int4 --a_elem fp16 --block_size 128 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int4_fp16_block128_wanda_40.log
+# python mxfp_wanda.py --w_elem int4 --a_elem fp16 --block_size 64 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int4_fp16_block64_wanda_40.log
+# python mxfp_wanda.py --w_elem int4 --a_elem fp16 --block_size 32 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int4_fp16_block32_wanda_40.log
+# python mxfp_wanda.py --w_elem int4 --a_elem fp16 --block_size 16 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int4_fp16_block16_wanda_40.log
+# python mxfp_wanda.py --w_elem int4 --a_elem fp16 --block_size 8 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int4_fp16_block8_wanda_40.log
+# python mxfp_wanda.py --w_elem int4 --a_elem fp16 --block_size 4 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int4_fp16_block4_wanda_40.log
+# python mxfp_wanda.py --w_elem int4 --a_elem fp16 --block_size 2 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int4_fp16_block2_wanda_40.log
+# python mxfp_wanda.py --w_elem int4 --a_elem fp16 --block_size 1 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int4_fp16_block1_wanda_40.log
+
+
+# python mxfp_wanda.py --w_elem int3 --a_elem fp16 --block_size 128 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int3_fp16_block128_wanda_40.log
+# python mxfp_wanda.py --w_elem int3 --a_elem fp16 --block_size 64 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int3_fp16_block64_wanda_40.log
+# python mxfp_wanda.py --w_elem int3 --a_elem fp16 --block_size 32 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int3_fp16_block32_wanda_40.log
+# python mxfp_wanda.py --w_elem int3 --a_elem fp16 --block_size 16 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int3_fp16_block16_wanda_40.log
+# python mxfp_wanda.py --w_elem int3 --a_elem fp16 --block_size 8 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int3_fp16_block8_wanda_40.log
+# python mxfp_wanda.py --w_elem int3 --a_elem fp16 --block_size 4 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int3_fp16_block4_wanda_40.log
+# python mxfp_wanda.py --w_elem int3 --a_elem fp16 --block_size 2 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int3_fp16_block2_wanda_40.log
+# python mxfp_wanda.py --w_elem int3 --a_elem fp16 --block_size 1 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int3_fp16_block1_wanda_40.log
+
+
+# python mxfp_wanda.py --w_elem int2 --a_elem fp16 --block_size 128 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int2_fp16_block128_wanda_40.log
+# python mxfp_wanda.py --w_elem int2 --a_elem fp16 --block_size 64 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int2_fp16_block64_wanda_40.log
+# python mxfp_wanda.py --w_elem int2 --a_elem fp16 --block_size 32 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int2_fp16_block32_wanda_40.log
+# python mxfp_wanda.py --w_elem int2 --a_elem fp16 --block_size 16 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int2_fp16_block16_wanda_40.log
+# python mxfp_wanda.py --w_elem int2 --a_elem fp16 --block_size 8 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int2_fp16_block8_wanda_40.log
+# python mxfp_wanda.py --w_elem int2 --a_elem fp16 --block_size 4 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int2_fp16_block4_wanda_40.log
+# python mxfp_wanda.py --w_elem int2 --a_elem fp16 --block_size 2 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int2_fp16_block2_wanda_40.log
+# python mxfp_wanda.py --w_elem int2 --a_elem fp16 --block_size 1 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int2_fp16_block1_wanda_40.log
+
+#### done
+
+
+# python mxfp_wanda.py --w_elem int4 --a_elem fp16 --block_size 128 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.1 > wanda_logs/int4_fp16_block128_wanda_10.log
+# python mxfp_wanda.py --w_elem int4 --a_elem fp16 --block_size 128 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.2 > wanda_logs/int4_fp16_block128_wanda_20.log
+# python mxfp_wanda.py --w_elem int4 --a_elem fp16 --block_size 128 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.3 > wanda_logs/int4_fp16_block128_wanda_30.log
+# python mxfp_wanda.py --w_elem int4 --a_elem fp16 --block_size 128 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/int4_fp16_block128_wanda_40.log
+# python mxfp_wanda.py --w_elem int4 --a_elem fp16 --block_size 128 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.5 > wanda_logs/int4_fp16_block128_wanda_50.log
+# python mxfp_wanda.py --w_elem int4 --a_elem fp16 --block_size 128 --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.6 > wanda_logs/int4_fp16_block128_wanda_60.log
+
 # python mxfp_wanda.py --wanda_checkpoints --wanda_method wanda_unstructured --target_sparsity 0.4 > wanda_logs/baseline_wanda_wanda_40.log
 # python mxfp_wanda.py --wanda_checkpoints --wanda_method sparsegpt_unstructured --target_sparsity 0.4 > wanda_logs/baseline_wanda_sparsegpt_40.log
 
